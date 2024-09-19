@@ -12,7 +12,7 @@
 			<xsd:element name="productcatalogSOAPOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="customer_id" type="xsd:string"></xsd:element>
+						<xsd:element name="customer_id" type="xsd:int"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
