@@ -12,14 +12,25 @@
 			<xsd:element name="productcatalogSOAPOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="customer_id" type="xsd:string"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
 			<xsd:element name="productcatalogSOAPOperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="customer_id"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="name" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="email" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="address" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Phone"
+							type="xsd:int">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
