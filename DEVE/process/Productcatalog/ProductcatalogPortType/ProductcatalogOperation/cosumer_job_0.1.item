@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -96,13 +98,117 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3e02a765-d847-4473-a446-938df719cf6f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>osH9aijtBRvsHzSj/0Lx/SCNPGsOawxd7AI+/AleOxarl2wrasHt15lTfGElWUik21/xxjZ/sIkM&#13;
-7vuco5cBRg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2c696248-a23f-4fac-a2c3-ce8363279915"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CgYTK3i5+Xds0jGZwJBxGI1hQBd0JBG2oHq6gYP1fFm5SyUgRjE4qKZD0wELLYLS9qgGjmhKJEwI&#13;
-ukxKvuy5pA==</DigestValue></Reference></SignedInfo><SignatureValue>VILfS7FrlGdBjAyZch65pbgJtipJ3fZvTE26ScMH0fVzrtuFqkCX07EMMI/8em52d1SrHGyAXh8O&#13;
-rGaUo9ES5yMb/ED7G/kCYiC/jyl0h0JjrM3q3CTX/fUQ3tWlVmjj2BRZw3Bpyo3D6bOe1M5eyU0A&#13;
-+B5a7oTDpDRXwbN29+iYnEkKjibFRPBQMD8hK1WIJs2F7rrjgSfM07zXMOzOB6zWYeLcy0bhNLOk&#13;
-pcWBgCwBAgE/fXqVKoPLWiFwSzaWE+hFT02MV2/cHRHxEbR1mloJhTEXucYRsCV+qkIZXnNFfdV9&#13;
-mnhxtkrMKJQKietx4LQTuzYHCTr7rZUnidmNKw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tESBConsumer" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBConsumer_1"/>
+    <elementParameter field="EXTERNAL" name="SERVICE_CONFIGURATION" value=""/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVICE_LOCATOR_STRATEGY" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="USE_SR" value="false"/>
+    <elementParameter field="LABEL" name="AUTHENTICATION_LABEL" show="false" value=""/>
+    <elementParameter field="CHECK" name="AUTH_PROPAGATE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="SAML"/>
+    <elementParameter field="CLOSED_LIST" name="PROPAGATE_TYPE" show="false" value="NONE"/>
+    <elementParameter field="LABEL" name="PROPAGATE_U_P_LABEL" show="false" value=""/>
+    <elementParameter field="LABEL" name="PROPAGATE_CERT_LABEL" show="false" value=""/>
+    <elementParameter field="TEXT" name="AUTH_ALIAS" show="false" value="&quot;alias&quot;"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:zGU+f6McH/QJR0gaz4Ovx71IyXR4mG+sRYT+ZyF1x0LEZTjebxo="/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="LABEL" name="AUTHORIZATION_LABEL" show="false" value=""/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_ENCRYPTION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_CXF_MESSAGE_GZIP" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="ESB_ENDPOINT" value="&quot;http://localhost:8090/services/Productcatalog&quot;"/>
+    <elementParameter field="TEXT" name="ENDPOINT" show="false" value="&quot;E:/sept_2024/Predoole_september_2024-276904637/DEVE/services/Productcatalog_0.1.wsdl&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" show="false" value="http://www.talend.org/service/"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="Productcatalog"/>
+    <elementParameter field="TEXT" name="PORT_NS" show="false" value="http://www.talend.org/service/"/>
+    <elementParameter field="TEXT" name="PORT_NAME" show="false" value="ProductcatalogPort"/>
+    <elementParameter field="TEXT" name="METHOD_NS" show="false" value="http://www.talend.org/service/"/>
+    <elementParameter field="TEXT" name="METHOD" show="false" value="ProductcatalogOperation(ProductcatalogOperationRequest):ProductcatalogOperationResponse"/>
+    <elementParameter field="TEXT" name="SOAP_ACTION" show="false" value="http://www.talend.org/service/ProductcatalogOperation"/>
+    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" show="false" value="request-response"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="LABEL" name="CONNECTION_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(Studio Only, See Doc for Runtime)"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKING" value="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;C:/clientTrustStore.trustStore&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:uYJ4z/ZcOI/10S/LqJ1einaLjWfTU2AL58wvsg1VK2Jh7pOe3CA="/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:SAbbh7MZYFHdeBbVCyu3GUHLbtJtQyzcYFkEVaEq"/>
+    <elementParameter field="TEXT" name="WSDL_CONTENT" show="false" value="eJwL8GZmEWHg4OBgYGk1jmRAApxAnJuYmadXXpySszbsdN9lA5FY8c76jj3L89rPBvhKMjaJ9gue&#13;&#10;8XgzodBHWnNj83rj3P/zXrtfUim9ldJWFvj117zHxfHb8vO+u86z4eKdOSl70xx9DyWV8Ew18+xP&#13;&#10;Bf9fXjXdWfv709GzfJdqpnbZzzzDs8tJKVLx2hO/1VsetRkfLtqq2JlYpXwmPKZ5UmHJDangdRp3&#13;&#10;35YVlwgazdXeu1DhS/IxVlXOPP3E1JvS8Q+iAw1mPBbSCLNqKM3Y071GYPreteHMhkLHsm463yq8&#13;&#10;u7csL7z76KR/fz79bL+9vmxb3fSlN7623dfTXa/XvCee3YzPhVNMx7Pm5JmFIg/+LWZ1jq588cRJ&#13;&#10;8WiOWTGPknjrBLVbjPe9Fs7MnfD+Ub7qAZY57EWhU3beuL94ScK3sg37Jpkfu2G2h2kx18L6VM0y&#13;&#10;SaM1naWnlihuUVwsaJZvc/PW7MNyl5ubhdIdfHr1JH+4lP0zkHlv6LtXQu3C7UPbKw9mzKmY7vVb&#13;&#10;Vufw8abUShaLFZkTVt7RkpxsMLdz6Uoxhsk7513XY3y77OR56be8c+QdZAwSpA33LYw5KrMlZddJ&#13;&#10;scs/sj/MOfb55uoIYZsrYcmcmYdviEkf8Z1+m+d7fdDtp9La20Ju3ZByvXqv9eg6r9D3lXZOl3om&#13;&#10;t6duWuMjJGKjKNb+vnDVqR713mmXjb/kmC6bu8sqcO2dv+eW7H2yOLPi/fVXnVaiZZOiq9+bTEng&#13;&#10;szwUdFQ7umrJRZ+mqwXfmIrLp8eWH79Q7PXsikzit/fWeXe4n/8xNXfxTX57warQ+Y+WrYrogiM2&#13;&#10;h5+lV0qXr+Sfd8hs17+FRms/tXc8Pr/jXYy27H6+XOEJKgHHdy3JWxyXeKhy7pOuzX6BaxTvaxms&#13;&#10;fn10tmusyIvQpzdkj9/LOy6V8O2i1+/1YSb/mAO82TnuHdP508bEwPCJi4EhwJuRSYQBkXyR5TgZ&#13;&#10;0AE8MQd4s7KBBBiB0BxI72UC8QDmwFiW&#13;&#10;"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tESBConsumer_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="1024" name="faultCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultString" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultActor" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultNode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="faultRole" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="faultDetail" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="payload"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="RESPONSE" label="row1" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" source="tESBConsumer_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tESBConsumer_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_93e06c59-9b50-487e-93a9-bbcf5a45085c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+Nke/Mm5WRRUinNKjv8k/xwapLJkvOAIA0fHw6jRmDXB5UNzI9cHtfwpHO2Yiy9UdMGs35bbzy7u&#13;
+4ohX0JzMaQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9734787c-8162-4d24-a32d-60390536aa7c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ywh0dyvMEJB9bLsye5iOLiRvQKpIQB+ausK8IaV/9sqAxeUVgUzvwbgtPfEgp3+5TzDrmLpoaJE8&#13;
+b+flT8XMFQ==</DigestValue></Reference></SignedInfo><SignatureValue>VwuEQJ3jfirKJpGhfJZ4EJdbogCtp6VPwLY//NNNXXsuh4OHjAAkmNyNgBKRXbK4QTxvToxiiVSD&#13;
+dzriE81cMuFWtmmdgVqMBK5LX/qbiUutZrhQiRHVt0FJYNShSZNCzuiFehWr5dV3r0AhEpTVu8/S&#13;
+JDyE4aAQxtSKsSxKtE+ZwgVCMaDraHI1IJbEUWV/G6VOuNmy2zK7TPS2V/F/4qM7kVsM5EQlKY28&#13;
+kwQ7L99Y6C3HzGN9kZubBHE3rybDxsNgJIlWTha81wtBTeUJO8nvnumq7zBvvteYvZ9mQS3z/Zl0&#13;
+8wzExsIAKT23EkdiNX9uQr+vtKLjXR2oNAPFQw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -124,4 +230,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2c696248-a23f-4fac-a2c3-ce8363279915" Target="#_3e02a765-d847-4473-a446-938df719cf6f"><Timestamp>2024-09-19 10:53:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9734787c-8162-4d24-a32d-60390536aa7c" Target="#_93e06c59-9b50-487e-93a9-bbcf5a45085c"><Timestamp>2024-09-19 11:11:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
