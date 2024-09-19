@@ -12,14 +12,23 @@
 			<xsd:element name="ProductcatalogOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="customer_id" type="xsd:int"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
 			<xsd:element name="ProductcatalogOperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+                        <xsd:element name="Customer_id" type="xsd:int">
+						</xsd:element>
+                        <xsd:element name="Name" type="xsd:string"></xsd:element>
+						<xsd:element name="Email" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="phone" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="address"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
