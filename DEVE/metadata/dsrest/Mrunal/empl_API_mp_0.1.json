@@ -1,0 +1,224 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Jay_empl_API",
+    "description" : "No description",
+    "contact" : { },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "http://127.0.0.1:8091/service"
+  } ],
+  "paths" : {
+    "/employees/{id}" : {
+      "put" : {
+        "summary" : "update_record",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object"
+              },
+              "example" : "{\n  \"employees\": [\n    {\n      \"salary\": 70000\n    }\n  ]\n}"
+            }
+          }
+        },
+        "responses" : {
+          "204" : {
+            "description" : "Status 204"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/employees" : {
+      "get" : {
+        "summary" : "get_all",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/employee"
+                },
+                "example" : "<employees>\n    <employee>\n        <id>8</id>\n        <name>Pranita Patole</name>\n        <age>23</age>\n        <department>Data Engineering</department>\n        <position>ETL Dev</position>\n        <salary>70000</salary>\n        <hireDate>2023-08-19</hireDate>\n    </employee>\n</employees>\n"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/employees/byCity/{city}" : {
+      "get" : {
+        "summary" : "getByRegion",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "simple",
+          "explode" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/employee"
+                },
+                "example" : "<employees>\n    <employee>\n        <id>8</id>\n        <name>Pranita Patole</name>\n        <age>23</age>\n        <department>Data Engineering</department>\n        <position>ETL Dev</position>\n        <salary>70000</salary>\n        <hireDate>2023-08-19</hireDate>\n    </employee>\n</employees>\n"
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "Basic authentication" : [ ]
+        } ]
+      },
+      "parameters" : [ {
+        "name" : "city",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/employees/byUser" : {
+      "get" : {
+        "summary" : "getByUser",
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "style" : "simple",
+          "explode" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/employee"
+                },
+                "example" : "<employees>\n    <employee>\n        <id>8</id>\n        <name>Pranita Patole</name>\n        <age>23</age>\n        <department>Data Engineering</department>\n        <position>ETL Dev</position>\n        <salary>70000</salary>\n        <hireDate>2023-08-19</hireDate>\n    </employee>\n</employees>\n"
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "Basic authentication" : [ ]
+        } ]
+      }
+    },
+    "/employees/byTable" : {
+      "get" : {
+        "summary" : "getFromTable",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/order"
+                },
+                "example" : "{\n    \"ord_no\": 70001,\n    \"ord_date\": \"05-10-2012\",\n    \"purch_amt\": 150.5,\n    \"salesman_id\": 5002,\n    \"created_on\": \"10-09-2024\",\n    \"modified_on\": \"10-09-2024\",\n    \"customer_id\": 3005\n  }"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "employee" : {
+        "type" : "object",
+        "properties" : {
+          "employees" : {
+            "type" : "array",
+            "items" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "number"
+                },
+                "name" : {
+                  "type" : "string"
+                },
+                "age" : {
+                  "type" : "number"
+                },
+                "department" : {
+                  "type" : "string"
+                },
+                "position" : {
+                  "type" : "string"
+                },
+                "salary" : {
+                  "type" : "number"
+                },
+                "hireDate" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "example" : "{\n  \"employees\": [\n    {\n      \"id\": 8,\n      \"name\": \"Pranita Patole\",\n      \"age\": 23,\n      \"department\": \"Data Engineering\",\n      \"position\": \"ETL Dev\",\n      \"salary\": 70000,\n      \"hireDate\": \"2023-08-19\"\n    }\n  ]\n}\n"
+      },
+      "order" : {
+        "type" : "object",
+        "properties" : {
+          "ord_no" : {
+            "type" : "number"
+          },
+          "ord_date" : {
+            "type" : "string"
+          },
+          "purch_amt" : {
+            "type" : "number"
+          },
+          "salesman_id" : {
+            "type" : "number"
+          },
+          "created_on" : {
+            "type" : "string"
+          },
+          "modified_on" : {
+            "type" : "string"
+          },
+          "customer_id" : {
+            "type" : "number"
+          }
+        },
+        "example" : "{\r\n    \"ord_no\": 70001,\r\n    \"ord_date\": \"05-10-2012\",\r\n    \"purch_amt\": 150.5,\r\n    \"salesman_id\": 5002,\r\n    \"created_on\": \"10-09-2024\",\r\n    \"modified_on\": \"10-09-2024\",\r\n    \"customer_id\": 3005\r\n  }"
+      }
+    },
+    "securitySchemes" : {
+      "Basic_authentication" : {
+        "type" : "http",
+        "scheme" : "basic"
+      }
+    }
+  }
+}
