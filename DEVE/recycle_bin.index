@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>process/mrunal</deletedFolders>
+  <deletedItems id="_7wprkHfdEe-CjNwdL1LyDg" path="Task_MP" type="PROCESS"/>
+  <deletedItems id="_CByH4HfdEe-C0qmFFzxh9w" path="Task_MP" type="PROCESS"/>
   <deletedItems id="_PpXtIHZXEe-0_a2PyndybQ" path="" type="SERVICES"/>
 </recyclebin:RecycleBin>
