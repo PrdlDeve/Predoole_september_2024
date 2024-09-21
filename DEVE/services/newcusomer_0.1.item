@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services" xmi:version="2.0">
+  <Services:ServiceConnection servicePort="_coo8wHZTEe-0_a2PyndybQ" xmi:id="_cn-1cHZTEe-0_a2PyndybQ"/>
+  <Services:ServicePort id="_conuoHZTEe-0_a2PyndybQ" name="newcusomerPortType" serviceOperation="_coo8wXZTEe-0_a2PyndybQ" xmi:id="_coo8wHZTEe-0_a2PyndybQ"/>
+  <Services:ServiceOperation id="_conuoXZTEe-0_a2PyndybQ" label="newcusomerOperation-newcusomerPortType_newcusomerOperation" name="newcusomerOperation" referenceJobId="_k4ONUHZTEe-0_a2PyndybQ" xmi:id="_coo8wXZTEe-0_a2PyndybQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5366783e-e0d0-4089-af68-d897b2f74681"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ixEkWh6T3HDlPoPp++xf5bxT3ZKhCLsFfsjF01WGj+DrGnXzF0H1lVYIxpqEznGHrdH6LC4ckkbg&#13;
+A9q3u8hSFQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4467d9b2-3369-4705-a6c7-53d1a895724e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6wWaSfNdlJdi2Ao81FWIP4+KMm8/tWV5JKYsZ1GrRNAmPA/4BPmRyfG+zP5a05XAkuxFLk5oGa8G&#13;
+awFbRNYKug==</DigestValue></Reference></SignedInfo><SignatureValue>WU9k1IVQtyPgL5mxatz61O+xDmdxOm7JVGNOCQIEF1edKgvcM3MJE5+fGc4StrVff4hSpaXkEMeF&#13;
+opK5710/5ZmaH/I428Ro5R1ZJwFd9X6Pscp82qDzNu1FiMk/sgouYjR9eUj+FvzeWuXTwcPN0GBJ&#13;
+35l65Ia5AbvwLKDNOzzW6BUlpxuSZ6qATIwiGJ5wrkDgEXPl6YS8Txair0Gvapp0N4JrFYL2IAEv&#13;
+3i4Ra7ckOGylJFurn/U5pq8Hxn9o9ClmCSzpzu7TByIh7GyHkcEBpcB8md5xu916SAlhIO0x/+f+&#13;
+Jy9/Ryrj0aSsIY+xGyFE/Avp0gLxz9HkhQuZ0A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4467d9b2-3369-4705-a6c7-53d1a895724e" Target="#_5366783e-e0d0-4089-af68-d897b2f74681"><Timestamp>2024-09-19 06:51:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

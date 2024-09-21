@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="single_table_transfar"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="single_table_transfarOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="TableName" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="single_table_transfarOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Customer_id"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="name" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="email" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="address" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="phone"
+							type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="single_table_transfarOperationRequest">
+		<wsdl:part name="parameters" element="tns:single_table_transfarOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="single_table_transfarOperationResponse">
+		<wsdl:part name="parameters" element="tns:single_table_transfarOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="single_table_transfarPortType">
+		<wsdl:operation name="single_table_transfarOperation">
+			<wsdl:input message="tns:single_table_transfarOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:single_table_transfarOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="single_table_transfarBinding" type="tns:single_table_transfarPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="single_table_transfarOperation">
+			<soap:operation soapAction="http://www.talend.org/service/single_table_transfarOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="single_table_transfar">
+		<wsdl:port name="single_table_transfarPort" binding="tns:single_table_transfarBinding">
+			<soap:address location="http://localhost:8090/services/single_table_transfar" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

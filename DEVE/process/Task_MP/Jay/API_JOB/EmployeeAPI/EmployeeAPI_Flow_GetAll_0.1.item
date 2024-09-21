@@ -45,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:9EG0ssmSmNfeXEtZN85kC+Dp30pnd56J8Y9J8314"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:N7B/+3I6n7ZRvXmWFl3U6wd3odBO1O2G/+g2WVlY"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -60,7 +60,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/Talend_Studio_Workplace/studio/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/sept_2024/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xxMmae7PIHV9cu3GRHivXifnjz2poNjcDVuJY2S2"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:agmWyzeedmejhLcpLC0aj+cKvI+8nSmIZq1HNP3D"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -132,8 +132,8 @@
       <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value=""/>
     </elementParameter>
-    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="SAML"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" show="false" value="JKS"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" show="false" value=""/>
@@ -141,15 +141,15 @@
     <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:10T2VEOENFcyBW2AXX3CWikYp71sYMn80xOTJU5T"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" show="false" value=""/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" show="false" value=""/>
-    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;Copy_of_EmployeeAPI_Flow&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="true"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;Copy_of_EmployeeAPI_Flow&quot;"/>
     <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
     <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
     <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
     <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
     <elementParameter field="CHECK" name="ATTRIBUTES_TO_ELEMENTS" value="true"/>
-    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
     <elementParameter field="TABLE" name="JAXRS_PROPS"/>
@@ -184,22 +184,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_acX9sF3iEe-5W9f3y9Dx1Q"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;20.204.123.250&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;SQL_Queries&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;jay&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7m/mQD+k92Rnxnv1cx7aEPe2Kuv06dPqFJCOQVibqCsevw=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Talend_Sample2&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MrunalTalend&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;qdimainuser&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Y2VmkacN0XXizrOp7024Qz+6OE8qFAUpkHNpyx341Gba1CL0MbTUXNZP"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_details&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.Talend_Sample2.\&quot;id\&quot;,&#10;&#9;&#9;dbo.Talend_Sample2.name,&#10;&#9;&#9;dbo.Talend_Sample2.age,&#10;&#9;&#9;dbo.Talend_Sample2.department,&#10;&#9;&#9;dbo.Talend_Sample2.position,&#10;&#9;&#9;dbo.Talend_Sample2.salary,&#10;&#9;&#9;dbo.Talend_Sample2.hireDate&#10;FROM&#9;dbo.Talend_Sample2&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.customer_details.\&quot;id\&quot;,&#10;&#9;&#9;dbo.customer_details.name,&#10;&#9;&#9;dbo.customer_details.age,&#10;&#9;&#9;dbo.customer_details.department,&#10;&#9;&#9;dbo.customer_details.position,&#10;&#9;&#9;dbo.customer_details.salary,&#10;&#9;&#9;dbo.customer_details.hireDate&#10;FROM&#9;dbo.customer_details&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -208,6 +206,9 @@
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_ALWAYS_ENCRYPTED" value="false"/>
+    <elementParameter field="TEXT" name="KEYSTORE_PRINCIPAL_ID" show="false" value=""/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" show="false" value=""/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
@@ -332,15 +333,15 @@
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cfb960b0-342c-4b26-bed9-15280a93e58b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tHrlmsFucAJwSleGK/H30ItuGee3yeolg7TJaQ02uV2QOdhNExAQGHUvAFUENDTQ9sDePwfXN5fF&#13;
-hTsCt0BLOw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_14771d1d-d15a-4051-ad75-b4ab70c839fc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XZWZdOwyfZk+s1Co/pLQiRraaUVywXuT8/IR+DXjlKaEhSiQJgxU7KD2wKyldOAFUcMsnHJPzdSM&#13;
-KMMtm8XCKQ==</DigestValue></Reference></SignedInfo><SignatureValue>Z4U6DuiSj3sOhB11k5plfs5QNxs1XA2Boj8sL6ihGLNIxRjOwgdlPKzhZIKbTjsES5po5Kh3Blx/&#13;
-Kc995lz4rX3KmC5K58rqtyDx1cViKMkSTZ6NHbALXFa2Y8C0pupsd4oV83s+0tmr4mO7ayGaftFb&#13;
-J4zQzD7JsT65KtiX9eFWGPyFHQHJFtBm86S9TYpD8uao4tGO+UKTBpmv30GLMgR2t5Ky31ajYxbt&#13;
-dha2cXxJXwZ91ZEiZ4otw3nSFQqhnWJEAOgaA4GIwu1TjZ+4WAKSOGrGWf5QnO1C+mCpdIg1f1mX&#13;
-yK8AN7693MnwltiqMmNtzkiGoPFugzqNccRCIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_83ae137c-3e50-4568-9a96-9034c5277813"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vVANSKlJwx2ui0QL/PLBeoprBrsvyJsYk4oYVjLQw/JRXmc8QSOD1kpEfXAZ/WOX/QdFgtwnWQII&#13;
+pfsHy+SCcw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c616c63e-0530-4d53-b3ab-f346e78bdece"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Eg6kWpODawlBQj5Z9NYv+ZYLcwPacElYdK/NVCcvr7yXJrly+/9pbtuXxmFJMabOSuUrjQvXd5S6&#13;
+f97uIXIqBw==</DigestValue></Reference></SignedInfo><SignatureValue>j7UurMYGv+d+UldAonymelP5ePCTQ+tl8mtII05vtQohsq50Bko9y1SO8gpnuLTYOBXfDvpNPKzG&#13;
+GMLUsN8p8DylqcWvhzvbeH2R+/YU3N4pCa/Qxvx52/MY60jOe8HRM6aXWGpNqUbTl8TpD49F3fgS&#13;
+0AxxdIaEzwy05zGU9LDVjOwNXFBXSz9dgoeoQLbZLPiZnh4Qm7EIGesv084iOuBtWHxPxhMoD74t&#13;
+ud4WVG1BjeeYr/r3dzgVL1fryBpBmPCpTS7OzoPRhXcebVa5uWcNw5evrXW27+M9TeXTZuwgsERv&#13;
+ZQpIF3iUfDrjWLBs0h/WikTcAPTucVJr+P1MYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -362,4 +363,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_14771d1d-d15a-4051-ad75-b4ab70c839fc" Target="#_cfb960b0-342c-4b26-bed9-15280a93e58b"><Timestamp>2024-09-12 07:09:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c616c63e-0530-4d53-b3ab-f346e78bdece" Target="#_83ae137c-3e50-4568-9a96-9034c5277813"><Timestamp>2024-09-19 08:35:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
