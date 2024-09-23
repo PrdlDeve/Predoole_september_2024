@@ -1,0 +1,34 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "test_Jay",
+    "description" : "No description",
+    "contact" : { },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "security" : [ {
+    "Custom" : [ ]
+  } ],
+  "paths" : {
+    "/employees" : {
+      "get" : {
+        "summary" : "get_alll",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
