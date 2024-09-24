@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/Jobs/Customer_details/tHMap_1/row1.xml' outStruct='HL7_V2.5:Structures/Composites/AD.xml' inputRep='178' outputRep='179' nextMap='' inputStructUserName='row1' outputStructUserName='AD' V1='4' name='tHMap_1' incarnation='125'>
+  <inputMapElem t='200' id='2' V200='8' input='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='root'>
+    <mapNode t='190' idref='1'/>
+  </inputMapElem>
+  <outputMapElem t='200' id='3' V200='8' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' ediElemType='3' ediElemRef='158' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='AD' description='Address'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/root,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='4' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='120' dataType='2' repHandlerStruct='' visible='true' sequenceId='1' inheritsFrom='' V281='13' V1='4' name='AD_1' description='Street Address'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='5' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='120' dataType='2' repHandlerStruct='' visible='true' sequenceId='2' inheritsFrom='' V281='13' V1='4' name='AD_2' description='Other Designation'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='6' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='50' dataType='2' repHandlerStruct='' visible='true' sequenceId='3' inheritsFrom='' V281='13' V1='4' name='AD_3' description='City'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='7' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='50' dataType='2' repHandlerStruct='' visible='true' sequenceId='4' inheritsFrom='' V281='13' V1='4' name='AD_4' description='State or Province'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='8' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='12' dataType='2' repHandlerStruct='' visible='true' sequenceId='5' inheritsFrom='' V281='13' V1='4' name='AD_5' description='Zip or Postal Code'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='9' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='3' dataType='2' repHandlerStruct='' visible='true' sequenceId='6' inheritsFrom='' V281='13' V1='4' name='AD_6' description='Country'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='10' V200='8' structElemExists='true' valueSetIndex='1' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' sequenceId='7' inheritsFrom='HL7_V2.5:Structures/Tables/T190.xml' V281='13' V1='4' name='AD_7' description='Address Type'>
+      <mapNode t='190' idref='1'/>
+    </child>
+    <child t='200' id='11' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='50' dataType='2' repHandlerStruct='' visible='true' sequenceId='8' inheritsFrom='' V281='13' V1='4' name='AD_8' description='Other Geographic Designation'>
+      <mapNode t='190' idref='1'/>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='698' id='12' V698='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='699' id='13' V699='1' V690='1' rowElemPath='/AD'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <valueSets>B|BA|BDL|BR|C|F|H|L|M|N|O|P|RH</valueSets>
+  <valueSetKeys>Structures/Tables/T190.xml</valueSetKeys>
+  <valueSetKeys>1</valueSetKeys>
+  <child t='165' id='14' V1='4' name='Document Bindings'>
+    <child t='166' id='15' V166='5' docType='1' V1='4' name='in$/root'>
+      <elemNode t='200' idref='2'/>
+    </child>
+    <child t='166' id='16' V166='5' docType='2' V1='4' name='out$/AD'>
+      <elemNode t='200' idref='3'/>
+    </child>
+  </child>
+  <child t='201' id='17' V1='4' name='Inherits From'>
+  </child>
+</root>
