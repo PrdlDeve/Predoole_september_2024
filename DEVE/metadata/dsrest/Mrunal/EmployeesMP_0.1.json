@@ -1,0 +1,157 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "employees_MP",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/ Customer_details" : {
+      "get" : {
+        "summary" : "Customer_list",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer_Details"
+                },
+                "example" : "\n  {\n    \"customer_id\": 1002,\n    \"name\": \"Jane Smith\",\n    \"address\": \"456 Elm St\",\n    \"email\": \"janesmith@example.com\",\n    \"phone\": \"555-5678\"\n  },\n  {\n    \"customer_id\": 1003,\n    \"name\": \"Bob Johnson\",\n    \"address\": \"789 Oak St\",\n    \"email\": \"bjohnson@example.com\",\n    \"phone\": \"555-9012\"\n  },\n  {\n    \"customer_id\": 1004,\n    \"name\": \"Alice Williams\",\n    \"address\": \"321 Pine St\",\n    \"email\": \"awilliams@example.com\",\n    \"phone\": \"555-3456\"\n  },\n  {\n    \"customer_id\": 1005,\n    \"name\": \"Charlie Brown\",\n    \"address\": \"654 Maple St\",\n    \"email\": \"cbrown@example.com\",\n    \"phone\": \"555-7890\"\n  }\n\n\n"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "summary" : "create Customer_details",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Customer_Details"
+              },
+              "example" : "{\n  \"customer\": {\n    \"address\": \"123 Main St\",\n    \"customer_id\": 1001,\n    \"email\": \"johndoe@example.com\",\n    \"name\": \"John Doe\",\n    \"phone\": \"555-1234\"\n  }\n}\n"
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Status 201",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer_Details"
+                },
+                "example" : "{\n  \"customer\": {\n    \"address\": \"123 Main St\",\n    \"customer_id\": 1001,\n    \"email\": \"johndoe@example.com\",\n    \"name\": \"John Doe\",\n    \"phone\": \"555-1234\"\n  }\n}\n"
+              }
+            }
+          },
+          "409" : {
+            "description" : "Conflict",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error"
+                },
+                "example" : "Customer_id 461145\",\n\"errorCode\": \"23000\",\n\"errorMessage\": \"Duplicate entry '461145 for key 'PRIMARY-Line: 0"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Customer_details/{id}" : {
+      "put" : {
+        "summary" : "Put update",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Customer_Details"
+              },
+              "example" : "{\n  \"customer\": {\n    \"address\": \"123 Main St\",\n    \"customer_id\": 1001,\n    \"email\": \"johndoe@example.com\",\n    \"name\": \"John Doe\",\n    \"phone\": \"555-1234\"\n  }\n}\n"
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Customer_Details" : {
+        "type" : "object",
+        "properties" : {
+          "customer" : {
+            "type" : "object",
+            "properties" : {
+              "address" : {
+                "type" : "string"
+              },
+              "customer_id" : {
+                "type" : "number"
+              },
+              "email" : {
+                "type" : "string"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "phone" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "example" : "{\r\n  \"customer\": {\r\n    \"address\": \"123 Main St\",\r\n    \"customer_id\": 1001,\r\n    \"email\": \"johndoe@example.com\",\r\n    \"name\": \"John Doe\",\r\n    \"phone\": \"555-1234\"\r\n  }\r\n}\r\n"
+      },
+      "Customer_Detail" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/Customer_Details"
+        }
+      },
+      "Error" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "Errorcode" : {
+            "type" : "string",
+            "maxLength" : 400
+          },
+          "Errormessage" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}
