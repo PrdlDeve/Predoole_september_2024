@@ -56,6 +56,14 @@
     "id" : "_1hX1MHc1Ee-XwIZfFB7DVA",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_dkCWMHsCEe-ieb2t1q9I-A",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dkCWMHsCEe-ieb2t1q9I-A - customer_details",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {

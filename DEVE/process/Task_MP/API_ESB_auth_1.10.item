@@ -189,8 +189,20 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" show="false" value="tMSSqlInput"/>
+    <elementParameter field="TEXT" name="VERSION" show="false" value="0.102 (ALPHA)"/>
+    <elementParameter field="TEXT" name="FAMILY" show="false" value="Databases/DB Specifics/MS_SQL_Server"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" show="false" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HELP" show="false" value="org.talend.help.tMSSqlInput"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" show="false" value=""/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" show="false" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_dkCWMHsCEe-ieb2t1q9I-A"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;20.204.123.250&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
@@ -198,18 +210,20 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MrunalTalend&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;qdimainuser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:g1V1Oxp3kVE3Nj2BSoE6iA2U6a40GGOOFm1u20LazQIbu/gc4kzdJ6R7"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q+iDFMo+K45Wu879t0KeK2D41evZqJWoBk8mQu3C/CJmgpLve0jC0OFU"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_dkCWMHsCEe-ieb2t1q9I-A - customer_details"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_details&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select dbo.customer_details.address,dbo.customer_details.customer_id,dbo.customer_details.email,dbo.customer_details.name,dbo.customer_details.phone &#10;from dbo.customer_details&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.customer_details.customer_id,&#10;&#9;&#9;dbo.customer_details.name,&#10;&#9;&#9;dbo.customer_details.email,&#10;&#9;&#9;dbo.customer_details.phone,&#10;&#9;&#9;dbo.customer_details.address&#10;FROM&#9;dbo.customer_details&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;encrypt=true;trustServerCertificate=true;&quot;"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -218,26 +232,37 @@
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" show="false" value=""/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
-      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" key="false" length="100" name="address" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="email" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="name" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="phone" nullable="false" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="customer_details" name="tDBInput_1">
+      <column comment="" key="true" length="10" name="customer_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="email" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="phone" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="address" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
   </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="120">
@@ -301,13 +326,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_934f21c4-e992-4b6e-b4ca-dec16bf099c5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/9W5xvYWedbxhY5nrg1qSN8nBFSAjIGZBlN3F05o5hECf8Kc13Q9c8ku6Doa0JSh1jFNPe8gJmxh&#13;
-/pRu5Whnfg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3979703e-220c-481a-b257-f9e4b5106eb5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>URIIxLzPTo03XnaoF7oIYPMkCicHKIqFKWBggz78Z6gbd2YwaAewMDEL9vcdzwo70yAcSEIKpc3u&#13;
-c25JMoZY7Q==</DigestValue></Reference></SignedInfo><SignatureValue>ApfxfC0MP6ZCTMU+tcaznayeig/oLDVrMmk7pv1e9QF7ichPhdDb+WY6by9H+qIr2Bu9wKgYXCWe&#13;
-RAACIhSoEamQo296aB6JTJZ+iAZv907fhRtFPNr/vNknUrgyc7CIOSDpUWngGmMSY2qX87He5efw&#13;
-PzM5VfSjRfbDEDCTLF1zO4V/oaPFWVoEm9d6nH1ZZpRpdNk85DGYYMaQSTo6NY5g47o8R6I942S0&#13;
-t+RA4MslH/CQyQvhtkY+eBU2j+riwhR64jU0HPGyDiL4OPv+cgo0GDkmbi4NsA7sDrcCmVVuzW5s&#13;
-hj9hqZXxXcQyXihKYSC2PTKT1cvk9wm09SwgVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8a805b8c-82d6-478e-9ad0-a4c703328009"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EAcAQOGvGuleQudQpprxuVw2p7dxLigUJ577c5oNWomv7d41TYbznUKXNgBjxfuhbUsuQf0BC94J&#13;
+2e3luaOQHg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d67d91f6-36af-41bd-8d7d-c60aef85859a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oWQzb3abrCvYDwFnezQ/YdpOdY49tbowDdfw8mp2zpmDxLP7nCFHnjgZ9F8EmBcovtB6fFcAnx8z&#13;
+WUHvhYQpFw==</DigestValue></Reference></SignedInfo><SignatureValue>QG8CmOagwj07MpsT3Sz4Hw8O1mf6JUS3Y7uSIvDR7vEiPL84gY9N1kjz4aVTAvR3oUGmMhd+LSOG&#13;
+xf8vZmwGNF2BxoIEJLaEodFpykCGpzRIkg7KfaVLePZw756lmwcg/GCxYWCaSE1uvMe758sMQ9QI&#13;
+Z8Dwr81mUGQn+i1pvh0IExurys0aFaDIolf1F6+1u4YsENvb/PzCcEX/IFhMD8tW6EJKsZEODQAm&#13;
+ayLFmZ6hp9HdGF/ruxGkoHod2IEtWMTPW4FofGhvBbDVg+jAVqVMsrASc7QSbOGelr06OCJZRBkP&#13;
+fsw8QAjjRf9pl7PcFx/EM7bGmUcD7y478dXtXA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -329,4 +354,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3979703e-220c-481a-b257-f9e4b5106eb5" Target="#_934f21c4-e992-4b6e-b4ca-dec16bf099c5"><Timestamp>2024-09-24 12:56:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d67d91f6-36af-41bd-8d7d-c60aef85859a" Target="#_8a805b8c-82d6-478e-9ad0-a4c703328009"><Timestamp>2024-09-25 05:58:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
