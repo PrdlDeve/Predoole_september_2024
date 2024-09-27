@@ -113,17 +113,11 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_BEnGEHovEe--aM2Gpoi24g"/>
     <elementParameter field="TEXT" name="API_ID" show="false" value="554c43ce-e64d-40a9-81d1-62dfa028a068"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/employess_cloud&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/employees_cloud&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="Customer_list"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;"/>
-      <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
       <elementValue elementRef="SCHEMA" value="create_Customer_details"/>
       <elementValue elementRef="HTTP_VERB" value="POST"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/ Customer_details&quot;"/>
       <elementValue elementRef="CONSUMES" value="JSON"/>
       <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value=""/>
@@ -137,6 +131,12 @@
       <elementValue elementRef="HTTP_VERB" value="DELETE"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details/{id}&quot;"/>
       <elementValue elementRef="CONSUMES" value="JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value=""/>
+      <elementValue elementRef="SCHEMA" value="Customer_list"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;"/>
+      <elementValue elementRef="CONSUMES" value=""/>
       <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value=""/>
     </elementParameter>
@@ -170,7 +170,6 @@
       <column defaultValue="" key="false" length="0" name="status" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="1024" name="error" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" name="Customer_list"/>
     <metadata name="create_Customer_details">
       <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -181,6 +180,7 @@
     <metadata name="Delete">
       <column comment="path(id)" key="false" length="-1" name="id" nullable="false" originalLength="-1" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
+    <metadata name="Customer_list"/>
   </node>
   <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_2"/>
@@ -330,13 +330,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5af86bcb-1338-4d6c-b0f2-34dbb0f17ef4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9EL7KFLtafHZsTW60LrS7NCmTszGIVuikGabVZGZ8GFrezIWoedqofbP92ukYf9kjCovfRVDjh5K&#13;
-dqBkju91sw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f5fba61b-c89e-4b54-86ec-31c341b58f06"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A3KVsaayeKelKmnIg8EapiwGt0oR/aZezdHnS1MFw13Pd4+l3PpntmeS+0hR8ADHQ/l2gELvr2Q8&#13;
-81G6itOq+A==</DigestValue></Reference></SignedInfo><SignatureValue>IKHugTlSZ1nK+qblIUDyO5JRqnhke9NxZUdViRIxfmEMh6QmMnFe5Qw1jtuPvLo0Iwi65aKe2s5V&#13;
-q2P2q2m0brx6IUsbJ6iRwbWlzFp0BFVUGyyZzDacZjpSr0sg/+fqcc1jJ+9J0czrGZTpbnYbCvZu&#13;
-qsvsaMltpKGoSd1mnIKpESQmET31PRnKEuwMxXjTANbCfiy/MHJSKW+DjFOG7+XiuBfCKJWhJJWo&#13;
-FnhxEI6/+x+KQnWC3NSUE9I8QTQqBYVgCOGxp53csgXeUtaLUL9Ig+sP/D0rFBA5U/FOAzQhhhqx&#13;
-slKI1sOz2ilZs31NNIlppo0fX+Hm44yws7Y/LQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3672e382-c4d5-494c-bc4a-f4bc02dbc512"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xAVeYn+pHR8IIynXGslyPjGWWQcCc276Nr+FubCWcCZKaXjOLd6W3402IORYsDgm1qGWw66J4q+f&#13;
+rk3coLXgDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c78a7783-99b8-42d9-8675-c7a68641503a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SnEsibrrpE02BTV+SZtmDvLICcJfPxHNMoxN8O1jbamJCmUW/kOiq4FT3KY4Nk0RA7DQyd8yJRKL&#13;
+qEHgiFnGEw==</DigestValue></Reference></SignedInfo><SignatureValue>Ag2YgD1iUSzh/fYLW+OiuB+7hchD4DRDfMpW13LSRFrPqBMG+LVlC00VcWBdxOQKpdjd/LvQxDiG&#13;
+GtY7Lt/EMkmd+aog0cSf68fSlowJxH6+b/xdfkg6iyGISycITQNuJ8Zho+C87JF1vef8bTt8UDIX&#13;
+JmbvN0dVdnapVa5G6OgEFDgWo43DQ6vj5jeag23Nx+ScJuvzcOVb98Sd7LuxIcQgCbk9H2DoyMyz&#13;
+quy7NkcPQmFr6FJtUS7N2dcgmzQUxbXuNykHfVfS49QoXw07mSvD7exdNXTY99qk5wZdWliHJPU0&#13;
+Dk98nBEDsZ73da4BwCAztcOkCI+YmNgQbNaa3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -358,4 +358,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f5fba61b-c89e-4b54-86ec-31c341b58f06" Target="#_5af86bcb-1338-4d6c-b0f2-34dbb0f17ef4"><Timestamp>2024-09-27 09:11:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c78a7783-99b8-42d9-8675-c7a68641503a" Target="#_3672e382-c4d5-494c-bc4a-f4bc02dbc512"><Timestamp>2024-09-27 09:22:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
