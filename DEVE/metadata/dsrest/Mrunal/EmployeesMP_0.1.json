@@ -3,10 +3,14 @@
   "info" : {
     "title" : "employees_MP",
     "description" : "No description",
+    "contact" : { },
     "version" : "1.0.0"
   },
   "servers" : [ {
     "url" : "/"
+  } ],
+  "security" : [ {
+    "Basic authentication" : [ ]
   } ],
   "paths" : {
     "/ Customer_details" : {
@@ -151,6 +155,12 @@
             "type" : "string"
           }
         }
+      }
+    },
+    "securitySchemes" : {
+      "Basic authentication" : {
+        "type" : "http",
+        "scheme" : "basic"
       }
     }
   }
