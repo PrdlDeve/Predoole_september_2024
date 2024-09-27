@@ -228,13 +228,17 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_Gi6L4HpdEe--aM2Gpoi24g",
-    "version" : "Latest",
-    "type" : "mapper"
-  }, {
     "id" : "_BEnGEHovEe--aM2Gpoi24g",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_dkCWMHsCEe-ieb2t1q9I-A",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dkCWMHsCEe-ieb2t1q9I-A - customer_details",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
