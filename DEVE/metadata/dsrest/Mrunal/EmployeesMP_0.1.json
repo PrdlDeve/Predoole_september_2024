@@ -14,22 +14,6 @@
   } ],
   "paths" : {
     "/ Customer_details" : {
-      "get" : {
-        "summary" : "Customer_list",
-        "responses" : {
-          "200" : {
-            "description" : "Status 200",
-            "content" : {
-              "application/json" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/Customer_Details"
-                },
-                "example" : "\n  {\n    \"customer_id\": 1002,\n    \"name\": \"Jane Smith\",\n    \"address\": \"456 Elm St\",\n    \"email\": \"janesmith@example.com\",\n    \"phone\": \"555-5678\"\n  },\n  {\n    \"customer_id\": 1003,\n    \"name\": \"Bob Johnson\",\n    \"address\": \"789 Oak St\",\n    \"email\": \"bjohnson@example.com\",\n    \"phone\": \"555-9012\"\n  },\n  {\n    \"customer_id\": 1004,\n    \"name\": \"Alice Williams\",\n    \"address\": \"321 Pine St\",\n    \"email\": \"awilliams@example.com\",\n    \"phone\": \"555-3456\"\n  },\n  {\n    \"customer_id\": 1005,\n    \"name\": \"Charlie Brown\",\n    \"address\": \"654 Maple St\",\n    \"email\": \"cbrown@example.com\",\n    \"phone\": \"555-7890\"\n  }\n\n\n"
-              }
-            }
-          }
-        }
-      },
       "post" : {
         "summary" : "create Customer_details",
         "requestBody" : {
@@ -105,6 +89,24 @@
         "style" : "simple",
         "explode" : false
       } ]
+    },
+    "/Customer_details" : {
+      "get" : {
+        "summary" : "Customer_list",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Customer_Details"
+                },
+                "example" : "\n  {\n    \"customer_id\": 1002,\n    \"name\": \"Jane Smith\",\n    \"address\": \"456 Elm St\",\n    \"email\": \"janesmith@example.com\",\n    \"phone\": \"555-5678\"\n  },\n  {\n    \"customer_id\": 1003,\n    \"name\": \"Bob Johnson\",\n    \"address\": \"789 Oak St\",\n    \"email\": \"bjohnson@example.com\",\n    \"phone\": \"555-9012\"\n  },\n  {\n    \"customer_id\": 1004,\n    \"name\": \"Alice Williams\",\n    \"address\": \"321 Pine St\",\n    \"email\": \"awilliams@example.com\",\n    \"phone\": \"555-3456\"\n  },\n  {\n    \"customer_id\": 1005,\n    \"name\": \"Charlie Brown\",\n    \"address\": \"654 Maple St\",\n    \"email\": \"cbrown@example.com\",\n    \"phone\": \"555-7890\"\n  }\n\n\n"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components" : {
