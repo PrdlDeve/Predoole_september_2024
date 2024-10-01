@@ -195,7 +195,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.customer_details.customer_id,&#10;&#9;&#9;dbo.customer_details.name,&#10;&#9;&#9;dbo.customer_details.email,&#10;&#9;&#9;dbo.customer_details.phone,&#10;&#9;&#9;dbo.customer_details.address&#10;FROM&#9;dbo.customer_details&#13;&#10;where customer_id='&quot;+context.id+&quot;'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.customer_details.customer_id,&#10;&#9;&#9;dbo.customer_details.name,&#10;&#9;&#9;dbo.customer_details.email,&#10;&#9;&#9;dbo.customer_details.phone,&#10;&#9;&#9;dbo.customer_details.address&#10;FROM&#9;dbo.customer_details&#13;&#10;where customer_id='&quot;+context.ID+&quot;'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -317,13 +317,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="255;255;255"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b89651a3-deb6-43cd-8985-58345cae3a94"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iRSiH1cOtq73nKXKePzoPzklurtnGvAGKn0u9pYUKYeLAcUNT9si5A0eg7SBreFODeVjn0qwLIqs&#13;
-8BNpqvYViw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0450c3a0-ad6e-41fc-a46f-f11ba5497eff"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RH26CiQ7z1Ke0S5BHsczjSpEi4VU5XFjUc5S8x8X7FHh7EsBN0enqrwZluqyYRMgHpuxd9wLLyFf&#13;
-4OL9bj0EZQ==</DigestValue></Reference></SignedInfo><SignatureValue>OniuDU7RdQm3NO5hMV4mJYE3/VXWMWdGYXgmTBaR4RPjd1jHE18mgQtAn0vwvIsqgwLUCrD/TG41&#13;
-yuvF/hVwPMBxvjOWegd+UHDnCV5hZ20RW/6PW3LolxJKPXRYnPhHWr5VJGiYQkzBM+vm6Mrf3Lin&#13;
-VFvHHCEVzigbUihFj3nGA2z0yIb4MfgVrZs+qL4LLaXAdXiT7DKmxlirdtJ4E9ovSJZ7T2gtg0d8&#13;
-irPzRlXlazBQNzRDQCOmDFx+THglBcCfZSiJwVY35KClVzc1Kq7HujYJg5qwFSuiKnmoG1SqQaw3&#13;
-W3AhL1KQxycNWd3LJX3KP/I4btLQAHZX9VMqIA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f561f1f1-9952-4013-ad32-21f3444df0e8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y5f3J8tI3xUWQMyoqaNI7pPy9HEa91xaSroYKOdQQCnTBmPmpMktz8UnncGX7jezeiWs9ySpc8bH&#13;
+DcHr7sOQsQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3785bce0-6760-4ac3-a62d-f9a6705af325"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V5mytjyDTfoj/aByCZ1+1CrRJoeNLMLkqt4ameLqhvQcEHeNDHtTZLabje44wUGTJWDC7YQjC36l&#13;
+V8ZKyniIsw==</DigestValue></Reference></SignedInfo><SignatureValue>E6o+ogqDi04trGIj9v7cec4WNinscnwvX+hyPlyi5ligS1SJiDW+171EFK+PRQEyC67JLmTLhZHK&#13;
+OJGKpFjVQcnwpxESH1JcNzdLRcUEXNxeB2mwDQXRdbCoeiBzZW6q07MdEKziJ7h2kC4Y7ZXyoHpz&#13;
+XouIBU8JhF7TcJX+sTyZz8XQdeDxB9f+J2SkQparEgG60ahEsve1/hN5FMafnsCsi0LTc1Y0Rz+W&#13;
+nb7lu4hFRFtbwykYSvKq4CefaLtJ8B8oAgbxMPLdcuWrKOTVONBkhkvLGRp0mvH0ODF74tcwwLUq&#13;
+Eq2uzKJE2S8+wcLrFDTP1ef/7ChWQBLKIE5O/w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -345,4 +345,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0450c3a0-ad6e-41fc-a46f-f11ba5497eff" Target="#_b89651a3-deb6-43cd-8985-58345cae3a94"><Timestamp>2024-10-01 10:19:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3785bce0-6760-4ac3-a62d-f9a6705af325" Target="#_f561f1f1-9952-4013-ad32-21f3444df0e8"><Timestamp>2024-10-01 10:20:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
