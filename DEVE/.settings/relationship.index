@@ -258,6 +258,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_ANDSQH_dEe-FdfOr5DSH-A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_dkCWMHsCEe-ieb2t1q9I-A",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_nwq4YH_bEe-FdfOr5DSH-A - _n6qh4H_bEe-FdfOr5DSH-A - _n6rI8H_bEe-FdfOr5DSH-A",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dkCWMHsCEe-ieb2t1q9I-A - customer_details",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_CByH4HfdEe-C0qmFFzxh9w",
     "version" : "0.1",
     "type" : "job"
