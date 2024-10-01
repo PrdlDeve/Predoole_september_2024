@@ -12,14 +12,25 @@
 			<xsd:element name="emplyOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="in" type="xsd:string"></xsd:element>
+						<xsd:element name="ID" type="xsd:int"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
 			<xsd:element name="emplyOperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="Customer_id "
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="Name" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Email" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Address" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Phone"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
@@ -55,7 +66,7 @@
 
 	<wsdl:service name="emply">
 		<wsdl:port name="emplyPort" binding="tns:emplyBinding">
-			<soap:address location="http://localhost:8090/services/emply" />
+			<soap:address location="http://localhost:8040/services/emply" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
