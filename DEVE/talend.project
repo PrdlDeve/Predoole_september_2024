@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_EAf0gXDQEe-fuZoFcguJAw" label="deve" description="" language="java" technicalLabel="DEVE" author="_EAf0gnDQEe-fuZoFcguJAw" productVersion="Talend Real-time Big Data Platform-8.0.1.20240820_0946-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/PredooleTalend2023/Predoole_september_2024&quot;,&quot;settings&quot;:&quot;011&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_EAf0gXDQEe-fuZoFcguJAw" label="deve" description="" language="java" technicalLabel="DEVE" author="_EAf0gnDQEe-fuZoFcguJAw" productVersion="Talend Real-time Big Data Platform-8.0.1.20240820_0946-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/PredooleTalend2023/Predoole_september_2024.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_EBvxsHDQEe-fuZoFcguJAw" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_EAf0gnDQEe-fuZoFcguJAw" login="admin@talend.com" firstName="A" lastName="T" type="DQ" additionnalData="{}"/>
-  <TalendProperties:User xmi:id="_RwcWUXDQEe-0_a2PyndybQ" login="mrunal@talend.com" firstName="mrunal" lastName="patil" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_RwcWUXDQEe-0_a2PyndybQ" login="mrunal@talend.com" firstName="mrunal" lastName="p" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_RwcWUnDQEe-0_a2PyndybQ" login="harsh@talend.com" firstName="harsh" lastName="patel" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_fHzwMHTaEe-vPeNH3y9uYA" login="chirag.p@talend.com" firstName="Chirag" lastName="Patil" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_p7lZYHfbEe-CjNwdL1LyDg" login="jay.p@talend.com" firstName="Jay" lastName="P" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_AVG-UIa9Ee-4aI9sCCIonQ" login="pranita@talend.om" firstName="pranita" lastName="t" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_r22HQIrWEe-Y7L4cjjWYGw" login="admin@t.com" firstName="admin" lastName="t" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_r22HQYrWEe-Y7L4cjjWYGw" login="admin@t.com" firstName="admin" lastName="t" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
