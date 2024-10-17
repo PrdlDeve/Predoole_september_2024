@@ -12,7 +12,7 @@
 			<xsd:element name="emplyOperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="ID" type="xsd:int"></xsd:element>
+						<xsd:element name="ID" type="xsd:string"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
