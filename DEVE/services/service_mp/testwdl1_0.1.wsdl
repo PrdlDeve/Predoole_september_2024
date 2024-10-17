@@ -55,7 +55,7 @@
 
 	<wsdl:service name="testwdl1">
 		<wsdl:port name="testwdl1Port" binding="tns:testwdl1Binding">
-			<soap:address location="http://localhost:8090/services/testwdl1" />
+			<soap:address location="http://www.example/services/testwdl1" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
