@@ -12,14 +12,25 @@
 			<xsd:element name="testwdl1OperationRequest">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="ID" type="xsd:int"></xsd:element>
+						<xsd:element name="ID" type="xsd:string"></xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
 			<xsd:element name="testwdl1OperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="Customer_id"
+							type="xsd:int">
+						</xsd:element>
+						<xsd:element name="Name" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Address" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Email" type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Phone"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
