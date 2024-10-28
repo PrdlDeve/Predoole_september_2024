@@ -1,0 +1,29 @@
+{
+  "itemId" : "_vCHMMI9yEe-e1umB8A-2uw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_XmhAQI95Ee-e1umB8A-2uw",
+    "parameterList" : [ {
+      "id" : "_Xm2-gY95Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_Login"
+    }, {
+      "id" : "_Xm2-go95Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_AdditionalParams"
+    }, {
+      "id" : "_Xm2-g495Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_Server"
+    }, {
+      "id" : "_Xm2-hI95Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_Password"
+    }, {
+      "id" : "_Xm2-hY95Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_Database"
+    }, {
+      "id" : "_Xm2-ho95Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_Schema"
+    }, {
+      "id" : "_Xm2-h495Ee-e1umB8A-2uw",
+      "name" : "connection_MovieAPI_SSMS_Port"
+    } ]
+  } ]
+}

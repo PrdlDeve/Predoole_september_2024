@@ -1,0 +1,120 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Movie catalog API",
+    "description" : "This API allows movie rental movie to browse their catalog and add movies.",
+    "contact" : {
+      "name" : "Megha More",
+      "email" : "megha@predoole.com"
+    },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://9plrhso4ln3muuf.ap.api-mocks.com",
+    "description" : "This is your API mock endpoint. When called, it will simulate the behavior of your API."
+  }, {
+    "url" : "http://127.0.0.1:8090"
+  } ],
+  "paths" : {
+    "/movies/{movieId}" : {
+      "get" : {
+        "summary" : "Get information about a movie",
+        "description" : "Returns information about a specific movie",
+        "operationId" : "getMovieById",
+        "responses" : {
+          "2XX" : {
+            "description" : "Status 2XX",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Movie"
+                }
+              }
+            }
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "movieId",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/movies" : {
+      "get" : {
+        "summary" : "Get a list of movies",
+        "description" : "Returns a list of movies available for rental",
+        "operationId" : "getMovies",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/Movie"
+                  }
+                },
+                "example" : "<movies>\n  <movie>\n    <movieId>1</movieId>\n    <title>The Social Network</title>\n    <releaseYear>2010</releaseYear>\n    <director>David Fincher</director>\n    <price>4.99</price>\n  </movie>\n  <movie>\n    <movieId>2</movieId>\n    <title>La La Land</title>\n    <releaseYear>2016</releaseYear>\n    <director>Damien Chazelle</director>\n    <price>5.99</price>\n  </movie>\n  <movie>\n    <movieId>3</movieId>\n    <title>Ex Machine</title>\n    <releaseYear>2014</releaseYear>\n    <director>Alex Garland</director>\n    <price>4.99</price>\n  </movie>\n</movies>"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "summary" : "Add a movie",
+        "description" : "Add a new movie to the catalog",
+        "operationId" : "addMovie",
+        "requestBody" : {
+          "content" : {
+            "application/xml" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Movie"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "2XX" : {
+            "description" : "Status 2XX"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Movie" : {
+        "type" : "object",
+        "required" : [ "movieId", "price", "releaseYear", "title" ],
+        "description" : " Represents a movie",
+        "properties" : {
+          "movieId" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "title" : {
+            "type" : "string"
+          },
+          "releaseYear" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "director" : {
+            "type" : "string"
+          },
+          "price" : {
+            "type" : "number"
+          }
+        },
+        "example" : "<movie>\n    <movieId>1</movieId>\n    <title>The Social Network</title>\n    <releaseYear>2010</releaseYear>\n    <director>David Fincher</director>\n    <price>4.99</price>\n</movie>"
+      }
+    }
+  }
+}
