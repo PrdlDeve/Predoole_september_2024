@@ -587,7 +587,11 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_eZ0C8JwEEe-r-pgqanl4mQ - ",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 }, {
   "baseItem" : {
     "id" : "_k4ONUHZTEe-0_a2PyndybQ",
