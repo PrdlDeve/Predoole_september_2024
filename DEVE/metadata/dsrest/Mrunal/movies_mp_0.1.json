@@ -1,0 +1,87 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "movies_mp",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/movies" : {
+      "get" : {
+        "summary" : "get_movies",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/xml" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "summary" : "put_movies",
+        "requestBody" : {
+          "content" : {
+            "application/xml" : {
+              "schema" : {
+                "type" : "object"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "default" : {
+            "description" : "Status default"
+          }
+        }
+      },
+      "post" : {
+        "summary" : "post_movies",
+        "requestBody" : {
+          "content" : {
+            "application/xml" : {
+              "schema" : {
+                "type" : "object"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          },
+          "default" : {
+            "description" : "Status default"
+          }
+        }
+      }
+    },
+    "/movies/{id}" : {
+      "delete" : {
+        "summary" : "Delete_movies",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    }
+  }
+}
