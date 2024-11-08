@@ -143,7 +143,7 @@
     <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Documents/stsKeystore.properties&quot;"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:A+gHs8l0cc1ryiHoxdEdd1OSpUsraOrULwA6qX1DAT65gOzTrD9ImRa60w=="/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:NvwASSct32izdvlPz5Cml/+gG5q/BtN4/XCUMEl4+rL23Fsm062wSi+pIg=="/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" value=""/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -201,7 +201,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MrunalTalend&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;qdimainuser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q+iDFMo+K45Wu879t0KeK2D41evZqJWoBk8mQu3C/CJmgpLve0jC0OFU"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oieUGgfdTQvjTBD5/xqruvEoA7A02nsGpcphewkE3Wrtoux/BUfUdqXV"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_dkCWMHsCEe-ieb2t1q9I-A - customer_details" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_details&quot;"/>
@@ -302,7 +302,7 @@
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tDBInput_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
