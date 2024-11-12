@@ -138,14 +138,14 @@
       <elementValue elementRef="STREAMING" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="JWT"/>
-    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SAML"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
-    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Documents/stsKeystore.properties&quot;"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:NvwASSct32izdvlPz5Cml/+gG5q/BtN4/XCUMEl4+rL23Fsm062wSi+pIg=="/>
-    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
-    <elementParameter field="TEXT" name="JWT_AUDIENCE" value=""/>
+    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Documents/stsKeystore.properties&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:NvwASSct32izdvlPz5Cml/+gG5q/BtN4/XCUMEl4+rL23Fsm062wSi+pIg==" show="false"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="" show="false"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;API_ESB_auth&quot;" show="false"/>
