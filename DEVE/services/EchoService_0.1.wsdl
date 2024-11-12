@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="EchoService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="EchoServiceOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="EchoServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="EchoServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:EchoServiceOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="EchoServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:EchoServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="EchoServicePortType">
+		<wsdl:operation name="EchoServiceOperation">
+			<wsdl:input message="tns:EchoServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:EchoServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="EchoServiceBinding" type="tns:EchoServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="EchoServiceOperation">
+			<soap:operation soapAction="http://www.talend.org/service/EchoServiceOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="EchoService">
+		<wsdl:port name="EchoServicePort" binding="tns:EchoServiceBinding">
+			<soap:address location="http://localhost:8090/services/EchoService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
