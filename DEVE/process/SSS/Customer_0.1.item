@@ -114,14 +114,14 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mOVY4KDKEe-14PjNH3BwBw - _mPCjgKDKEe-14PjNH3BwBw - _mPCjgaDKEe-14PjNH3BwBw" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
-    <elementParameter field="TEXT" name="WSDL_LOCATION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ENDPOINT_URI" value="/esb/provider" show="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NS" value="http://talend.org/esb/service/job" show="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" value="--DEFAULT--" show="false"/>
-    <elementParameter field="TEXT" name="PORT_NS" value="http://talend.org/esb/service/job" show="false"/>
-    <elementParameter field="TEXT" name="PORT_NAME" value="--DEFAULT--" show="false"/>
+    <elementParameter field="TEXT" name="WSDL_LOCATION" value="C:/Program Files (x86)/Talend-Studio/studio/workspace/Predoole_september_2024-598023001/DEVE/services/CustomerService_0.1.wsdl" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8090/services/CustomerService" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" value="http://www.talend.org/service/" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="CustomerService" show="false"/>
+    <elementParameter field="TEXT" name="PORT_NS" value="http://www.talend.org/service/" show="false"/>
+    <elementParameter field="TEXT" name="PORT_NAME" value="CustomerServicePort" show="false"/>
     <elementParameter field="TEXT" name="OPERATION_NS" value="" show="false"/>
-    <elementParameter field="TEXT" name="OPERATION_NAME" value="invoke" show="false"/>
+    <elementParameter field="TEXT" name="OPERATION_NAME" value="CustomerServiceOperation" show="false"/>
     <elementParameter field="TEXT" name="COMMUNICATION_STYLE" value="" show="false"/>
     <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
     <elementParameter field="TEXT" name="EXCHANGE_TIMEOUT" value="50"/>
