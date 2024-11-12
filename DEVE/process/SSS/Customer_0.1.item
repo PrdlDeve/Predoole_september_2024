@@ -115,7 +115,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mOVY4KDKEe-14PjNH3BwBw - _mPCjgKDKEe-14PjNH3BwBw - _mPCjgaDKEe-14PjNH3BwBw" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
     <elementParameter field="TEXT" name="WSDL_LOCATION" value="C:/Program Files (x86)/Talend-Studio/studio/workspace/Predoole_september_2024-598023001/DEVE/services/CustomerService_0.1.wsdl" show="false"/>
-    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8090/services/CustomerService" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8091/services/CustomerService" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NS" value="http://www.talend.org/service/" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="CustomerService" show="false"/>
     <elementParameter field="TEXT" name="PORT_NS" value="http://www.talend.org/service/" show="false"/>
