@@ -101,16 +101,6 @@
   </parameters>
   <node componentName="tESBProviderRequest" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tESBProviderRequest_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tESBProviderRequest" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.100 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="ESB/Web Services" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tESBProviderRequest" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mOVY4KDKEe-14PjNH3BwBw - _mPCjgKDKEe-14PjNH3BwBw - _mPCjgaDKEe-14PjNH3BwBw" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
@@ -173,16 +163,6 @@
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMSSqlInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MS_SQL_Server" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMSSqlInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -243,20 +223,37 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="ourt">
+    <metadata connector="FLOW" name="out1">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE"/>
-      <outputTrees name="ourt">
-        <nodes name="payload" expression="" type="id_Document" xpath="ourt/payload">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:newcusomerOperationResponse" type="id_String" xpath="ourt.payload:/tns:newcusomerOperationResponse" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns" type="id_String" xpath="ourt.payload:/tns:newcusomerOperationResponse/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://www.talend.org/service/"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="out" type="id_String" xpath="ourt.payload:/tns:newcusomerOperationResponse/out" loop="true"/>
+      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="Department" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.0" xpath="row3/Department"/>
+        <nodes name="EmployeeID" type="id_Integer" outgoingConnections="//@node.5/@nodeData/@connections.1" xpath="row3/EmployeeID" nullable="false"/>
+        <nodes name="FirstName" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.2" xpath="row3/FirstName"/>
+        <nodes name="LastName" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.3" xpath="row3/LastName"/>
+        <nodes name="Salary" type="id_BigDecimal" outgoingConnections="//@node.5/@nodeData/@connections.4" xpath="row3/Salary"/>
+      </inputTrees>
+      <outputTrees name="out1">
+        <nodes name="payload" expression="" type="id_Document" xpath="out1/payload">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:newcusomerOperationResponse" type="id_String" xpath="out1.payload:/tns:newcusomerOperationResponse" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns" type="id_String" xpath="out1.payload:/tns:newcusomerOperationResponse/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://www.talend.org/service/"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="out" expression="" type="id_String" xpath="out1.payload:/tns:newcusomerOperationResponse/out" loop="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Department" expression="row3.Department" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="out1.payload:/tns:newcusomerOperationResponse/out/Department"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EmployeeID" expression="row3.EmployeeID" type="id_Integer" incomingConnections="//@node.5/@nodeData/@connections.1" xpath="out1.payload:/tns:newcusomerOperationResponse/out/EmployeeID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FirstName" expression="row3.FirstName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.2" xpath="out1.payload:/tns:newcusomerOperationResponse/out/FirstName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastName" expression="row3.LastName" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.3" xpath="out1.payload:/tns:newcusomerOperationResponse/out/LastName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Salary" expression="row3.Salary" type="id_BigDecimal" incomingConnections="//@node.5/@nodeData/@connections.4" xpath="out1.payload:/tns:newcusomerOperationResponse/out/Salary"/>
+            </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.1" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.2" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.3" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.4" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1/@children.4"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="120">
@@ -288,9 +285,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="ourt" lineStyle="0" metaname="ourt" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tESBProviderResponse_1">
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tESBProviderResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ourt" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tESBProviderRequest_1" show="false"/>
