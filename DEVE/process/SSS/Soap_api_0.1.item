@@ -111,18 +111,16 @@
     <elementParameter field="TEXT" name="HELP" value="org.talend.help.tESBProviderRequest" show="false"/>
     <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1M5mwKDGEe-14PjNH3BwBw - _1OzrQKDGEe-14PjNH3BwBw - _1OzrQaDGEe-14PjNH3BwBw" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
-    <elementParameter field="TEXT" name="WSDL_LOCATION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ENDPOINT_URI" value="/esb/provider" show="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NS" value="http://talend.org/esb/service/job" show="false"/>
-    <elementParameter field="TEXT" name="SERVICE_NAME" value="--DEFAULT--" show="false"/>
-    <elementParameter field="TEXT" name="PORT_NS" value="http://talend.org/esb/service/job" show="false"/>
-    <elementParameter field="TEXT" name="PORT_NAME" value="--DEFAULT--" show="false"/>
+    <elementParameter field="TEXT" name="WSDL_LOCATION" value="C:/Program Files (x86)/Talend-Studio/studio/workspace/Predoole_september_2024-598023001/DEVE/services/EchoService_1_0.1.wsdl" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT_URI" value="http://localhost:8090/services/EchoService_1" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NS" value="http://www.talend.org/service/" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="EchoService_1" show="false"/>
+    <elementParameter field="TEXT" name="PORT_NS" value="http://www.talend.org/service/" show="false"/>
+    <elementParameter field="TEXT" name="PORT_NAME" value="EchoService_1Port" show="false"/>
     <elementParameter field="TEXT" name="OPERATION_NS" value="" show="false"/>
-    <elementParameter field="TEXT" name="OPERATION_NAME" value="invoke" show="false"/>
-    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" value="" show="false"/>
+    <elementParameter field="TEXT" name="OPERATION_NAME" value="EchoService_1Operation" show="false"/>
+    <elementParameter field="TEXT" name="COMMUNICATION_STYLE" value="request-response" show="false"/>
     <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
     <elementParameter field="TEXT" name="EXCHANGE_TIMEOUT" value="50"/>
     <elementParameter field="TEXT" name="MAX_PARALLEL_REQUESTS" value="1000"/>
@@ -134,11 +132,11 @@
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tESBProviderResponse_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="" show="false"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tESBProviderResponse_1">
-      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tESBProviderResponse_1"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tESBProviderRequest_1" offsetLabelX="0" offsetLabelY="0" source="tESBProviderRequest_1" target="tESBProviderResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
