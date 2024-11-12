@@ -19,7 +19,21 @@
 			<xsd:element name="newcusomerOperationResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-						<xsd:element name="out" type="xsd:string"></xsd:element>
+						<xsd:element name="Department"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="EmployeeID"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="FirstName"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="LastName"
+							type="xsd:string">
+						</xsd:element>
+						<xsd:element name="Salary"
+							type="xsd:string">
+						</xsd:element>
 					</xsd:sequence>
 				</xsd:complexType>
 			</xsd:element>
