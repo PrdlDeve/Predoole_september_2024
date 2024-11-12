@@ -130,8 +130,8 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="ourt2" name="ourt2">
-      <column comment="" key="false" length="-1" name="in" nullable="true" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="ourt2" name="oyhnn">
+      <column comment="" key="false" length="-1" name="in" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
@@ -142,8 +142,8 @@
           </children>
         </nodes>
       </inputTrees>
-      <outputTrees name="ourt2">
-        <nodes name="in" expression="[row1.payload:/tns:newcusomerOperationRequest/in]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="ourt2/in"/>
+      <outputTrees name="oyhnn">
+        <nodes name="in" expression="[row1.payload:/tns:newcusomerOperationRequest/in]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="oyhnn/in"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
@@ -272,9 +272,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="ourt2" lineStyle="0" metaname="ourt2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tJavaRow_1">
+  <connection connectorName="FLOW" label="oyhnn" lineStyle="0" metaname="oyhnn" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ourt2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="oyhnn" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tFlowToIterate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
