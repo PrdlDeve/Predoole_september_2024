@@ -131,7 +131,7 @@
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ourt2" name="oyhnn">
-      <column comment="" key="false" length="-1" name="in" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="in" nullable="true" precision="-1" sourceType="id_String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
@@ -143,7 +143,7 @@
         </nodes>
       </inputTrees>
       <outputTrees name="oyhnn">
-        <nodes name="in" expression="[row1.payload:/tns:newcusomerOperationRequest/in]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="oyhnn/in"/>
+        <nodes name="in" expression="[row1.payload:/tns:newcusomerOperationRequest/in]" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="oyhnn/in"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
