@@ -101,6 +101,18 @@
   </parameters>
   <node componentName="tESBProviderRequest" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tESBProviderRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tESBProviderRequest" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.100 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="ESB/Web Services" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tESBProviderRequest" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mOVY4KDKEe-14PjNH3BwBw - _mPCjgKDKEe-14PjNH3BwBw - _mPCjgaDKEe-14PjNH3BwBw" show="false"/>
     <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
     <elementParameter field="TEXT" name="WSDL_LOCATION" value="" show="false"/>
     <elementParameter field="TEXT" name="ENDPOINT_URI" value="/esb/provider" show="false"/>
