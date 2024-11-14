@@ -160,7 +160,7 @@
     <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;20.204.123.250&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;target&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;target12&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;chirag&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RCL+pfXULDksUnImU+N5FUV3fSeEMIC88E3nKabHYZDz4/FedF2NsfIT"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_d&quot;"/>
