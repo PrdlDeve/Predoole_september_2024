@@ -104,7 +104,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1hX1MHc1Ee-XwIZfFB7DVA" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://127.0.0.1:8092/service&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/service&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="update_record"/>
       <elementValue elementRef="HTTP_VERB" value="PUT"/>
