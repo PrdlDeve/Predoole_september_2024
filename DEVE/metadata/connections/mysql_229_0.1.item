@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_OoSVwKGoEe-cs4UjYZlUtA" name="mysql_229" id="_IaQisKGnEe-cs4UjYZlUtA" label="mysql_229" dataPackage="_OwblIKGoEe-cs4UjYZlUtA" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://98.70.40.229:3306/jay?" dbVersionString="MYSQL_8" Port="3306" Username="Aarti" Password="enc:system.encryption.key.v1:yi+D+BA/rKHe7jIGnX/9suC2qwHB3fmY8pT6m5yJzPcNKj0JXDiykMw=" ServerName="98.70.40.229" DatasourceName="" FileFieldName="" SID="jay" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_OoSVwaGoEe-cs4UjYZlUtA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_OqTvAKGoEe-cs4UjYZlUtA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_OqbDwKGoEe-cs4UjYZlUtA" tag="Status" value=""/>
+    <taggedValue xmi:id="_OqbDwaGoEe-cs4UjYZlUtA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_OqbDwqGoEe-cs4UjYZlUtA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_OqbDw6GoEe-cs4UjYZlUtA" tag="Description" value=""/>
+    <taggedValue xmi:id="_OqbDxKGoEe-cs4UjYZlUtA" tag="Author" value=""/>
+    <taggedValue xmi:id="_OqbDxaGoEe-cs4UjYZlUtA" tag="otherParameter"/>
+    <taggedValue xmi:id="_OuV6cKGoEe-cs4UjYZlUtA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_OuV6caGoEe-cs4UjYZlUtA" tag="DB ProductVersion" value="8.0.36"/>
+    <taggedValue xmi:id="_OuV6cqGoEe-cs4UjYZlUtA" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_OoSVwqGoEe-cs4UjYZlUtA" key="CONN_PARA_KEY_USERNAME" value="Aarti"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_OwblIKGoEe-cs4UjYZlUtA" name="jay" dataManager="_OoSVwKGoEe-cs4UjYZlUtA"/>
+</xmi:XMI>

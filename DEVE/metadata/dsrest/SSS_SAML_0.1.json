@@ -1,0 +1,30 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "SSS_SAML",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/user" : {
+      "get" : {
+        "summary" : "SSSSS",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
