@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Hhy1AKZaEe-FttkWhW3VJg" name="motor" dataPackage="_Hhy1AaZaEe-FttkWhW3VJg" Server="Localhost 127.0.0.1" FilePath="D:/Glossary/Motor_Final Grid_Aug-24 1 1(Sheet1).csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma" splitRecord="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Hhy1AaZaEe-FttkWhW3VJg" name="default" dataManager="_Hhy1AKZaEe-FttkWhW3VJg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Hhy1AqZaEe-FttkWhW3VJg" id="_I1RrkKZZEe-FttkWhW3VJg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1A6ZaEe-FttkWhW3VJg" label="CONCAT_EXCEL_MOTOR" length="62" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1BKZaEe-FttkWhW3VJg" label="Code" length="25" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1BaZaEe-FttkWhW3VJg" label="Product" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1BqZaEe-FttkWhW3VJg" label="Type_of_Policy" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1B6ZaEe-FttkWhW3VJg" label="Bucket" length="50" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1CKZaEe-FttkWhW3VJg" label="lower" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1CaZaEe-FttkWhW3VJg" label="upper" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1CqZaEe-FttkWhW3VJg" label="Pvt_Motor_New" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1C6ZaEe-FttkWhW3VJg" label="Renewal" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1DKZaEe-FttkWhW3VJg" label="Pvt_Motor_Old" length="4" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1DaZaEe-FttkWhW3VJg" label="Remarks_for_OLD" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1DqZaEe-FttkWhW3VJg" label="Make" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1D6ZaEe-FttkWhW3VJg" label="Model" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1EKZaEe-FttkWhW3VJg" label="NCB" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1EaZaEe-FttkWhW3VJg" label="OD_Addon__New" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1EqZaEe-FttkWhW3VJg" label="OD__New" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1E6ZaEe-FttkWhW3VJg" label="Addon_New" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1FKZaEe-FttkWhW3VJg" label="Net_Premium_New" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1FaZaEe-FttkWhW3VJg" label="OD_Addon__Renewal" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1FqZaEe-FttkWhW3VJg" label="OD__Renewal" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1F6ZaEe-FttkWhW3VJg" label="Addon_Renewal" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1GKZaEe-FttkWhW3VJg" label="Net_Premium_Renewal" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1GaZaEe-FttkWhW3VJg" label="OD_Addon__Rollover" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1GqZaEe-FttkWhW3VJg" label="OD__Rollover" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1G6ZaEe-FttkWhW3VJg" label="Addon_Rollover" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1HKZaEe-FttkWhW3VJg" label="Net_Premium_Rollover" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1HaZaEe-FttkWhW3VJg" label="Location" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1HqZaEe-FttkWhW3VJg" label="Dealer_Name" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1H6ZaEe-FttkWhW3VJg" label="Updated_Month" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1IKZaEe-FttkWhW3VJg" label="Preferd_Model" length="46" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1IaZaEe-FttkWhW3VJg" label="Non_Preferd" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1IqZaEe-FttkWhW3VJg" label="ZSM_Name" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Hhy1I6ZaEe-FttkWhW3VJg" label="TOP_Urban_Bifurcation" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
