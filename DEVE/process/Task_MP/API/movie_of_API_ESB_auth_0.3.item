@@ -138,7 +138,7 @@
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Downloads/stsKeystore.properties&quot;"/>
     <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ=="/>
-    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="mystskey"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value=""/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" value=""/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
