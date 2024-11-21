@@ -187,28 +187,18 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata name="out1">
+    <metadata connector="FLOW" name="out1">
       <column comment="" key="false" length="1" name="ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Value" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="10" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" label="metadata" name="out">
-      <column comment="" key="false" length="1" name="ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="row1.Product_A  + row1.Product_B  + row1.Product_C=Product&#xD;&#xA;" activateExpressionFilter="true">
         <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Product" expression="row1.Product_A  + row1.Product_B  + row1.Product_C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Value" expression="" type="id_Float" nullable="true"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="out">
-        <mapperTableEntries name="ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Product" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Value" type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ID" type="id_Integer" nullable="true"/>
@@ -242,19 +232,19 @@
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_1">
+    <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="1" name="ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Value" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="10" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
