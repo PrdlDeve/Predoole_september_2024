@@ -194,9 +194,11 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="row1.Product_A  + row1.Product_B  + row1.Product_C=Product&#xD;&#xA;" activateExpressionFilter="true">
-        <mapperTableEntries name="ID" expression="row1.ID" type="id_Integer" nullable="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="row1.IDValueProductrow1.Product_A " type="id_String" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="Var.var1 " activateExpressionFilter="true">
+        <mapperTableEntries name="ID" expression="" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Product" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Value" expression="" type="id_Float" nullable="true"/>
       </outputTables>
