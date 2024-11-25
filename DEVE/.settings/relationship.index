@@ -173,17 +173,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_3ypHcKsuEe-C04Xv6CW6Ew",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_D_gX0KstEe-C04Xv6CW6Ew",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_3ypHcKsuEe-C04Xv6CW6Ew - metadata",
-    "version" : "Latest",
-    "type" : "schema"
   }, {
     "id" : "_D_gX0KstEe-C04Xv6CW6Ew - metadata",
     "version" : "Latest",
