@@ -104,7 +104,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tAMOsJzOEe-dmZNsDR-kzw" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/section_movies&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/saml_Security&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="get_movies"/>
       <elementValue elementRef="HTTP_VERB" value="GET"/>
@@ -132,14 +132,14 @@
       <elementValue elementRef="STREAMING" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="JWT"/>
-    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="SAML"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
-    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Downloads/stsKeystore.properties&quot;"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ=="/>
-    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value=""/>
-    <elementParameter field="TEXT" name="JWT_AUDIENCE" value=""/>
+    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Downloads/stsKeystore.properties&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ==" show="false"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="" show="false"/>
+    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="" show="false"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;movie_of_API_ESB_auth&quot;" show="false"/>
