@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_QcMgULYVEe-UlNNH1Krl9A" name="pws" id="_EzQuULYVEe-UlNNH1Krl9A" label="pws" dataPackage="_Qo2cQLYVEe-UlNNH1Krl9A" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://20.204.123.250:3306/Pranita_PWS?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="chirag" Password="enc:system.encryption.key.v1:k6NUJTOfbn/0LzuBXujXYNTBLWc/Bzl41SO74VOracaZrs+Ugwlc3Zg=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Pranita_PWS" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_QcMgUbYVEe-UlNNH1Krl9A" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_QebU8LYVEe-UlNNH1Krl9A" tag="package filter" value=""/>
+    <taggedValue xmi:id="_QeiCoLYVEe-UlNNH1Krl9A" tag="Status" value=""/>
+    <taggedValue xmi:id="_QeiCobYVEe-UlNNH1Krl9A" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_QeiCorYVEe-UlNNH1Krl9A" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_QeiCo7YVEe-UlNNH1Krl9A" tag="Description" value=""/>
+    <taggedValue xmi:id="_QeiCpLYVEe-UlNNH1Krl9A" tag="Author" value=""/>
+    <taggedValue xmi:id="_QeiCpbYVEe-UlNNH1Krl9A" tag="otherParameter"/>
+    <taggedValue xmi:id="_Qg3k8LYVEe-UlNNH1Krl9A" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_Qg3k8bYVEe-UlNNH1Krl9A" tag="DB ProductVersion" value="8.0.33"/>
+    <taggedValue xmi:id="_Qg3k8rYVEe-UlNNH1Krl9A" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_QcMgUrYVEe-UlNNH1Krl9A" key="CONN_PARA_KEY_USERNAME" value="chirag"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_Qo2cQLYVEe-UlNNH1Krl9A" name="Pranita_PWS" dataManager="_QcMgULYVEe-UlNNH1Krl9A"/>
+</xmi:XMI>
