@@ -171,6 +171,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_FYXUgLbbEe-WaO-Fbtpk8g",
+    "version" : "1.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_tAMOsJzOEe-dmZNsDR-kzw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_H7PcIHouEe--aM2Gpoi24g",
     "version" : "0.1",
     "type" : "job"
