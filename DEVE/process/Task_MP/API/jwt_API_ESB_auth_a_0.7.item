@@ -135,7 +135,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="JWT"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JWKS"/>
-    <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="&quot;http://192.168.1.253:8080/realms/MyDemoRealm/protocol/openid-connect/certs&quot;"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="&quot;http://192.168.1.253:8080/realms/NewRealm/protocol/openid-connect/certs&quot;"/>
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;C:/Users/Laptop_User/Downloads/stsKeystore.properties&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ==" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="" show="false"/>
