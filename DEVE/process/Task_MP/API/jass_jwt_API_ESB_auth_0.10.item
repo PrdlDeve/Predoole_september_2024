@@ -104,7 +104,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tAMOsJzOEe-dmZNsDR-kzw" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/jwt_keylock&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/jass_jwt&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="get_movies"/>
       <elementValue elementRef="HTTP_VERB" value="GET"/>
@@ -138,7 +138,7 @@
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="&quot;http://192.168.1.253:8080/realms/NewRealm/protocol/openid-connect/certs&quot;" show="false"/>
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;D:/key/keystore.jks&quot;"/>
     <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ=="/>
-    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="mystskey"/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;http://127.0.0.1:8090/services/customers&quot;"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
