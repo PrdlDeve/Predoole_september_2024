@@ -139,7 +139,7 @@
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;D:/key/keystore.jks&quot;"/>
     <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ=="/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
-    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="'http://127.0.0.1:8090/jass_jwt&quot;"/>
+    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;account&quot;"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;movie_of_API_ESB_auth&quot;" show="false"/>
