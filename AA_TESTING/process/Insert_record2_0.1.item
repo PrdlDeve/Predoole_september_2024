@@ -106,7 +106,7 @@
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="Create_a_customer" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="POST" id="1"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/customer/{id}&quot;" id="2"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/customer&quot;" id="2"/>
       <elementValue elementRef="CONSUMES" value="XML-JSON" id="3"/>
       <elementValue elementRef="PRODUCES" value="XML-JSON" id="4"/>
       <elementValue elementRef="STREAMING" value="false" id="5"/>
@@ -286,8 +286,8 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
