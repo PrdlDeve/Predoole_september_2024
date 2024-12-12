@@ -107,8 +107,8 @@
       <elementValue elementRef="SCHEMA" value="Create_a_customer" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="POST" id="1"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/customer&quot;" id="2"/>
-      <elementValue elementRef="CONSUMES" value="XML-JSON" id="3"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON" id="4"/>
+      <elementValue elementRef="CONSUMES" value="JSON" id="3"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="4"/>
       <elementValue elementRef="STREAMING" value="false" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
