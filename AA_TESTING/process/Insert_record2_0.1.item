@@ -277,7 +277,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;database_art&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;Aarti&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:I63vTmVRNJdLOYuASg4ABXHlkfVZDmqzRS6N+Uez/UCbm8EzARUy4Djf1Q=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customers&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customers&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
