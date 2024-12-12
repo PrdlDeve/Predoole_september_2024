@@ -151,7 +151,10 @@
     <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
-    <elementParameter field="TABLE" name="JAXRS_PROPS"/>
+    <elementParameter field="TABLE" name="JAXRS_PROPS">
+      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.accept.public.key&quot;"/>
+      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;true&quot;"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="movies_mp"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="MEMO" name="COMMENT" value="No description"/>
@@ -315,6 +318,6 @@
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
 </talendfile:ProcessType>
