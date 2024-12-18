@@ -152,6 +152,8 @@
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
     <elementParameter field="TABLE" name="JAXRS_PROPS">
+      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.signature.algorithm&quot;"/>
+      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;RS256&quot;"/>
       <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.accept.public.key&quot;"/>
       <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;true&quot;"/>
     </elementParameter>
@@ -318,6 +320,6 @@
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
 </talendfile:ProcessType>
