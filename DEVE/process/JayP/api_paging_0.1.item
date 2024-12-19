@@ -140,7 +140,8 @@
       <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="getsome" name="getsome">
-      <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="query" defaultValue="&quot;0&quot;" key="false" length="-1" name="offset" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="query" defaultValue="&quot;10&quot;" key="false" length="-1" name="limit" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
@@ -173,7 +174,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select USER1.\&quot;JAY_FINAL_TEST3\&quot;.EMP_DEPT,USER1.\&quot;JAY_FINAL_TEST3\&quot;.EMP_ID,USER1.\&quot;JAY_FINAL_TEST3\&quot;.EMP_NAME,USER1.\&quot;JAY_FINAL_TEST3\&quot;.\&quot;FILE_NAME\&quot;,USER1.\&quot;JAY_FINAL_TEST3\&quot;.F_MONTH,USER1.\&quot;JAY_FINAL_TEST3\&quot;.LOAD_CREATED_DATE,USER1.\&quot;JAY_FINAL_TEST3\&quot;.LOAD_MODIFIED_DATE &#xA;from USER1.\&quot;JAY_FINAL_TEST3\&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select *&#xA;from USER1.\&quot;JAY_FINAL_TEST3\&quot;&quot; +  &quot; OFFSET &quot; + globalMap.get(&quot;getsome.offset&quot;) + &quot; ROWS FETCH NEXT &quot; + globalMap.get(&quot;getsome.limit&quot;) + &quot; ROWS ONLY&quot; + &quot;;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -220,13 +221,46 @@
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="our">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData"/>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="EMP_DEPT" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/EMP_DEPT"/>
+        <nodes name="EMP_ID" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/EMP_ID"/>
+        <nodes name="EMP_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/EMP_NAME"/>
+        <nodes name="FILE_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/FILE_NAME"/>
+        <nodes name="F_MONTH" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/F_MONTH"/>
+        <nodes name="LOAD_CREATED_DATE" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/LOAD_CREATED_DATE"/>
+        <nodes name="LOAD_MODIFIED_DATE" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/LOAD_MODIFIED_DATE"/>
+      </inputTrees>
+      <outputTrees name="our">
+        <nodes name="body" expression="" type="id_Document" xpath="our/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="our.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="transaction" expression="" type="id_String" xpath="our.body:/root/transaction" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMP_DEPT" expression="row1.EMP_DEPT" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="our.body:/root/transaction/EMP_DEPT"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMP_ID" expression="row1.EMP_ID" type="id_BigDecimal" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="our.body:/root/transaction/EMP_ID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMP_NAME" expression="row1.EMP_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="our.body:/root/transaction/EMP_NAME"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FILE_NAME" expression="row1.FILE_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="our.body:/root/transaction/FILE_NAME"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="F_MONTH" expression="row1.F_MONTH" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="our.body:/root/transaction/F_MONTH"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LOAD_CREATED_DATE" expression="row1.LOAD_CREATED_DATE" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="our.body:/root/transaction/LOAD_CREATED_DATE"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LOAD_MODIFIED_DATE" expression="row1.LOAD_MODIFIED_DATE" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="our.body:/root/transaction/LOAD_MODIFIED_DATE"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
+    </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
@@ -260,20 +294,40 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="520" posY="280">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWriteJSONField_1" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="body"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/catalog"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/catalog/transaction"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="false"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
+    <elementParameter field="CHECK" name="USE_SCIENTIFIC_NOTATION" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="copyOfour">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tWriteJSONField_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData"/>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
-    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
     <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
     <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
@@ -281,10 +335,18 @@
     <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTResponse_2">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="getsome" lineStyle="0" metaname="getsome" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="offset"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="limit"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="getsome" show="false"/>
   </connection>
@@ -305,18 +367,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="our" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="body"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tWriteJSONField_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="copyOfour" lineStyle="0" metaname="copyOfour" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_2">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tRESTResponse_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfour" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
