@@ -146,8 +146,8 @@
   </node>
   <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
-    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
-    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
+    <elementParameter field="TABLE" name="MAP"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
@@ -174,7 +174,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from USER1.JAY_FINAL_TEST3&quot; +&#xD;&#xA;&quot; ORDER BY EMP_ID &quot; +  &quot; OFFSET &quot; + globalMap.get(&quot;getsome.offset&quot;) +&#xD;&#xA; &quot; ROWS FETCH NEXT &quot; + globalMap.get(&quot;getsome.limit&quot;) + &quot; ROWS ONLY&quot; "/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from USER1.JAY_FINAL_TEST3&quot; +&#xD;&#xA;&quot; ORDER BY EMP_ID &quot; +  &quot; OFFSET &quot; + +&#xD;&#xA; &quot; ROWS FETCH NEXT &quot; + globalMap.get(&quot;getsome.limit&quot;) + &quot; ROWS ONLY&quot; "/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
