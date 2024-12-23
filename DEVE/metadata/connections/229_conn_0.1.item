@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_FnRdwKDjEe-Nee7K9MFJsQ" name="229_conn" id="_9w9BwKDiEe-Nee7K9MFJsQ" label="229_conn" dataPackage="_Fs8A4KDjEe-Nee7K9MFJsQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.40.229:1433;DatabaseName=Jay_3;" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:3mrLdbxA/aq2T0u8xmmtfXJVv/J4JtoTVWx1wBHWQj+P09OvE1ClbQ==" ServerName="98.70.40.229" DatasourceName="" FileFieldName="" SID="Jay_3" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
-    <taggedValue xmi:id="_FnRdwaDjEe-Nee7K9MFJsQ" tag="Is Conn Need Reload" value="false"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_FnRdwKDjEe-Nee7K9MFJsQ" name="229_conn" id="_9w9BwKDiEe-Nee7K9MFJsQ" label="229_conn" dataPackage="_Fs8A4KDjEe-Nee7K9MFJsQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.40.229:1433;DatabaseName=Jay_3;trustServerCertificate=true" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:3mrLdbxA/aq2T0u8xmmtfXJVv/J4JtoTVWx1wBHWQj+P09OvE1ClbQ==" ServerName="98.70.40.229" DatasourceName="" FileFieldName="" SID="Jay_3" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="trustServerCertificate=true" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+    <taggedValue xmi:id="_FnRdwaDjEe-Nee7K9MFJsQ" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_FpUFIKDjEe-Nee7K9MFJsQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_FpcoAKDjEe-Nee7K9MFJsQ" tag="Status" value=""/>
     <taggedValue xmi:id="_FpcoAaDjEe-Nee7K9MFJsQ" tag="Version" value="0.1"/>
@@ -13,6 +13,7 @@
     <taggedValue xmi:id="_FqkCUaDjEe-Nee7K9MFJsQ" tag="DB ProductVersion" value="16.00.1000"/>
     <taggedValue xmi:id="_FqkCUqDjEe-Nee7K9MFJsQ" tag="DB IdentifierQuoteString" value="&quot;"/>
     <parameters xmi:id="_FnSE0KDjEe-Nee7K9MFJsQ" key="CONN_PARA_KEY_USERNAME" value="User1"/>
+    <parameters xmi:id="_bQkg0MD1Ee-g_YVE3ZwGYQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_Fs8A4KDjEe-Nee7K9MFJsQ" name="Jay_3" dataManager="_FnRdwKDjEe-Nee7K9MFJsQ">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_Fs8A4aDjEe-Nee7K9MFJsQ" name="dbo"/>
