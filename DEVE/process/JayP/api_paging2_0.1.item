@@ -237,7 +237,7 @@
         <nodes name="LOAD_CREATED_DATE" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/LOAD_CREATED_DATE"/>
         <nodes name="LOAD_MODIFIED_DATE" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/LOAD_MODIFIED_DATE"/>
       </inputTrees>
-      <outputTrees name="our">
+      <outputTrees activateCondensedTool="true" name="our" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="our/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="our.body:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="transaction" expression="" type="id_String" xpath="our.body:/root/transaction" loop="true" main="true">
