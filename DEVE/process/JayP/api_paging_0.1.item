@@ -209,11 +209,11 @@
     <elementParameter field="TEXT" name="LABEL" value="qdi3_orcl"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" key="false" length="100" name="EMP_DEPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="38" name="EMP_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="EMP_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="FILE_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="F_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="EMP_DEPT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="EMP_ID" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="EMP_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="FILE_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="F_MONTH" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LOAD_CREATED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="LOAD_MODIFIED_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -230,7 +230,7 @@
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <nodes name="EMP_DEPT" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/EMP_DEPT"/>
-        <nodes name="EMP_ID" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/EMP_ID"/>
+        <nodes name="EMP_ID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/EMP_ID"/>
         <nodes name="EMP_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/EMP_NAME"/>
         <nodes name="FILE_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/FILE_NAME"/>
         <nodes name="F_MONTH" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/F_MONTH"/>
