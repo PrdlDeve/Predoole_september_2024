@@ -318,6 +318,11 @@
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="main"/>
       <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="PATH" value="/catalog/transaction/body"/>
+      <elementValue elementRef="COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="3"/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TABLE" name="GROUPBYS"/>
