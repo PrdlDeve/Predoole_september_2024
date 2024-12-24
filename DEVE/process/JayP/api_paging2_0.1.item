@@ -223,25 +223,21 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="EMP_DEPT" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/EMP_DEPT"/>
-        <nodes name="EMP_ID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/EMP_ID"/>
-        <nodes name="EMP_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/EMP_NAME"/>
-        <nodes name="FILE_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/FILE_NAME"/>
-        <nodes name="F_MONTH" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/F_MONTH"/>
-        <nodes name="LOAD_CREATED_DATE" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/LOAD_CREATED_DATE"/>
-        <nodes name="LOAD_MODIFIED_DATE" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/LOAD_MODIFIED_DATE"/>
+        <nodes name="EMAIL" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/EMAIL"/>
+        <nodes name="EMPLOYEE_ID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/EMPLOYEE_ID" nullable="false"/>
+        <nodes name="FIRST_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/FIRST_NAME"/>
+        <nodes name="LAST_NAME" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/LAST_NAME"/>
+        <nodes name="PHONE_NUMBER" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/PHONE_NUMBER"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="our" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="our/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="our.body:/root" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="transaction" expression="" type="id_String" xpath="our.body:/root/transaction" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMP_DEPT" expression="row1.EMP_DEPT" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="our.body:/root/transaction/EMP_DEPT"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMP_ID" expression="row1.EMP_ID" type="id_BigDecimal" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="our.body:/root/transaction/EMP_ID"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMP_NAME" expression="row1.EMP_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="our.body:/root/transaction/EMP_NAME"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FILE_NAME" expression="row1.FILE_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="our.body:/root/transaction/FILE_NAME"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="F_MONTH" expression="row1.F_MONTH" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="our.body:/root/transaction/F_MONTH"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LOAD_CREATED_DATE" expression="row1.LOAD_CREATED_DATE" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="our.body:/root/transaction/LOAD_CREATED_DATE"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LOAD_MODIFIED_DATE" expression="row1.LOAD_MODIFIED_DATE" type="id_Date" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="our.body:/root/transaction/LOAD_MODIFIED_DATE"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Employee" expression="" type="id_String" xpath="our.body:/root/Employee" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMAIL" expression="row1.EMAIL" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="our.body:/root/Employee/EMAIL"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="EMPLOYEE_ID" expression="row1.EMPLOYEE_ID" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="our.body:/root/Employee/EMPLOYEE_ID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FIRST_NAME" expression="row1.FIRST_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="our.body:/root/Employee/FIRST_NAME"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="LAST_NAME" expression="row1.LAST_NAME" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="our.body:/root/Employee/LAST_NAME"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="PHONE_NUMBER" expression="row1.PHONE_NUMBER" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="our.body:/root/Employee/PHONE_NUMBER"/>
             </children>
           </children>
         </nodes>
@@ -252,8 +248,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="80">
@@ -269,7 +263,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="200">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(globalMap.get(&quot;getsome.limit&quot;));&#xA;System.out.println(globalMap.get(&quot;getsome.limit&quot;).getClass().getName());"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
