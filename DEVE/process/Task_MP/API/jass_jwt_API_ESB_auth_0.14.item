@@ -136,8 +136,8 @@
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="&quot;http://192.168.1.253:8080/realms/NewRealm/protocol/openid-connect/certs&quot;" show="false"/>
-    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;D:/key/stsstore.jks&quot;"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:EVlEeZhdZ0CmGdKKzyAXr8VQUFVasV11jDm+tyBUZi2YzHtgsgj906LuqQ=="/>
+    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;/opt/Talend-8.0.1/runtime/etc/keystores/stsstore.jks&quot;"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:cLKjTQ/0xtney+HbxyFiSg5pg1gjlGt+zSo3c72X8hP6iqvi32M="/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;http://localhost:8040/services/jass_jwt&quot;"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
