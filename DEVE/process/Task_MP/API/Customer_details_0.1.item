@@ -104,7 +104,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_BEnGEHovEe--aM2Gpoi24g" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="554c43ce-e64d-40a9-81d1-62dfa028a068" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/employees_cloud&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/basic_Mp&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="create_Customer_details"/>
       <elementValue elementRef="HTTP_VERB" value="POST"/>
