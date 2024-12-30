@@ -486,6 +486,17 @@
 }, {
   "baseItem" : {
     "id" : "_UmyswLhrEe-ovpRFrOQHpg",
+    "version" : "0.17",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_tAMOsJzOEe-dmZNsDR-kzw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_UmyswLhrEe-ovpRFrOQHpg",
     "version" : "0.9",
     "type" : "job"
   },
