@@ -104,7 +104,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tAMOsJzOEe-dmZNsDR-kzw" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/jass_jwt&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/open&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="get_movies"/>
       <elementValue elementRef="HTTP_VERB" value="GET"/>
