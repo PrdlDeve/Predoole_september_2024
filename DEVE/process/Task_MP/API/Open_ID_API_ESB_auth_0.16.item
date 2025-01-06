@@ -132,14 +132,14 @@
       <elementValue elementRef="STREAMING" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OIDC_PASSWORD_GRANT"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="JWT"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="PKCS12"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="&quot;http://192.168.1.253:8080/realms/NewRealm/protocol/openid-connect/certs&quot;" show="false"/>
-    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;/opt/Talend-8.0.1/runtime/etc/keystores/stsstore.jks&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:TDbhHQsenbuIWyiOoGzYBoMmXlxfFVWDW2A0s7XTDooJjPwsOKM=" show="false"/>
-    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;" show="false"/>
-    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;http://192.168.1.133:8040/services/jass_jwt&quot;" show="false"/>
+    <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;/opt/Talend-8.0.1/runtime/etc/keystores/stsstore.jks&quot;"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:TDbhHQsenbuIWyiOoGzYBoMmXlxfFVWDW2A0s7XTDooJjPwsOKM="/>
+    <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
+    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;http://192.168.1.133:8040/services/jass_jwt&quot;"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;movie_of_API_ESB_auth&quot;" show="false"/>
@@ -151,12 +151,7 @@
     <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
-    <elementParameter field="TABLE" name="JAXRS_PROPS">
-      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.signature.algorithm&quot;"/>
-      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;RS256&quot;"/>
-      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.accept.public.key&quot;"/>
-      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;true&quot;"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="JAXRS_PROPS"/>
     <elementParameter field="TEXT" name="LABEL" value="movies_mp"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <elementParameter field="MEMO" name="COMMENT" value="No description"/>
