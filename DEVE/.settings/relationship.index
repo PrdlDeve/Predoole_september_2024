@@ -759,11 +759,11 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_HA3UoMzaEe-70I-FxdznuA",
+    "id" : "_F59SwMzhEe-70I-FxdznuA",
     "version" : "Latest",
-    "type" : "property"
+    "type" : "mapper"
   }, {
-    "id" : "_WQzoUHWgEe-vPeNH3y9uYA",
+    "id" : "_HA3UoMzaEe-70I-FxdznuA",
     "version" : "Latest",
     "type" : "property"
   } ]
