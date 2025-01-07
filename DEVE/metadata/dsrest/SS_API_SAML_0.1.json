@@ -1,0 +1,23 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "SS_API_SAML",
+    "description" : "No description",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "paths" : {
+    "/getID" : {
+      "get" : {
+        "summary" : "GET_SAML",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      }
+    }
+  }
+}
