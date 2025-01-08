@@ -2,5 +2,5 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
   <Services:ServiceConnection xmi:id="_TKsPIM2IEe-62KEhKQIkaA" servicePort="_TKsPIc2IEe-62KEhKQIkaA"/>
   <Services:ServicePort xmi:id="_TKsPIc2IEe-62KEhKQIkaA" name="CustomerServicePortType" id="_TKjFMM2IEe-62KEhKQIkaA" serviceOperation="_TKsPIs2IEe-62KEhKQIkaA"/>
-  <Services:ServiceOperation xmi:id="_TKsPIs2IEe-62KEhKQIkaA" label="CustomerServiceOperation-CustomerServicePortType_CustomerServiceOperation" name="CustomerServiceOperation" id="_TKjFMc2IEe-62KEhKQIkaA" referenceJobId="_aAaJwM2IEe-62KEhKQIkaA"/>
+  <Services:ServiceOperation xmi:id="_TKsPIs2IEe-62KEhKQIkaA" label="CustomerServiceOperation" name="CustomerServiceOperation" id="_TKjFMc2IEe-62KEhKQIkaA"/>
 </xmi:XMI>
