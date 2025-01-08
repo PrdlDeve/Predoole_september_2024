@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CustomerService1"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="CustomerService1OperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CustomerService1OperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="CustomerService1OperationRequest">
+		<wsdl:part name="parameters" element="tns:CustomerService1OperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="CustomerService1OperationResponse">
+		<wsdl:part name="parameters" element="tns:CustomerService1OperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="CustomerService1PortType">
+		<wsdl:operation name="CustomerService1Operation">
+			<wsdl:input message="tns:CustomerService1OperationRequest"></wsdl:input>
+			<wsdl:output message="tns:CustomerService1OperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="CustomerService1Binding" type="tns:CustomerService1PortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="CustomerService1Operation">
+			<soap:operation soapAction="http://www.talend.org/service/CustomerService1Operation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="CustomerService1">
+		<wsdl:port name="CustomerService1Port" binding="tns:CustomerService1Binding">
+			<soap:address location="http://localhost:8090/services/CustomerService1" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
