@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="test_new"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="test_newOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="test_newOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="test_newOperationRequest">
+		<wsdl:part name="parameters" element="tns:test_newOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="test_newOperationResponse">
+		<wsdl:part name="parameters" element="tns:test_newOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="test_newPortType">
+		<wsdl:operation name="test_newOperation">
+			<wsdl:input message="tns:test_newOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:test_newOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="test_newBinding" type="tns:test_newPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="test_newOperation">
+			<soap:operation soapAction="http://www.talend.org/service/test_newOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="test_new">
+		<wsdl:port name="test_newPort" binding="tns:test_newBinding">
+			<soap:address location="http://localhost:8090/services/test_new" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
