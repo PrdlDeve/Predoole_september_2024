@@ -151,7 +151,7 @@
     <metadata connector="FLOW" name="get_movies"/>
     <metadata connector="FLOW" name="get_books"/>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="40">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
@@ -170,12 +170,12 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;RESTCatalog&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;User1&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wg44uIVmMeIHmcoSBP+tdlzons9CqIAB0CST9mB/zenPvUpGa72xA30m"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;movies&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;books&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from movies&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  *  from books &quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -193,11 +193,11 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="author"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="genre"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="director"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="release_year"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="publication_year"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="rating"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -209,9 +209,9 @@
     <metadata connector="FLOW" name="tDBInput_1">
       <column comment="" defaultValue="" key="false" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="title" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="author" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="genre" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="director" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="release_year" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="publication_year" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="2" name="rating" nullable="true" pattern="" precision="1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -226,34 +226,28 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="id" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/id" nullable="false"/>
-        <nodes name="title" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/title" nullable="false"/>
-        <nodes name="genre" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/genre"/>
-        <nodes name="director" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/director"/>
-        <nodes name="release_year" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/release_year"/>
-        <nodes name="rating" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/rating"/>
+        <nodes name="id" type="id_Integer" xpath="row1/id" nullable="false"/>
+        <nodes name="title" type="id_String" xpath="row1/title" nullable="false"/>
+        <nodes name="author" type="id_String" xpath="row1/author"/>
+        <nodes name="genre" type="id_String" xpath="row1/genre"/>
+        <nodes name="publication_year" type="id_Integer" xpath="row1/publication_year"/>
+        <nodes name="rating" type="id_BigDecimal" xpath="row1/rating"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="SS" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="SS/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="SS.body:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="ff" expression="" type="id_String" xpath="SS.body:/root/ff" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="SS.body:/root/ff/id"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="SS.body:/root/ff/title"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="genre" expression="row1.genre" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="SS.body:/root/ff/genre"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="director" expression="row1.director" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="SS.body:/root/ff/director"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="release_year" expression="row1.release_year" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="SS.body:/root/ff/release_year"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="rating" expression="row1.rating" type="id_BigDecimal" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="SS.body:/root/ff/rating"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" xpath="SS.body:/root/ff/id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" xpath="SS.body:/root/ff/title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="genre" expression="row1.genre" type="id_String" xpath="SS.body:/root/ff/genre"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="director" expression="row1.director" type="id_String" xpath="SS.body:/root/ff/director"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="release_year" expression="row1.release_year" type="id_Integer" xpath="SS.body:/root/ff/release_year"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="rating" expression="row1.rating" type="id_BigDecimal" xpath="SS.body:/root/ff/rating"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
@@ -269,9 +263,9 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="get_movies" lineStyle="0" metaname="get_movies" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
+  <connection connectorName="FLOW" label="get_books" lineStyle="0" metaname="get_books" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="get_movies" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="get_books" show="false"/>
   </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tDBInput_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
