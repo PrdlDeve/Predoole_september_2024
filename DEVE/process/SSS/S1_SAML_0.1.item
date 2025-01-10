@@ -235,8 +235,8 @@
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="SS" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="SS/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="SS.body:/root">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="kk" expression="" type="id_String" xpath="SS.body:/root/kk">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="SS.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="kk" expression="" type="id_String" xpath="SS.body:/root/kk" loop="true" main="true">
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="SS.body:/root/kk/id"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="SS.body:/root/kk/title"/>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="author" expression="row1.author" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="SS.body:/root/kk/author"/>
