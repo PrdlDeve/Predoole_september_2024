@@ -233,7 +233,7 @@
         <nodes name="release_year" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/release_year"/>
         <nodes name="rating" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/rating"/>
       </inputTrees>
-      <outputTrees name="SS">
+      <outputTrees activateCondensedTool="true" name="SS" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="SS/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="SS.body:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="ff" expression="" type="id_String" xpath="SS.body:/root/ff" loop="true" main="true">
