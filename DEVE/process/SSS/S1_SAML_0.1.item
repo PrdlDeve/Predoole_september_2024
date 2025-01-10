@@ -226,28 +226,34 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="id" type="id_Integer" xpath="row1/id" nullable="false"/>
-        <nodes name="title" type="id_String" xpath="row1/title" nullable="false"/>
-        <nodes name="author" type="id_String" xpath="row1/author"/>
-        <nodes name="genre" type="id_String" xpath="row1/genre"/>
-        <nodes name="publication_year" type="id_Integer" xpath="row1/publication_year"/>
-        <nodes name="rating" type="id_BigDecimal" xpath="row1/rating"/>
+        <nodes name="id" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/id" nullable="false"/>
+        <nodes name="title" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/title" nullable="false"/>
+        <nodes name="author" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/author"/>
+        <nodes name="genre" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/genre"/>
+        <nodes name="publication_year" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/publication_year"/>
+        <nodes name="rating" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/rating"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" name="SS" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="SS/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="SS.body:/root" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="ff" expression="" type="id_String" xpath="SS.body:/root/ff" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" xpath="SS.body:/root/ff/id"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" xpath="SS.body:/root/ff/title"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="genre" expression="row1.genre" type="id_String" xpath="SS.body:/root/ff/genre"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="director" expression="row1.director" type="id_String" xpath="SS.body:/root/ff/director"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="release_year" expression="row1.release_year" type="id_Integer" xpath="SS.body:/root/ff/release_year"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="rating" expression="row1.rating" type="id_BigDecimal" xpath="SS.body:/root/ff/rating"/>
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="SS.body:/root">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="kk" expression="" type="id_String" xpath="SS.body:/root/kk">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="SS.body:/root/kk/id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="title" expression="row1.title" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="SS.body:/root/kk/title"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="author" expression="row1.author" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="SS.body:/root/kk/author"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="genre" expression="row1.genre" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="SS.body:/root/kk/genre"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="publication_year" expression="row1.publication_year" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="SS.body:/root/kk/publication_year"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="rating" expression="row1.rating" type="id_BigDecimal" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="SS.body:/root/kk/rating"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
