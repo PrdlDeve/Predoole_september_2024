@@ -759,10 +759,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_F59SwMzhEe-70I-FxdznuA",
-    "version" : "Latest",
-    "type" : "mapper"
-  }, {
     "id" : "_HA3UoMzaEe-70I-FxdznuA",
     "version" : "Latest",
     "type" : "property"
