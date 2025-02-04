@@ -357,11 +357,11 @@
       <elementValue elementRef="INPUT_COLUMN" value="State" id="1"/>
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="Avg_LoanAmount" id="0"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="State" id="0"/>
       <elementValue elementRef="FUNCTION" value="avg" id="1"/>
       <elementValue elementRef="INPUT_COLUMN" value="LoanAmount" id="2"/>
       <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="CustomerCount" id="4"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="State" id="4"/>
       <elementValue elementRef="FUNCTION" value="count" id="5"/>
       <elementValue elementRef="INPUT_COLUMN" value="CustomerID" id="6"/>
       <elementValue elementRef="IGNORE_NULL" value="false" id="7"/>
