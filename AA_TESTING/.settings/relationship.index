@@ -105,6 +105,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_weFooOM9Ee-_sN-CV1ofcQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_o8FcUOMoEe-slcHmW0mxTA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_o8FcUOMoEe-slcHmW0mxTA - Customers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_o8FcUOMoEe-slcHmW0mxTA - Loans",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_x9MdcLkYEe-ElLxa2D2U8Q",
     "version" : "0.1",
     "type" : "job"
