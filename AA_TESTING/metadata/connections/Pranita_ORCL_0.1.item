@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_XukgUOKMEe-XsrE8T0_WXw" name="Pranita_ORCL" id="_rNNfwOKLEe-XsrE8T0_WXw" label="Pranita_ORCL" dataPackage="_Xw9F8OKMEe-XsrE8T0_WXw" DatabaseType="Oracle with SID" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@20.204.123.250:1521:orcl" dbVersionString="ORACLE_23" Port="1521" Username="user1" Password="enc:system.encryption.key.v1:p54ROVCv90V59Hj1LM3YH7r4PsfPNCBWDgpBKnVKXND0aBUkjbnPhw==" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="orcl" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="USER1" supportNLS="false">
+    <taggedValue xmi:id="_XukgUeKMEe-XsrE8T0_WXw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_Xu_-IOKMEe-XsrE8T0_WXw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_Xu_-IeKMEe-XsrE8T0_WXw" tag="Status" value=""/>
+    <taggedValue xmi:id="_Xu_-IuKMEe-XsrE8T0_WXw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Xu_-I-KMEe-XsrE8T0_WXw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Xu_-JOKMEe-XsrE8T0_WXw" tag="Description" value=""/>
+    <taggedValue xmi:id="_Xu_-JeKMEe-XsrE8T0_WXw" tag="Author" value=""/>
+    <taggedValue xmi:id="_Xu_-JuKMEe-XsrE8T0_WXw" tag="otherParameter"/>
+    <taggedValue xmi:id="_Xv5WAOKMEe-XsrE8T0_WXw" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_Xv5WAeKMEe-XsrE8T0_WXw" tag="DB ProductVersion" value="Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production&#xA;Version 19.3.0.0.0"/>
+    <taggedValue xmi:id="_Xv5WAuKMEe-XsrE8T0_WXw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_XukgUuKMEe-XsrE8T0_WXw" key="CONN_PARA_KEY_USERNAME" value="user1"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_Xw9F8OKMEe-XsrE8T0_WXw" name="USER1" dataManager="_XukgUOKMEe-XsrE8T0_WXw"/>
+</xmi:XMI>
