@@ -16,9 +16,17 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_2rzyYOJ9Ee-XsrE8T0_WXw",
+    "id" : "_o8FcUOMoEe-slcHmW0mxTA",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_o8FcUOMoEe-slcHmW0mxTA - Customers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_o8FcUOMoEe-slcHmW0mxTA - Loans",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
