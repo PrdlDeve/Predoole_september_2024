@@ -123,8 +123,6 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;BANKING&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pklUcUnSaOKITraB8MxPLozs9OnBsgn5Zh33iS/SuRzUOumkU4IkOQ1CrQ=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_o8FcUOMoEe-slcHmW0mxTA - Customers" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customers&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -256,8 +254,8 @@
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="CustomerID" expression="row1.ID " type="id_Integer" operator="="/>
         <mapperTableEntries name="LoanType" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoanAmount" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="InterestRate" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LoanAmount" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="InterestRate" type="id_Float" nullable="true"/>
         <mapperTableEntries name="StartDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
@@ -288,8 +286,6 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;BANKING&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JRnLkV+MKadBMkt2mJxkZanGWQNiYVD7LlgE7JcSvLsbSFrsVP8bP8dFcw=="/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_o8FcUOMoEe-slcHmW0mxTA - Loans" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Loans&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -335,10 +331,10 @@
       <column comment="" key="false" length="255" name="LoanType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="10" name="LoanAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="10" name="LoanAmount" nullable="true" pattern="" precision="2" sourceType="REAL" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="5" name="InterestRate" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+      <column comment="" key="false" length="5" name="InterestRate" nullable="true" pattern="" precision="2" sourceType="REAL" type="id_Float" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="StartDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
