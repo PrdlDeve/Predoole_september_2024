@@ -188,8 +188,8 @@
     <metadata connector="FLOW" name="aggregate">
       <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="LoanType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="LoanAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="InterestRate" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LoanAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="InterestRate" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="StartDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="EndDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -203,8 +203,8 @@
       <outputTables sizeState="INTERMEDIATE" name="aggregate">
         <mapperTableEntries name="ID" expression="row2.ID " type="id_Integer"/>
         <mapperTableEntries name="LoanType" expression="row1.LoanType " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoanAmount" expression="row1.LoanAmount " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="InterestRate" expression="row1.InterestRate " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LoanAmount" expression="row1.LoanAmount " type="id_String" nullable="true"/>
+        <mapperTableEntries name="InterestRate" expression="row1.InterestRate " type="id_String" nullable="true"/>
         <mapperTableEntries name="StartDate" expression="row1.StartDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" expression="row1.EndDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Status" expression="row1.Status " type="id_String" nullable="true"/>
