@@ -117,10 +117,6 @@
     "id" : "_o8FcUOMoEe-slcHmW0mxTA - Customers",
     "version" : "Latest",
     "type" : "schema"
-  }, {
-    "id" : "_o8FcUOMoEe-slcHmW0mxTA - Loans",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
