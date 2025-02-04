@@ -16,10 +16,6 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "AA_TESTING:_o_YeoOJ9Ee-XsrE8T0_WXw",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
     "id" : "_2rzyYOJ9Ee-XsrE8T0_WXw",
     "version" : "Latest",
     "type" : "property"
