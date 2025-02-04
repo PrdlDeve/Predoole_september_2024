@@ -178,8 +178,8 @@
     <metadata connector="FLOW" name="aggregation1">
       <column comment="" defaultValue="" key="false" length="10" name="ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="LoanType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="LoanAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="InterestRate" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="LoanAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="InterestRate" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="StartDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="EndDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -188,13 +188,13 @@
       <column comment="" key="false" length="200" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="aggregation1">
         <mapperTableEntries name="ID" type="id_Integer"/>
         <mapperTableEntries name="LoanType" expression="row1.LoanType " type="id_String" nullable="true"/>
-        <mapperTableEntries name="LoanAmount" expression="row1.LoanAmount " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="InterestRate" expression="row1.InterestRate " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LoanAmount" expression="row1.LoanAmount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="InterestRate" expression="row1.InterestRate " type="id_Double" nullable="true"/>
         <mapperTableEntries name="StartDate" expression="row1.StartDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" expression="row1.EndDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Status" expression="row1.Status " type="id_String" nullable="true"/>
