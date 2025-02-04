@@ -352,7 +352,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="80">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="21" offsetLabelY="-20" posX="360" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
       <elementValue elementRef="OUTPUT_COLUMN" value="State" id="0"/>
