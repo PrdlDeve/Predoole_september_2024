@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_IjDRsOjJEe-T0_fY-An3aA" name="SQL_Server_250" id="_AhcLsOjJEe-T0_fY-An3aA" label="SQL_Server_250" dataPackage="_IlhW4OjJEe-T0_fY-An3aA" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.204.123.250:1433;DatabaseName=Finance_Dev;" dbVersionString="MSSQL_PROP" Port="1433" Username="admin" Password="enc:system.encryption.key.v1:/6yIJZ4QFlsicLlcQsc/SOoM6v3jFnl6nXDBY2NQ8HAFACFl1QA72ek=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Finance_Dev" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+    <taggedValue xmi:id="_IjDRsejJEe-T0_fY-An3aA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_Ij5mQOjJEe-T0_fY-An3aA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_IkA7AOjJEe-T0_fY-An3aA" tag="Status" value=""/>
+    <taggedValue xmi:id="_IkA7AejJEe-T0_fY-An3aA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_IkA7AujJEe-T0_fY-An3aA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_IkA7A-jJEe-T0_fY-An3aA" tag="Description" value=""/>
+    <taggedValue xmi:id="_IkA7BOjJEe-T0_fY-An3aA" tag="Author" value=""/>
+    <taggedValue xmi:id="_IkA7BejJEe-T0_fY-An3aA" tag="otherParameter"/>
+    <taggedValue xmi:id="_IkeOAOjJEe-T0_fY-An3aA" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_IkeOAejJEe-T0_fY-An3aA" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_IkeOAujJEe-T0_fY-An3aA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_IjDRsujJEe-T0_fY-An3aA" key="CONN_PARA_KEY_USERNAME" value="admin"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_IlhW4OjJEe-T0_fY-An3aA" name="Finance_Dev" dataManager="_IjDRsOjJEe-T0_fY-An3aA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_IlhW4ejJEe-T0_fY-An3aA" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
