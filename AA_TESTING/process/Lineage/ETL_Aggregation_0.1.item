@@ -205,6 +205,17 @@
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
+    <metadata name="Frequency">
+      <column comment="" key="false" length="50" name="Frequency" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Amount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="FundName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
@@ -213,6 +224,11 @@
         <mapperTableEntries name="FundName" expression="row1.FundName " type="id_String" nullable="true"/>
         <mapperTableEntries name="InvestorID" expression="row2.InvestorID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Amount" expression="row2.Amount " type="id_BigDecimal" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Frequency">
+        <mapperTableEntries name="Frequency" expression="row2.Frequency " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Amount" expression="row2.Amount " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="FundName" expression="row1.FundName " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="FundID" type="id_Integer"/>
@@ -227,7 +243,7 @@
         <mapperTableEntries name="InvestorID" expression="" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="StartDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="EndDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Frequency" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Frequency" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Amount" type="id_BigDecimal" nullable="true"/>
       </inputTables>
     </nodeData>
