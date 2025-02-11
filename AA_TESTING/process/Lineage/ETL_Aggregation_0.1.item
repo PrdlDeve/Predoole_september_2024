@@ -323,10 +323,8 @@
   <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="FundID" id="0"/>
-      <elementValue elementRef="INPUT_COLUMN" value="FundID" id="1"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="FundName" id="2"/>
-      <elementValue elementRef="INPUT_COLUMN" value="FundName" id="3"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="FundName" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="FundName" id="1"/>
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="OUTPUT_COLUMN" value="Total_Investors" id="0"/>
