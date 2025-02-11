@@ -334,7 +334,7 @@
       <elementValue elementRef="INPUT_COLUMN" value="InvestorID" id="2"/>
       <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="Avg_Amount" id="4"/>
-      <elementValue elementRef="FUNCTION" value="count" id="5"/>
+      <elementValue elementRef="FUNCTION" value="avg" id="5"/>
       <elementValue elementRef="INPUT_COLUMN" value="Amount" id="6"/>
       <elementValue elementRef="IGNORE_NULL" value="false" id="7"/>
     </elementParameter>
