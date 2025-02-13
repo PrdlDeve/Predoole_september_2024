@@ -949,6 +949,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_sq9JMN0yEe-NRMdcn4l3Bw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_IA-SwNiLEe-XAOTSSYNL3Q - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_wA7u8MZnEe-vSrnAX_1txQ",
     "version" : "0.16",
     "type" : "job"
