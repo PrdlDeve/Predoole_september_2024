@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/fileXml/Mp_file</deletedFolders>
+  <deletedFolders>routes/Mrunal/Banking_Flows</deletedFolders>
   <deletedItems id="_2K-lYKASEe-JBZfbH7w5OQ" path="" type="PROCESS"/>
   <deletedItems id="_-PKXcL3QEe-CMdIPiwrwhw" path="JayP" type="PROCESS"/>
   <deletedItems id="_ZBJNwKDpEe-nCOEa6iie-w" path="SSS" type="PROCESS"/>
