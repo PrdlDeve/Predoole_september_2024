@@ -264,7 +264,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.Database"/>
     <elementParameter field="TEXT" name="USER" value="context.User"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vy1SZB48IsRZAyawD6XY+TP9jfcq1QypqI+GNAoSl/i/WviF4FB3Bbz564Q="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customers&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.Table"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
