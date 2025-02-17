@@ -3,7 +3,7 @@
   <talendfile:ContextType xmi:id="_ZmkXQOkwEe-TZ5NL7Wg6ZQ" confirmationNeeded="false" hide="false" name="Default">
     <contextParameter xmi:id="_ZmkXQekwEe-TZ5NL7Wg6ZQ" comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;98.70.40.229&quot;"/>
     <contextParameter xmi:id="_ZmkXQukwEe-TZ5NL7Wg6ZQ" comment="" name="User" prompt="User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;User1&quot;"/>
-    <contextParameter xmi:id="_ZmkXQ-kwEe-TZ5NL7Wg6ZQ" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:JL4EriS5nf35CuaUdIhvcGd0cPP0e/ZcxyTWnfyJpUbgxSLaWKud5kA="/>
+    <contextParameter xmi:id="_ZmkXQ-kwEe-TZ5NL7Wg6ZQ" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:sMPGrHKknbYIEExl0bfN8FLIM3fN7Sd81C9WcOSpBQc1C7w9C5R5OA=="/>
     <contextParameter xmi:id="_ZmkXROkwEe-TZ5NL7Wg6ZQ" comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;BANKING&quot;"/>
     <contextParameter xmi:id="_ZmkXRekwEe-TZ5NL7Wg6ZQ" comment="" name="table" prompt="table?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;Customers&quot;"/>
     <contextParameter xmi:id="_ZmkXRukwEe-TZ5NL7Wg6ZQ" comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;1433&quot;"/>
