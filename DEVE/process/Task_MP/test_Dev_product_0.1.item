@@ -6,17 +6,8 @@
     <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_Password" value="enc:system.encryption.key.v1:WUSFiHdWYEZgrfOdVu0SN6aCfzIAjLOtkN1Vr+UjgfhrGszBCto4Rw==" internalId="_o8orku0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;BANKING&quot;" internalId="_o8rH0O0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="table" prompt="table?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;Customers&quot;" internalId="_o8rH0e0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;1433&quot;" internalId="_o8rH0u0QEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;1433&quot;" internalId="_o8rH0u0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;dbo&quot;" internalId="_o8rH0-0QEe-xr-Q6s6Nr_w"/>
-  </context>
-  <context confirmationNeeded="false" hide="false" name="Test">
-    <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;98.70.40.229&quot;" internalId="_o8rH1O0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="User" prompt="User?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;User1&quot;" internalId="_o8rH1e0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_Password" value="enc:system.encryption.key.v1:KZUh5/PgnZrG9+gf0d4JbZv/dfLAEhJePBajraSRs1wkLCVW/VtSvg==" internalId="_o8rH1u0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;BANKING&quot;" internalId="_o8rH1-0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="table" prompt="table?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;Customers&quot;" internalId="_o8rH2O0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;1433&quot;" internalId="_o8rH2e0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;dbo&quot;" internalId="_o8rH2u0QEe-xr-Q6s6Nr_w"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Development">
     <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;20.204.123.250&quot;" internalId="_o8rH2-0QEe-xr-Q6s6Nr_w"/>
@@ -24,8 +15,17 @@
     <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_Password" value="enc:system.encryption.key.v1:4b9jYB8vDzR/qlASWXbml7gtUXAldMtwiO1Um8FP5Ba7AaCPVZvZDyo=" internalId="_o8rH3e0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;BANKING&quot;" internalId="_o8rH3u0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="table" prompt="table?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;Customers&quot;" internalId="_o8rH3-0QEe-xr-Q6s6Nr_w"/>
-    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;1433&quot;" internalId="_o8rH4O0QEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;1433&quot;" internalId="_o8rH4O0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;dbo&quot;" internalId="_o8rH4e0QEe-xr-Q6s6Nr_w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="t">
+    <contextParameter comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;98.70.40.229&quot;" internalId="_yCVH8O0UEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="User" prompt="User?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;User1&quot;" internalId="_yCVH8e0UEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_Password" value="enc:system.encryption.key.v1:GNrTwuIow8v1ySXPOG/FJohkyo1n/Vf9k/m3pS6m9/gQhEUgBl+e0A==" internalId="_yCVH8u0UEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;BANKING&quot;" internalId="_yCVH8-0UEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="table" prompt="table?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;Customers&quot;" internalId="_yCVH9O0UEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;1433&quot;" internalId="_yCVH9e0UEe-xr-Q6s6Nr_w"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;dbo&quot;" internalId="_yCVH9u0UEe-xr-Q6s6Nr_w"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -186,7 +186,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="DateOfBirth" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Gender" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -240,7 +240,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="DateOfBirth" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Gender" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
