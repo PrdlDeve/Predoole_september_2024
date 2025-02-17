@@ -9,7 +9,7 @@
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;1433&quot;" internalId="_o8rH0u0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;dbo&quot;" internalId="_o8rH0-0QEe-xr-Q6s6Nr_w"/>
   </context>
-  <context confirmationNeeded="false" hide="false" name="Development">
+  <context confirmationNeeded="false" hide="true" name="Development">
     <contextParameter comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;20.204.123.250&quot;" internalId="_o8rH2-0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="User" prompt="User?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_String" value="&quot;admin&quot;" internalId="_o8rH3O0QEe-xr-Q6s6Nr_w"/>
     <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_ZmSqcOkwEe-TZ5NL7Wg6ZQ" type="id_Password" value="enc:system.encryption.key.v1:4b9jYB8vDzR/qlASWXbml7gtUXAldMtwiO1Um8FP5Ba7AaCPVZvZDyo=" internalId="_o8rH3e0QEe-xr-Q6s6Nr_w"/>
