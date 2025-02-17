@@ -159,10 +159,6 @@
     "id" : "_ZmSqcOkwEe-TZ5NL7Wg6ZQ",
     "version" : "Latest",
     "type" : "context"
-  }, {
-    "id" : "built-in",
-    "version" : "Latest",
-    "type" : "context"
   } ]
 }, {
   "baseItem" : {
