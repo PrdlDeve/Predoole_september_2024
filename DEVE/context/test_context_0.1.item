@@ -11,7 +11,7 @@
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_ZmkXSOkwEe-TZ5NL7Wg6ZQ" confirmationNeeded="false" hide="false" name="Development">
     <contextParameter xmi:id="_ZmkXSekwEe-TZ5NL7Wg6ZQ" comment="" name="host" prompt="host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;20.204.123.250&quot;"/>
-    <contextParameter xmi:id="_ZmkXSukwEe-TZ5NL7Wg6ZQ" comment="" name="User" prompt="User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;chirag&quot;"/>
+    <contextParameter xmi:id="_ZmkXSukwEe-TZ5NL7Wg6ZQ" comment="" name="User" prompt="User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;admin&quot;"/>
     <contextParameter xmi:id="_ZmkXS-kwEe-TZ5NL7Wg6ZQ" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:HdQ0t9yBqacFYCUy6NHVLCAWpWBEys26WnTGReNR9Ztf5xHRjiuSD2g="/>
     <contextParameter xmi:id="_ZmkXTOkwEe-TZ5NL7Wg6ZQ" comment="" name="database" prompt="database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;BANKING&quot;"/>
     <contextParameter xmi:id="_Zmk-UOkwEe-TZ5NL7Wg6ZQ" comment="" name="table" prompt="table?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;Customers&quot;"/>
