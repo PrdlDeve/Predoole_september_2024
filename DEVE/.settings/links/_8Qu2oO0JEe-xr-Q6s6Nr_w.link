@@ -5,7 +5,7 @@
     "repoId" : "_ZmSqcOkwEe-TZ5NL7Wg6ZQ",
     "parameterList" : [ {
       "id" : "_ZmkXQekwEe-TZ5NL7Wg6ZQ",
-      "name" : "host"
+      "name" : "Host"
     }, {
       "id" : "_ZmkXQukwEe-TZ5NL7Wg6ZQ",
       "name" : "User"
@@ -14,10 +14,10 @@
       "name" : "Password"
     }, {
       "id" : "_ZmkXROkwEe-TZ5NL7Wg6ZQ",
-      "name" : "database"
+      "name" : "Database"
     }, {
       "id" : "_ZmkXRekwEe-TZ5NL7Wg6ZQ",
-      "name" : "table"
+      "name" : "Table"
     }, {
       "id" : "_ZmkXR-kwEe-TZ5NL7Wg6ZQ",
       "name" : "Schema"
@@ -27,7 +27,7 @@
     "repoId" : "_ZmSqcOkwEe-TZ5NL7Wg6ZQ",
     "parameterList" : [ {
       "id" : "_ZmkXSekwEe-TZ5NL7Wg6ZQ",
-      "name" : "host"
+      "name" : "Host"
     }, {
       "id" : "_ZmkXSukwEe-TZ5NL7Wg6ZQ",
       "name" : "User"
@@ -36,10 +36,10 @@
       "name" : "Password"
     }, {
       "id" : "_ZmkXTOkwEe-TZ5NL7Wg6ZQ",
-      "name" : "database"
+      "name" : "Database"
     }, {
       "id" : "_Zmk-UOkwEe-TZ5NL7Wg6ZQ",
-      "name" : "table"
+      "name" : "Table"
     }, {
       "id" : "_Zmk-UukwEe-TZ5NL7Wg6ZQ",
       "name" : "Schema"
@@ -49,7 +49,7 @@
     "repoId" : "_ZmSqcOkwEe-TZ5NL7Wg6ZQ",
     "parameterList" : [ {
       "id" : "_ZmkXQekwEe-TZ5NL7Wg6ZQ",
-      "name" : "host"
+      "name" : "Host"
     }, {
       "id" : "_ZmkXQukwEe-TZ5NL7Wg6ZQ",
       "name" : "User"
@@ -58,10 +58,10 @@
       "name" : "Password"
     }, {
       "id" : "_ZmkXROkwEe-TZ5NL7Wg6ZQ",
-      "name" : "database"
+      "name" : "Database"
     }, {
       "id" : "_ZmkXRekwEe-TZ5NL7Wg6ZQ",
-      "name" : "table"
+      "name" : "Table"
     }, {
       "id" : "_ZmkXR-kwEe-TZ5NL7Wg6ZQ",
       "name" : "Schema"
