@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default">
+  <context confirmationNeeded="false" hide="true" name="Default">
     <contextParameter comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_5cfn4O0eEe-UfIira7eLtQ"/>
     <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_5cfn4e0eEe-UfIira7eLtQ"/>
     <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" internalId="_5cfn4u0eEe-UfIira7eLtQ"/>
