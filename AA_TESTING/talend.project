@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_LwdOMLe7Ee-Z-vBXVVcSOQ" label="AA_testing" description="" language="java" technicalLabel="AA_TESTING" author="_LwdOMbe7Ee-Z-vBXVVcSOQ" productVersion="Talend Real-time Big Data Platform-8.0.1.20241219_0901-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/PredooleTalend2023/Predoole_september_2024.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_LwdOMLe7Ee-Z-vBXVVcSOQ" label="AA_testing" description="" language="java" technicalLabel="AA_TESTING" author="_LwdOMbe7Ee-Z-vBXVVcSOQ" productVersion="Talend Real-time Big Data Platform-8.0.1.20250126_0750-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/PredooleTalend2023/Predoole_september_2024.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_Lxyq8Le7Ee-Z-vBXVVcSOQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_LwdOMbe7Ee-Z-vBXVVcSOQ" login="admin@t.com" firstName="admin" lastName="t" type="DQ" additionnalData="{}"/>
@@ -9,4 +9,5 @@
   <TalendProperties:User xmi:id="_AuYI0LxFEe-wYJlmBbZAEw" login="jay@talend.com" firstName="Jay" lastName="Pandya" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_AuYI0bxFEe-wYJlmBbZAEw" login="chirag@talend.com" firstName="Chirag" lastName="Patil" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_Ets6YOMvEe-7osk-XezYoQ" login="mrunal@talend.com" firstName="mrunal" lastName="p" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_xxDloPQCEe-s3MoWyPcEKA" login="chirag.p@predoole.com" firstName="Chirag" lastName="Patil" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
