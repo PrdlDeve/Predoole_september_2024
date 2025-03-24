@@ -982,6 +982,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_sWBXIAVXEfCNR6vuhHHYbg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_3_T38AYnEfCNR6vuhHHYbg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_acX9sF3iEe-5W9f3y9Dx1Q",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_3_T38AYnEfCNR6vuhHHYbg - weather_forecast",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_acX9sF3iEe-5W9f3y9Dx1Q - Talend_Sample2",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_sev5MN0yEe-NRMdcn4l3Bw",
     "version" : "0.1",
     "type" : "job"
