@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:JKOE6k6+EldIgD+EsLJEHOG3pacAUM4dIdmgMKCN" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:N7B/+3I6n7ZRvXmWFl3U6wd3odBO1O2G/+g2WVlY" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -59,7 +59,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;E:/sept_2024/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -67,7 +67,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lbpj8KYp6x6l81bZe6BvnX3omK4MB91DVzxtIbM3" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:agmWyzeedmejhLcpLC0aj+cKvI+8nSmIZq1HNP3D" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -99,7 +99,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="80">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -110,15 +110,13 @@
     <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
     <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
     <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\INSTALL\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_5X_j4AQ_EfCuCcbaUqxi6g" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_5X_j4AQ_EfCuCcbaUqxi6g - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Slzb8Ah5EfCsbYEcUlOtOQ" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/customers.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Laptop_User/Downloads/customers.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -132,8 +130,8 @@
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_5X_j4AQ_EfCuCcbaUqxi6g - metadata" show="false"/>
-    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_Slzb8Ah5EfCsbYEcUlOtOQ - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/INSTALL/studio/workspace&quot;" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
@@ -240,7 +238,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="80">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// Pass through non-PII fields&#xA;output_row.customer_id = input_row.customer_id;&#xA;output_row.loyalty_points = input_row.loyalty_points;&#xA;output_row.last_purchase_date = input_row.last_purchase_date;&#xA;output_row.account_creation_date = input_row.account_creation_date;&#xA;&#xA;// Mask first_name: Keep first letter, mask rest&#xA;output_row.first_name = input_row.first_name.charAt(0) + &quot;*&quot;.repeat(input_row.first_name.length() - 1);&#xA;&#xA;// Mask last_name: Keep first letter, mask rest&#xA;output_row.last_name = input_row.last_name.charAt(0) + &quot;*&quot;.repeat(input_row.last_name.length() - 1);&#xA;&#xA;// Mask email: Mask local part, keep domain&#xA;String[] emailParts = input_row.email.split(&quot;@&quot;);&#xA;String maskedEmailLocal = emailParts[0].charAt(0) + &quot;*&quot;.repeat(emailParts[0].length() - 1);&#xA;output_row.email = maskedEmailLocal + &quot;@&quot; + emailParts[1];&#xA;&#xA;// Mask phone_number: Keep last 4 digits&#xA;String lastFourPhone = input_row.phone_number.substring(input_row.phone_number.length() - 4);&#xA;output_row.phone_number = &quot;***-***-&quot; + lastFourPhone;&#xA;&#xA;// Mask address_line1: Replace all but house number&#xA;String[] addressParts = input_row.address_line1.split(&quot; &quot;, 2);&#xA;output_row.address_line1 = addressParts[0] + &quot; **** St&quot;;&#xA;&#xA;// Mask city: First letter only&#xA;output_row.city = input_row.city.charAt(0) + &quot;*&quot;.repeat(input_row.city.length() - 1);&#xA;&#xA;// Mask state: Full mask&#xA;output_row.state = &quot;**&quot;;&#xA;&#xA;// Mask postal_code: Mask first 3 digits&#xA;output_row.postal_code = &quot;***&quot; + input_row.postal_code.substring(3);&#xA;&#xA;// Mask date_of_birth: Keep year only&#xA;output_row.date_of_birth = input_row.date_of_birth.substring(0, 4) + &quot;-**-**&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -261,7 +259,7 @@
       <column comment="" key="false" length="-1" name="account_creation_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="680" posY="80">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -325,37 +323,51 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/Masked_result__Marketing.csv&quot;"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="first_name" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_name" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone_number" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address_line1" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="postal_code" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_of_birth" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="loyalty_points" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_purchase_date" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="account_creation_date" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+    <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="2" name="customer_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="last_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -375,17 +387,17 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="-50" offsetLabelY="18" source="tJavaRow_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
 </talendfile:ProcessType>
