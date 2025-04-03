@@ -15,6 +15,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_B8x_sBCGEfCiy7F5NtNYSw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Iy2zYBBJEfCkBuNKPJ67ew",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_Iy2zYBBJEfCkBuNKPJ67ew - Billing",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Sglt4BBSEfC4AtYYV5c-HQ",
     "version" : "0.1",
     "type" : "job"
