@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_S2c_QBBJEfCkBuNKPJ67ew" name="Delay_job_conn" id="_Iy2zYBBJEfCkBuNKPJ67ew" label="Delay_job_conn" dataPackage="_TFjyQBBJEfCkBuNKPJ67ew" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.40.229:1433;DatabaseName=Hospital_Management_DB;" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:a4xSyEPLeGeARxbwYhXS2oQzOiHyK0RlbuY3O/N0Wcus3/pPEVtsaQ==" ServerName="98.70.40.229" DatasourceName="" FileFieldName="" SID="Hospital_Management_DB" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+    <taggedValue xmi:id="_S2c_QRBJEfCkBuNKPJ67ew" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_S5bawBBJEfCkBuNKPJ67ew" tag="package filter" value=""/>
+    <taggedValue xmi:id="_S5noABBJEfCkBuNKPJ67ew" tag="Status" value=""/>
+    <taggedValue xmi:id="_S5noARBJEfCkBuNKPJ67ew" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_S5noAhBJEfCkBuNKPJ67ew" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_S5noAxBJEfCkBuNKPJ67ew" tag="Description" value=""/>
+    <taggedValue xmi:id="_S5noBBBJEfCkBuNKPJ67ew" tag="Author" value=""/>
+    <taggedValue xmi:id="_S5noBRBJEfCkBuNKPJ67ew" tag="otherParameter"/>
+    <taggedValue xmi:id="_TBi08BBJEfCkBuNKPJ67ew" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_TBi08RBJEfCkBuNKPJ67ew" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_TBi08hBJEfCkBuNKPJ67ew" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_S2c_QhBJEfCkBuNKPJ67ew" key="CONN_PARA_KEY_USERNAME" value="User1"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_TFjyQBBJEfCkBuNKPJ67ew" name="Hospital_Management_DB" dataManager="_S2c_QBBJEfCkBuNKPJ67ew">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_TFjyQRBJEfCkBuNKPJ67ew" name="dbo">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_Z2U7cBBJEfCkBuNKPJ67ew" name="Billing" id="_Z2KjYBBJEfCkBuNKPJ67ew" label="Billing" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7cRBJEfCkBuNKPJ67ew" name="BillID" label="BillID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" key="true" nullable="false">
+          <taggedValue xmi:id="_Z2U7chBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7cxBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7dBBJEfCkBuNKPJ67ew" name="INT IDENTITY" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7dRBJEfCkBuNKPJ67ew" name="PatientID" label="PatientID" length="10" sourceType="INT" talendType="id_Integer">
+          <taggedValue xmi:id="_Z2U7dhBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7dxBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7eBBJEfCkBuNKPJ67ew" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7eRBJEfCkBuNKPJ67ew" name="AppointmentID" label="AppointmentID" length="10" sourceType="INT" talendType="id_Integer">
+          <taggedValue xmi:id="_Z2U7ehBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7exBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7fBBJEfCkBuNKPJ67ew" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7fRBJEfCkBuNKPJ67ew" name="TotalAmount" label="TotalAmount" length="10" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+          <taggedValue xmi:id="_Z2U7fhBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7fxBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7gBBJEfCkBuNKPJ67ew" name="DECIMAL" numericPrecision="2" numericPrecisionRadix="10" javaDataType="3"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7gRBJEfCkBuNKPJ67ew" name="PaymentStatus" label="PaymentStatus" length="20" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_Z2U7ghBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7gxBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7hBBJEfCkBuNKPJ67ew" name="NVARCHAR" javaDataType="-9"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7hRBJEfCkBuNKPJ67ew" name="PaymentMethod" label="PaymentMethod" length="20" sourceType="NVARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_Z2U7hhBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7hxBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7iBBJEfCkBuNKPJ67ew" name="NVARCHAR" javaDataType="-9"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z2U7iRBJEfCkBuNKPJ67ew" name="BillingDate" label="BillingDate" length="10" sourceType="DATE" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+          <taggedValue xmi:id="_Z2U7ihBJEfCkBuNKPJ67ew" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z2U7ixBJEfCkBuNKPJ67ew" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z2U7jBBJEfCkBuNKPJ67ew" name="DATE" javaDataType="91"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
