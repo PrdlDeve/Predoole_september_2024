@@ -101,31 +101,31 @@
   </parameters>
   <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_1" show="false"/>
-    <elementParameter field="CHECK" name="KEEPLISTENING" value="false"/>
-    <elementParameter field="CHECK" name="STARTSERVER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USEMAX" value="false"/>
+    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
+    <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
+    <elementParameter field="CHECK" name="USEMAX" value="false" show="false"/>
     <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1"/>
-    <elementParameter field="CHECK" name="FAILOVER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STATIC" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMomConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="FAILOVER" value="false"/>
+    <elementParameter field="CHECK" name="STATIC" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TIMEOUT" value="1"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="1" show="false"/>
     <elementParameter field="TEXT" name="MAXMSG" value="1000" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ" show="false"/>
-    <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeystore or JVM arguments to specify keystore or truststore" show="false"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;localhost&quot;" show="false"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.1.247&quot;"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:H7AvTGcHAY/beYz839e2eH2haoKQUTrP8Hwzdkaf" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lrhf2kq9QGdOJupsdSgU35f0sdAspPbIAm4t/QCJ8I8eTRM="/>
     <elementParameter field="TEXT" name="FROM" value="&quot;sss&quot;"/>
     <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
     <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
-    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false" show="false"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
     <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false" show="false"/>
@@ -135,7 +135,7 @@
     <elementParameter field="CHECK" name="AUTO_BACKOUT" value="false" show="false"/>
     <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
     <elementParameter field="CHECK" name="BROWSE" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
     <elementParameter field="CHECK" name="GET_JMS_HEADER" value="false"/>
     <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
     <elementParameter field="CHECK" name="GET_JMS_PROPERTIES" value="false"/>
@@ -437,9 +437,9 @@
     <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
     <elementParameter field="TEXT" name="DATABASE" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SET_WRITE_CONCERN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_WRITE_CONCERN" value="false"/>
     <elementParameter field="CLOSED_LIST" name="WRITE_CONCERN" value="ACKNOWLEDGED" show="false"/>
-    <elementParameter field="LABEL" name="WRITE_CONCERN_NOTE" value="Note : Use Connection component to set Write Concern"/>
+    <elementParameter field="LABEL" name="WRITE_CONCERN_NOTE" value="Note : Use Connection component to set Write Concern" show="false"/>
     <elementParameter field="CHECK" name="SET_BULK_WRITE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="BULK_WRITE_TYPE" value="Unordered" show="false"/>
     <elementParameter field="TEXT" name="BULK_WRITE_SIZE" value="&quot;1000&quot;" show="false"/>
@@ -534,9 +534,9 @@
     <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
     <elementParameter field="TEXT" name="DATABASE" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SET_WRITE_CONCERN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_WRITE_CONCERN" value="false"/>
     <elementParameter field="CLOSED_LIST" name="WRITE_CONCERN" value="ACKNOWLEDGED" show="false"/>
-    <elementParameter field="LABEL" name="WRITE_CONCERN_NOTE" value="Note : Use Connection component to set Write Concern"/>
+    <elementParameter field="LABEL" name="WRITE_CONCERN_NOTE" value="Note : Use Connection component to set Write Concern" show="false"/>
     <elementParameter field="CHECK" name="SET_BULK_WRITE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="BULK_WRITE_TYPE" value="Unordered" show="false"/>
     <elementParameter field="TEXT" name="BULK_WRITE_SIZE" value="&quot;1000&quot;" show="false"/>
@@ -638,6 +638,7 @@
   </node>
   <node componentName="tMomConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="-40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeystore or JVM arguments to specify keystore or truststore" show="false"/>
@@ -667,6 +668,7 @@
   </node>
   <node componentName="tMongoDBConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="-40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_4_4_X"/>
     <elementParameter field="CHECK" name="USE_CONNECTION_STRING" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_STRING" value="&quot;&quot;" show="false"/>
@@ -729,9 +731,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMomConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMomConnection_1" target="tMongoDBConnection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMongoDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMongoDBConnection_1" target="tMomInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <note opaque="true" posX="440" posY="-120" sizeHeight="121" sizeWidth="801" text="Scenario: &#xA;A manufacturing company has IoT sensors installed on&#xD;&#xA;its machinery to monitor temperature, humidity, and vibration levels. &#xD;&#xA;The sensor data is continuously streamed using Apache Kafka and needs &#xD;&#xA;to be stored in MongoDB after applying transformation and filtering rules.">
