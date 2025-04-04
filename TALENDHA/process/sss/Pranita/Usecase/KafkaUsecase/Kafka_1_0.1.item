@@ -646,7 +646,7 @@
     <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.1.247&quot;"/>
     <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1mrzQbWyTPCg0ulBkjIHRCTRe+K5fz+yn8TVujGyM8oMJ7w="/>
@@ -672,9 +672,9 @@
     <elementParameter field="TEXT" name="CONNECTION_STRING" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
     <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.1.224&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="27017"/>
-    <elementParameter field="TEXT" name="DATABASE" value="&quot;Talend&quot;"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;sss&quot;"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC" show="false"/>
