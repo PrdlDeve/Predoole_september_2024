@@ -121,7 +121,7 @@
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:H7AvTGcHAY/beYz839e2eH2haoKQUTrP8Hwzdkaf" show="false"/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;IOT&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;sss&quot;"/>
     <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
     <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
