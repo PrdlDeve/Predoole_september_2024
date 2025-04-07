@@ -99,32 +99,9 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="461" posY="250">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
-    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value=""/>
-    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
-    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.bills.bill.line[*]&quot;"/>
-    <elementParameter field="TABLE" name="MAPPING" show="false"/>
-    <elementParameter field="TABLE" name="MAPPING_4_JSONPATH"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
-    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT_LIST" value="true" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tExtractJSONFields_1"/>
-    <metadata connector="REJECT" name="REJECT">
-      <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="200">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_CmEYoBBXEfC4AtYYV5c-HQ" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
@@ -187,8 +164,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="120">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -242,72 +220,9 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_1" show="false"/>
-    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
-    <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
-    <elementParameter field="CHECK" name="USEMAX" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="CHECK" name="FAILOVER" value="false"/>
-    <elementParameter field="CHECK" name="STATIC" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
-    <elementParameter field="TEXT" name="TIMEOUT" value="1" show="false"/>
-    <elementParameter field="TEXT" name="MAXMSG" value="1000" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
-    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
-    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeystore or JVM arguments to specify keystore or truststore" show="false"/>
-    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.1.247&quot;"/>
-    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
-    <elementParameter field="TABLE" name="SERVERS" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:14hz1203BKdJHYc5lGP+5KyE9L6HEs6+xEkquUCIHvpzh2s="/>
-    <elementParameter field="TEXT" name="FROM" value="&quot;sss&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
-    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
-    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
-    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false" show="false"/>
-    <elementParameter field="TEXT" name="MSG_ID" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="COMMIT" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ROLLBACK" value="false" show="false"/>
-    <elementParameter field="CHECK" name="AUTO_BACKOUT" value="false" show="false"/>
-    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="BROWSE" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
-    <elementParameter field="CHECK" name="GET_JMS_HEADER" value="false"/>
-    <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
-    <elementParameter field="CHECK" name="GET_JMS_PROPERTIES" value="false"/>
-    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false"/>
-    <elementParameter field="CHECK" name="GET_MQMD_FIELDS" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false" show="false"/>
-    <elementParameter field="CHECK" name="USE_FIX_MQRFH2" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_MCD" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_MCD_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_JMS" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="USE_MQRFH2_USR" value="false" show="false"/>
-    <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
-    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
-    <elementParameter field="CHECK" name="CUSTOM_CIPHER" value="false" show="false"/>
-    <elementParameter field="RADIO" name="USE_IBM_MAPPING" value="true" show="false"/>
-    <elementParameter field="RADIO" name="USE_ORACLE_MAPPING" value="false" show="false"/>
-    <elementParameter field="TEXT" name="CUSTOM_CIPHER_SUITE" value="&quot;SSL_RSA_WITH_AES_256_CBC_SHA&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tMomInput_1">
-      <column defaultValue="" key="false" length="255" name="from" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="80">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="PREV_COLUMN_LIST" name="JSONFIELD" value="from"/>
@@ -380,8 +295,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="120">
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_1">
       <column comment="" key="false" length="-1" name="sensor_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -396,8 +312,9 @@
       <column comment="" key="false" length="-1" name="health_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="120">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -447,8 +364,173 @@
       <column comment="" key="false" length="-1" name="health_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
+    <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
+    <elementParameter field="CHECK" name="USEMAX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CHECK" name="FAILOVER" value="false"/>
+    <elementParameter field="CHECK" name="STATIC" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="1" show="false"/>
+    <elementParameter field="TEXT" name="MAXMSG" value="1000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeystore or JVM arguments to specify keystore or truststore" show="false"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.1.247&quot;"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
+    <elementParameter field="TABLE" name="SERVERS" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:14hz1203BKdJHYc5lGP+5KyE9L6HEs6+xEkquUCIHvpzh2s="/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;sss&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
+    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
+    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MSG_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="COMMIT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ROLLBACK" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_BACKOUT" value="false" show="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="BROWSE" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
+    <elementParameter field="CHECK" name="GET_JMS_HEADER" value="false"/>
+    <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
+    <elementParameter field="CHECK" name="GET_JMS_PROPERTIES" value="false"/>
+    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="GET_MQMD_FIELDS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIX_MQRFH2" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_MCD" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_MCD_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_JMS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_USR" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
+    <elementParameter field="CHECK" name="CUSTOM_CIPHER" value="false" show="false"/>
+    <elementParameter field="RADIO" name="USE_IBM_MAPPING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_ORACLE_MAPPING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_CIPHER_SUITE" value="&quot;SSL_RSA_WITH_AES_256_CBC_SHA&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMomInput_1">
+      <column defaultValue="" key="false" length="255" name="from" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMomInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_2" show="false"/>
+    <elementParameter field="CHECK" name="KEEPLISTENING" value="true"/>
+    <elementParameter field="CHECK" name="STARTSERVER" value="false"/>
+    <elementParameter field="CHECK" name="USEMAX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USEMAX_WITH_TIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CHECK" name="FAILOVER" value="false"/>
+    <elementParameter field="CHECK" name="STATIC" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_FAILOVER" value="&quot;?randomize=false&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_PARAM_STATIC" value="&quot;?transport.maxReconnectDelay=5000&amp;transport.useExponentialBackOff=false&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="1" show="false"/>
+    <elementParameter field="TEXT" name="MAXMSG" value="1000" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVER" value="ActiveMQ"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="LABEL" name="USE_SSL_NOTE" value="Notice: You should use tSetKeystore or JVM arguments to specify keystore or truststore" show="false"/>
+    <elementParameter field="TEXT" name="SERVERADDRESS" value="&quot;192.168.1.247&quot;"/>
+    <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61616&quot;"/>
+    <elementParameter field="TABLE" name="SERVERS" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TP7pZmAzdcP8A6OE0TR3c88+31hvqPlrMKvwhDbHs7TfdUU="/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;sss&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
+    <elementParameter field="TEXT" name="CHANNEL" value="&quot;DC.SVRCONN&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MESSAGE_BODY_TYPE" value="Text"/>
+    <elementParameter field="CHECK" name="IS_TRANSACTED" value="false"/>
+    <elementParameter field="TEXT" name="QM" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUEUE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="IS_USE_MESSAGE_ID" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MSG_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="COMMIT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ROLLBACK" value="false" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_BACKOUT" value="false" show="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="BROWSE" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" value="AUTO_ACKNOWLEDGE"/>
+    <elementParameter field="CHECK" name="GET_JMS_HEADER" value="false"/>
+    <elementParameter field="TABLE" name="JMS_HEADERS" show="false"/>
+    <elementParameter field="CHECK" name="GET_JMS_PROPERTIES" value="false"/>
+    <elementParameter field="TABLE" name="JMS_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="GET_MQMD_FIELDS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQMD_FIELDS" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQ_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIX_MQRFH2" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_FIXED_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_MCD" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_MCD_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_JMS" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_JMS_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="USE_MQRFH2_USR" value="false" show="false"/>
+    <elementParameter field="TABLE" name="MQRFH2_USR_FIELD" show="false"/>
+    <elementParameter field="CHECK" name="SET_MQ_SSL_CIPHER" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MQ_SSL_CIPHER" value="SSL_RSA_WITH_NULL_MD5" show="false"/>
+    <elementParameter field="CHECK" name="CUSTOM_CIPHER" value="false" show="false"/>
+    <elementParameter field="RADIO" name="USE_IBM_MAPPING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_ORACLE_MAPPING" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CUSTOM_CIPHER_SUITE" value="&quot;SSL_RSA_WITH_AES_256_CBC_SHA&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMomInput_2">
+      <column defaultValue="" key="false" length="255" name="from" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="from" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="message" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column defaultValue="" key="false" length="255" name="from" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:hive2://&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;user&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:at9xfQN6Ag5Zgnh2H8adOfzgqJtazr3oDFrHWu2M"/>
+    <elementParameter field="TABLE" name="JDBC_DRIVER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tReplicate_1">
@@ -467,27 +549,45 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMomInput_1" offsetLabelX="0" offsetLabelY="0" source="tMomInput_1" target="tExtractJSONFields_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tExtractJSONFields_2" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" source="tReplicate_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMomInput_1" offsetLabelX="0" offsetLabelY="0" source="tMomInput_1" target="tExtractJSONFields_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tMomInput_2" offsetLabelX="0" offsetLabelY="0" source="tMomInput_2" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMomInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
