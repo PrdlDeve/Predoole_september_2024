@@ -109,7 +109,7 @@
     <elementParameter field="TABLE" name="QUERY">
       <elementValue elementRef="NAME" value="q" id="0"/>
       <elementValue elementRef="VALUE" value="&quot;London&quot;" id="1"/>
-      <elementValue elementRef="NAME" value="appid" id="2"/>
+      <elementValue elementRef="NAME" value="&quot;appid&quot;" id="2"/>
       <elementValue elementRef="VALUE" value="&quot;97e40be3ae67dc739610f1f66f24e11d&quot;" id="3"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
