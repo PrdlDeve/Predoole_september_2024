@@ -669,7 +669,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
   </connection>
-  <note opaque="true" posX="240" posY="-120" sizeHeight="121" sizeWidth="721" text="Scenario: &#xD;&#xA;A manufacturing company has IoT sensors installed on&#xD;&#xD;&#xA;its machinery to monitor temperature, humidity, and vibration levels. &#xD;&#xD;&#xA;The sensor data is continuously streamed using Active MQ  and needs &#xD;&#xD;&#xA;to be stored in MongoDB after applying transformation and filtering rules.">
+  <note opaque="false" posX="240" posY="-120" sizeHeight="121" sizeWidth="721" text="Scenario: &#xD;&#xA;A manufacturing company has IoT sensors installed on&#xD;&#xD;&#xA;its machinery to monitor temperature, humidity, and vibration levels. &#xD;&#xD;&#xA;The sensor data is continuously streamed using Active MQ  and needs &#xD;&#xD;&#xA;to be stored in MongoDB after applying transformation and filtering rules.">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
