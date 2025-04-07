@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_swtWYBOtEfCz8daMD9Xuvw" name="postgres_fl_diff_schema" id="_GX3jUBOZEfC7seMLi8h1Ow" label="postgres_fl_diff_schema" dataPackage="_fuvE8BOZEfC7seMLi8h1Ow" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://20.204.123.250:5433/Jay_Demo?" dbVersionString="V9_X" Port="5433" Username="postgres" Password="enc:system.encryption.key.v1:2pwB1C78pwgCfb31SiI8FW/iUvYp69AXS75n4OhzhOcGGEF9rLraGXw=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Jay_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public" supportNLS="false">
-    <taggedValue xmi:id="_fpOS0ROZEfC7seMLi8h1Ow" tag="Is Conn Need Reload" value="false"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_swtWYBOtEfCz8daMD9Xuvw" name="postgres_fl_diff_schema" id="_svZu0BOtEfCz8daMD9Xuvw" label="postgres_fl_diff_schema" dataPackage="_fuvE8BOZEfC7seMLi8h1Ow" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://20.204.123.250:5433/Jay_Demo?" dbVersionString="V9_X" Port="5433" Username="postgres" Password="enc:system.encryption.key.v1:2pwB1C78pwgCfb31SiI8FW/iUvYp69AXS75n4OhzhOcGGEF9rLraGXw=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Jay_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="cdc" supportNLS="false">
+    <taggedValue xmi:id="_fpOS0ROZEfC7seMLi8h1Ow" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_frGiIBOZEfC7seMLi8h1Ow" tag="package filter" value=""/>
     <taggedValue xmi:id="_frHwQBOZEfC7seMLi8h1Ow" tag="Status" value=""/>
     <taggedValue xmi:id="_frHwQROZEfC7seMLi8h1Ow" tag="Version" value="0.1"/>
@@ -22,6 +22,7 @@
       </cdcTypes>
     </cdcConns>
     <parameters xmi:id="_fpOS0hOZEfC7seMLi8h1Ow" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+    <parameters xmi:id="_uWgPgBOtEfCz8daMD9Xuvw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_fuvE8BOZEfC7seMLi8h1Ow" name="Jay_Demo" dataManager="_swtWYBOtEfCz8daMD9Xuvw">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_fuvE8ROZEfC7seMLi8h1Ow" name="public">
@@ -85,5 +86,6 @@
         </feature>
       </ownedElement>
     </ownedElement>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wsYhwBOtEfCz8daMD9Xuvw" name="cdc"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
