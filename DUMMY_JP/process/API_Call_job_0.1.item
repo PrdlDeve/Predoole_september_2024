@@ -173,7 +173,7 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/main&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="temp" id="0"/>
-      <elementValue elementRef="QUERY" value="temp" id="1"/>
+      <elementValue elementRef="QUERY" value="&quot;temp&quot;" id="1"/>
       <elementValue elementRef="NODECHECK" value="false" id="2"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
