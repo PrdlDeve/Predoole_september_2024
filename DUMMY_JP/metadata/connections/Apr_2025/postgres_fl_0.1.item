@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_fpOS0BOZEfC7seMLi8h1Ow" name="postgres_fl" id="_GX3jUBOZEfC7seMLi8h1Ow" label="postgres_fl" dataPackage="_fuvE8BOZEfC7seMLi8h1Ow" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://20.204.123.250:5433/Jay_Demo?" dbVersionString="V9_X" Port="5433" Username="postgres" Password="enc:system.encryption.key.v1:2pwB1C78pwgCfb31SiI8FW/iUvYp69AXS75n4OhzhOcGGEF9rLraGXw=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Jay_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="public" supportNLS="false">
+    <taggedValue xmi:id="_fpOS0ROZEfC7seMLi8h1Ow" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_frGiIBOZEfC7seMLi8h1Ow" tag="package filter" value=""/>
+    <taggedValue xmi:id="_frHwQBOZEfC7seMLi8h1Ow" tag="Status" value=""/>
+    <taggedValue xmi:id="_frHwQROZEfC7seMLi8h1Ow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_frHwQhOZEfC7seMLi8h1Ow" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_frHwQxOZEfC7seMLi8h1Ow" tag="Description" value=""/>
+    <taggedValue xmi:id="_frHwRBOZEfC7seMLi8h1Ow" tag="Author" value=""/>
+    <taggedValue xmi:id="_frHwRROZEfC7seMLi8h1Ow" tag="otherParameter"/>
+    <taggedValue xmi:id="_fsxWEBOZEfC7seMLi8h1Ow" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_fsxWEROZEfC7seMLi8h1Ow" tag="DB ProductVersion" value="14.12"/>
+    <taggedValue xmi:id="_fsx9IBOZEfC7seMLi8h1Ow" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <cdcConns xmi:id="_oo-moBOaEfC7seMLi8h1Ow">
+      <cdcTypes xmi:id="_oo-moROaEfC7seMLi8h1Ow" linkDB="_iX3qYBOZEfC7seMLi8h1Ow" cdcConnection="_oo-moBOaEfC7seMLi8h1Ow">
+        <subscribers xmi:id="_oo_NsBOaEfC7seMLi8h1Ow" name="TSUBSCRIBERS" id="_oo-mohOaEfC7seMLi8h1Ow" label="TSUBSCRIBERS" system="true">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oo_NsROaEfC7seMLi8h1Ow" name="TALEND_CDC_TABLE_TO_WATCH" label="TALEND_CDC_TABLE_TO_WATCH" length="35" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oo_NshOaEfC7seMLi8h1Ow" name="TALEND_CDC_SUBSCRIBER_NAME" label="TALEND_CDC_SUBSCRIBER_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oo_NsxOaEfC7seMLi8h1Ow" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date" nullable="false"/>
+        </subscribers>
+      </cdcTypes>
+    </cdcConns>
+    <parameters xmi:id="_fpOS0hOZEfC7seMLi8h1Ow" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_fuvE8BOZEfC7seMLi8h1Ow" name="Jay_Demo" dataManager="_fpOS0BOZEfC7seMLi8h1Ow">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_fuvE8ROZEfC7seMLi8h1Ow" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
