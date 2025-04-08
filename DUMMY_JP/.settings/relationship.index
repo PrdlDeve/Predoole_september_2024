@@ -15,6 +15,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_E7xI8BRuEfCB-PfziSPupA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw - TCDC_customers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_pA0scBN6EfC7seMLi8h1Ow",
     "version" : "0.1",
     "type" : "job"
