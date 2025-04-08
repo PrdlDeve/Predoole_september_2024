@@ -27,6 +27,10 @@
     "id" : "_svZu0BOtEfCz8daMD9Xuvw - TCDC_customers",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw - TSUBSCRIBERS",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
