@@ -17,7 +17,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_fuvE8BOZEfC7seMLi8h1Ow" name="Jay_Demo" dataManager="_swtWYBOtEfCz8daMD9Xuvw">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_fuvE8ROZEfC7seMLi8h1Ow" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_gyw9sBOtEfCz8daMD9Xuvw" name="customers" id="_gyqQABOtEfCz8daMD9Xuvw" label="customers" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_gyw9sBOtEfCz8daMD9Xuvw" name="customers" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_gyqQABOtEfCz8daMD9Xuvw" label="customers" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_gyw9sROtEfCz8daMD9Xuvw" name="customerid" label="customerid" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_gyw9shOtEfCz8daMD9Xuvw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_gyw9sxOtEfCz8daMD9Xuvw" language="COLUMN_DEF"/>
