@@ -59,7 +59,7 @@
           <sqlDataType xmi:id="_gyw90BOtEfCz8daMD9Xuvw" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_g1IVMBOtEfCz8daMD9Xuvw" name="products" id="_g1HuIBOtEfCz8daMD9Xuvw" label="products" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_g1IVMBOtEfCz8daMD9Xuvw" name="products" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_g1HuIBOtEfCz8daMD9Xuvw" label="products" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_g1IVMROtEfCz8daMD9Xuvw" name="id" label="id" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_g1IVMhOtEfCz8daMD9Xuvw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_g1IVMxOtEfCz8daMD9Xuvw" language="COLUMN_DEF"/>
