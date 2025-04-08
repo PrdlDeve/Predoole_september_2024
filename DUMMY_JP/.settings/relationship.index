@@ -24,6 +24,10 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow - products",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_svZu0BOtEfCz8daMD9Xuvw - TCDC_customers",
     "version" : "Latest",
     "type" : "schema"
