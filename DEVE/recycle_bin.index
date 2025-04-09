@@ -2,8 +2,6 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/fileXml/Mp_file</deletedFolders>
   <deletedFolders>metadata/snowflake/Banking_Flows</deletedFolders>
-  <deletedFolders>process/Task_MP/Melita</deletedFolders>
-  <deletedFolders>process/Task_MP/Melita/Usecase</deletedFolders>
   <deletedItems id="_CeiFkO0eEe-UfIira7eLtQ" path="" type="CONTEXT"/>
   <deletedItems id="_GN7NoO0MEe-Y7IfYbzqRpg" path="" type="CONTEXT"/>
   <deletedItems id="_2K-lYKASEe-JBZfbH7w5OQ" path="" type="PROCESS"/>
