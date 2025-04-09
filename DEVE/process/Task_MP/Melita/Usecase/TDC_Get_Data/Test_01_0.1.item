@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" name="EntityId" prompt="EntityId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8GovYP40Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="EntityDisplayType" prompt="EntityDisplayType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8GovYf40Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="ConfigurationContentId" prompt="ConfigurationContentId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8GovYv40Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="ConfigurationContentName" prompt="ConfigurationContentName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8GovY_40Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="ConfigurationContentPath" prompt="ConfigurationContentPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_8GovZP40Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="ConfigurationParentFolderId" prompt="ConfigurationParentFolderId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Q9Zi4P41Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="Name" prompt="Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Q9Zi4f41Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="NativeType" prompt="NativeType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Q9Zi4v41Ee-h_Z3iTaMBDA"/>
-    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_Q9Zi4_41Ee-h_Z3iTaMBDA"/>
-  </context>
+  <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="120" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -109,10 +99,10 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="40" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/mel&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhoost:8088/mel/&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="getDataAccess" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
@@ -127,7 +117,7 @@
     <elementParameter field="CLOSED_LIST" name="JWT_KEYSTORE_TYPE" value="JKS" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_URL" value="" show="false"/>
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:A9wWqnbGhNC6xo6g1D6XCu4ciygqo6hK6ooaQlze" show="false"/>
+    <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:YyAI9lYbrxhY5+m+dR5YIm32cdJ41UxokVLWVRCq" show="false"/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="" show="false"/>
     <elementParameter field="TEXT" name="JWT_AUDIENCE" value="" show="false"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -151,14 +141,14 @@
     </metadata>
     <metadata connector="FLOW" label="getDataAccess" name="getDataAccess"/>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="160">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="// Retrieve the full request URL from the globalMap&#xA;String fullUrl = (String) globalMap.get(&quot;tRESTRequest_1_URI_REQUEST&quot;);&#xA;System.out.println(&quot;Full URL: &quot; + fullUrl);&#xA;&#xA;// Check if the URL contains a query string&#xA;if (fullUrl != null &amp;&amp; fullUrl.contains(&quot;?&quot;)) {&#xA;    // Extract the query string (everything after '?')&#xA;    String queryString = fullUrl.substring(fullUrl.indexOf(&quot;?&quot;) + 1);&#xA;    System.out.println(&quot;Query String: &quot; + queryString);&#xA;&#xA;    // Split the query string into individual key-value pairs&#xA;    String[] params = queryString.split(&quot;&amp;&quot;);&#xA;&#xA;    // Iterate over each parameter and assign to context variables&#xA;    for (String param : params) {&#xA;        String[] keyValue = param.split(&quot;=&quot;);&#xA;        if (keyValue.length == 2) {&#xA;            String key = keyValue[0];&#xA;            // Using fully qualified name for URLDecoder&#xA;            String value = java.net.URLDecoder.decode(keyValue[1], &quot;UTF-8&quot;);&#xA;&#xA;            if (&quot;EntityId&quot;.equals(key)) {&#xA;                context.EntityId = value;&#xA;            } else if (&quot;EntityDisplayType&quot;.equals(key)) {&#xA;                context.EntityDisplayType = value;&#xA;            } else if (&quot;ConfigurationContentId&quot;.equals(key)) {&#xA;                context.ConfigurationContentId = value;&#xA;            } else if (&quot;ConfigurationContentName&quot;.equals(key)) {&#xA;                context.ConfigurationContentName = value;&#xA;            } else if (&quot;ConfigurationContentPath&quot;.equals(key)) {&#xA;                context.ConfigurationContentPath = value;&#xA;            } else if (&quot;ConfigurationParentFolderId&quot;.equals(key)) {&#xA;                context.ConfigurationParentFolderId = value;&#xA;            } else if (&quot;Name&quot;.equals(key)) {&#xA;                context.Name = value;&#xA;            } else if (&quot;NativeType&quot;.equals(key)) {&#xA;                context.NativeType = value;&#xA;            } else if (&quot;UserName&quot;.equals(key)) {&#xA;                context.UserName = value;&#xA;            }&#xA;        }&#xA;    }&#xA;} else {&#xA;    System.out.println(&quot;No query string found in the URL.&quot;);&#xA;}&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="getDataAccess" name="tJavaRow_1"/>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="160">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
@@ -168,7 +158,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE"/>
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE"/>
       <outputTrees name="sendRequest">
         <nodes name="body" expression="" type="id_Document" xpath="sendRequest/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="response" expression="" type="id_String" xpath="sendRequest.body:/response" main="true">
@@ -192,7 +182,7 @@
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
     <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
@@ -200,11 +190,11 @@
     <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
     <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTResponse_2">
+    <metadata connector="FLOW" name="tRESTResponse_1">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="80">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="-40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
@@ -218,56 +208,57 @@
     <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="LENGTHS" show="false"/>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tLogRow_1"/>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
-    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
-    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
-    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
-    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
-    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Get_Catalog_Details"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="DEVE:_0QGQcPgfEe-UX9_15D9K1g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTResponse_1">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
   <connection connectorName="FLOW" label="getDataAccess" lineStyle="0" metaname="getDataAccess" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="getDataAccess" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tXMLMap_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="newColumn" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="newColumn2" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="newColumn3" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-      <elementValue elementRef="TRACE_COLUMN" value="newColumn1" id="9"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="sendRequest" lineStyle="0" metaname="sendRequest" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_2">
+  <connection connectorName="FLOW" label="sendRequest" lineStyle="0" metaname="sendRequest" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendRequest" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tRunJob_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
@@ -276,11 +267,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
