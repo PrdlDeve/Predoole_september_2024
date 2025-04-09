@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Apr_2025/Use_Case</deletedFolders>
+  <deletedFolders>process/Apr_2025/Use_Case/CSV_File_Generation_based_on_column_values</deletedFolders>
   <deletedItems id="_863-EBOQEfC7seMLi8h1Ow" path="Apr_2025" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_b--S0BOSEfC7seMLi8h1Ow" path="Apr_2025" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_svZu0BOtEfCz8daMD9Xuvw" path="Apr_2025" type="METADATA_CONNECTIONS"/>
