@@ -141,13 +141,6 @@
     </metadata>
     <metadata connector="FLOW" label="getDataAccess" name="getDataAccess"/>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// Retrieve the full request URL from the globalMap&#xA;String fullUrl = (String) globalMap.get(&quot;tRESTRequest_1_URI_REQUEST&quot;);&#xA;System.out.println(&quot;Full URL: &quot; + fullUrl);&#xA;&#xA;// Check if the URL contains a query string&#xA;if (fullUrl != null &amp;&amp; fullUrl.contains(&quot;?&quot;)) {&#xA;    // Extract the query string (everything after '?')&#xA;    String queryString = fullUrl.substring(fullUrl.indexOf(&quot;?&quot;) + 1);&#xA;    System.out.println(&quot;Query String: &quot; + queryString);&#xA;&#xA;    // Split the query string into individual key-value pairs&#xA;    String[] params = queryString.split(&quot;&amp;&quot;);&#xA;&#xA;    // Iterate over each parameter and assign to context variables&#xA;    for (String param : params) {&#xA;        String[] keyValue = param.split(&quot;=&quot;);&#xA;        if (keyValue.length == 2) {&#xA;            String key = keyValue[0];&#xA;            // Using fully qualified name for URLDecoder&#xA;            String value = java.net.URLDecoder.decode(keyValue[1], &quot;UTF-8&quot;);&#xA;&#xA;            if (&quot;EntityId&quot;.equals(key)) {&#xA;                context.EntityId = value;&#xA;            } else if (&quot;EntityDisplayType&quot;.equals(key)) {&#xA;                context.EntityDisplayType = value;&#xA;            } else if (&quot;ConfigurationContentId&quot;.equals(key)) {&#xA;                context.ConfigurationContentId = value;&#xA;            } else if (&quot;ConfigurationContentName&quot;.equals(key)) {&#xA;                context.ConfigurationContentName = value;&#xA;            } else if (&quot;ConfigurationContentPath&quot;.equals(key)) {&#xA;                context.ConfigurationContentPath = value;&#xA;            } else if (&quot;ConfigurationParentFolderId&quot;.equals(key)) {&#xA;                context.ConfigurationParentFolderId = value;&#xA;            } else if (&quot;Name&quot;.equals(key)) {&#xA;                context.Name = value;&#xA;            } else if (&quot;NativeType&quot;.equals(key)) {&#xA;                context.NativeType = value;&#xA;            } else if (&quot;UserName&quot;.equals(key)) {&#xA;                context.UserName = value;&#xA;            }&#xA;        }&#xA;    }&#xA;} else {&#xA;    System.out.println(&quot;No query string found in the URL.&quot;);&#xA;}&#xA;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="getDataAccess" name="tJavaRow_1"/>
-  </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -158,7 +151,6 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE"/>
       <outputTrees name="sendRequest">
         <nodes name="body" expression="" type="id_Document" xpath="sendRequest/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="response" expression="" type="id_String" xpath="sendRequest.body:/response" main="true">
@@ -243,13 +235,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <connection connectorName="FLOW" label="getDataAccess" lineStyle="0" metaname="getDataAccess" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tJavaRow_1">
+  <connection connectorName="FLOW" label="getDataAccess" lineStyle="0" metaname="getDataAccess" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="getDataAccess" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tXMLMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="sendRequest" lineStyle="0" metaname="sendRequest" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
