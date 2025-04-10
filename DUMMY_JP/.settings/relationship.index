@@ -1,0 +1,96 @@
+[ {
+  "baseItem" : {
+    "id" : "_3gtOoBREEfCB-PfziSPupA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_9z_yoBQ5EfCB-PfziSPupA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_E7xI8BRuEfCB-PfziSPupA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow - products",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw - TCDC_customers",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw - TSUBSCRIBERS",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_SbxC4BRxEfCB-PfziSPupA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_obInwBRyEfCB-PfziSPupA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow - customers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_hHoIcBRzEfCB-PfziSPupA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_obInwBRyEfCB-PfziSPupA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_svZu0BOtEfCz8daMD9Xuvw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow - customers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_pA0scBN6EfC7seMLi8h1Ow",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_9z_yoBQ5EfCB-PfziSPupA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_GX3jUBOZEfC7seMLi8h1Ow - customers",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
