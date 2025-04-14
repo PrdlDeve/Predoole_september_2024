@@ -9,4 +9,5 @@
   <taggedValue xmi:id="_AAHcNBktEfC1ZeQjciH7bA" tag="Author" value=""/>
   <taggedValue xmi:id="_AAHcNRktEfC1ZeQjciH7bA" tag="otherParameter"/>
   <parameters xmi:id="__-wKQhksEfC1ZeQjciH7bA" key="CONN_PARA_KEY_USERNAME" value="QDI4"/>
+  <parameters xmi:id="_fCjkEBkuEfCUOtCdIgoshQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
 </TalendMetadata:DatabaseConnection>
