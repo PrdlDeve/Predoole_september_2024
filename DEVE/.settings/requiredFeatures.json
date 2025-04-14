@@ -130,9 +130,9 @@
   }, {
     "id" : "org.talend.studio.components.tck.cyberarkrest.connector.feature.feature.group"
   }, {
-    "id" : "org.talend.studio.components.tck.google.analytics.feature.feature.group"
-  }, {
     "id" : "org.talend.studio.components.tck.google.analytics4.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tck.hadoopcluster.feature.feature.group"
   }, {
     "id" : "org.talend.studio.components.tck.httpclient.connector.feature.feature.group"
   }, {

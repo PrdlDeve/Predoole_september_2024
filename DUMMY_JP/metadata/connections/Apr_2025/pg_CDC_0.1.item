@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_SsKKABOaEfC7seMLi8h1Ow" name="pg_CDC" id="_iX3qYBOZEfC7seMLi8h1Ow" label="pg_CDC" dataPackage="_vl7jsBkWEfC0Cbx7j8y_2A" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://98.70.31.45:5432/Jay_Demo?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:UFcHzX8llmJt3rZn/Q3OcjeVRWXx/2JqfS/GQopUyj+hbyGym7vjUb8=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="Jay_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="cdc" supportNLS="false">
+    <taggedValue xmi:id="_SsKKAROaEfC7seMLi8h1Ow" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_SunoIBOaEfC7seMLi8h1Ow" tag="package filter" value=""/>
+    <taggedValue xmi:id="_SuoPMBOaEfC7seMLi8h1Ow" tag="Status" value=""/>
+    <taggedValue xmi:id="_SuoPMROaEfC7seMLi8h1Ow" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_SuoPMhOaEfC7seMLi8h1Ow" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_SuoPMxOaEfC7seMLi8h1Ow" tag="Description" value=""/>
+    <taggedValue xmi:id="_SuoPNBOaEfC7seMLi8h1Ow" tag="Author" value=""/>
+    <taggedValue xmi:id="_SuoPNROaEfC7seMLi8h1Ow" tag="otherParameter"/>
+    <taggedValue xmi:id="_SwmlIBOaEfC7seMLi8h1Ow" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_SwmlIROaEfC7seMLi8h1Ow" tag="DB ProductVersion" value="17.4"/>
+    <taggedValue xmi:id="_SwmlIhOaEfC7seMLi8h1Ow" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_SsKKAhOaEfC7seMLi8h1Ow" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+    <parameters xmi:id="_zDDcwBkUEfC0Cbx7j8y_2A" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_vl7jsBkWEfC0Cbx7j8y_2A" name="Jay_Demo" dataManager="_SsKKABOaEfC7seMLi8h1Ow">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_vl7jsRkWEfC0Cbx7j8y_2A" name="cdc"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

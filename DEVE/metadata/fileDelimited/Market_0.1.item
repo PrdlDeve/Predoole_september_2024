@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_5YJU4AQ_EfCuCcbaUqxi6g" name="Market" dataPackage="_5YM_QAQ_EfCuCcbaUqxi6g" Server="Localhost 127.0.0.1" FilePath="D:/customers.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_5YM_QAQ_EfCuCcbaUqxi6g" name="default" dataManager="_5YJU4AQ_EfCuCcbaUqxi6g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5YM_QQQ_EfCuCcbaUqxi6g" id="_lyC4AAQ_EfCuCcbaUqxi6g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_QgQ_EfCuCcbaUqxi6g" label="customer_id" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_QwQ_EfCuCcbaUqxi6g" label="first_name" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_RAQ_EfCuCcbaUqxi6g" label="last_name" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_RQQ_EfCuCcbaUqxi6g" label="email" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_RgQ_EfCuCcbaUqxi6g" label="phone_number" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_RwQ_EfCuCcbaUqxi6g" label="address_line1" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_SAQ_EfCuCcbaUqxi6g" label="city" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_SQQ_EfCuCcbaUqxi6g" label="state" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_SgQ_EfCuCcbaUqxi6g" label="postal_code" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_SwQ_EfCuCcbaUqxi6g" label="date_of_birth" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_TAQ_EfCuCcbaUqxi6g" label="loyalty_points" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_TQQ_EfCuCcbaUqxi6g" label="last_purchase_date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5YM_TgQ_EfCuCcbaUqxi6g" label="account_creation_date" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
