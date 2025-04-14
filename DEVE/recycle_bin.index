@@ -2,9 +2,15 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/fileXml/Mp_file</deletedFolders>
   <deletedFolders>metadata/snowflake/Banking_Flows</deletedFolders>
+  <deletedFolders>process/Banking_Demo_V2</deletedFolders>
   <deletedItems id="_CeiFkO0eEe-UfIira7eLtQ" path="" type="CONTEXT"/>
   <deletedItems id="_GN7NoO0MEe-Y7IfYbzqRpg" path="" type="CONTEXT"/>
   <deletedItems id="_2K-lYKASEe-JBZfbH7w5OQ" path="" type="PROCESS"/>
+  <deletedItems id="_sW0FMN0yEe-NRMdcn4l3Bw" path="Banking_Demo_V2" type="PROCESS"/>
+  <deletedItems id="_sev5MN0yEe-NRMdcn4l3Bw" path="Banking_Demo_V2" type="PROCESS"/>
+  <deletedItems id="_skJWkN0yEe-NRMdcn4l3Bw" path="Banking_Demo_V2" type="PROCESS"/>
+  <deletedItems id="_snxSUN0yEe-NRMdcn4l3Bw" path="Banking_Demo_V2" type="PROCESS"/>
+  <deletedItems id="_sq9JMN0yEe-NRMdcn4l3Bw" path="Banking_Demo_V2" type="PROCESS"/>
   <deletedItems id="_ZBJNwKDpEe-nCOEa6iie-w" path="SSS" type="PROCESS"/>
   <deletedItems id="_FYXUgLbbEe-WaO-Fbtpk8g" path="Task_MP/API" type="PROCESS"/>
   <deletedItems id="_SFcFkAYjEfCNR6vuhHHYbg" path="" type="repository.metadata.tacokit.jdbc.jdbcdatastore"/>
