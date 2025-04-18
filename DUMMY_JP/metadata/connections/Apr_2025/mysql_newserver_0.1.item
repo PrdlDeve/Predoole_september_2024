@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_H9zLsBqyEfCrvaphAfuOfQ" name="mysql_newserver" id="_69nS4BqxEfCrvaphAfuOfQ" label="mysql_newserver" dataPackage="_II3MMBqyEfCrvaphAfuOfQ" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://98.70.31.45:3306/banking?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MYSQL_8" Port="3306" Username="User1" Password="enc:system.encryption.key.v1:VcxYsozqWdIWG+XMM7U4rjj0YdthA9pKJOHk9qceOjHRUF+qRGJf8co=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="banking" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_H90Z0BqyEfCrvaphAfuOfQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_IAlZ8BqyEfCrvaphAfuOfQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_IA7YMBqyEfCrvaphAfuOfQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_IA7YMRqyEfCrvaphAfuOfQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_IA7YMhqyEfCrvaphAfuOfQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_IA7YMxqyEfCrvaphAfuOfQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_IA7YNBqyEfCrvaphAfuOfQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_IA7YNRqyEfCrvaphAfuOfQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_IFFfcBqyEfCrvaphAfuOfQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_IFFfcRqyEfCrvaphAfuOfQ" tag="DB ProductVersion" value="8.0.32"/>
+    <taggedValue xmi:id="_IFFfchqyEfCrvaphAfuOfQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_H90Z0RqyEfCrvaphAfuOfQ" key="CONN_PARA_KEY_USERNAME" value="User1"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_II3MMBqyEfCrvaphAfuOfQ" name="banking" dataManager="_H9zLsBqyEfCrvaphAfuOfQ"/>
+</xmi:XMI>
