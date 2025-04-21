@@ -57,6 +57,29 @@
             <initialValue xmi:id="_LZnCfB5vEfCrbdHDhZZY3g"/>
           </feature>
         </subscribers>
+        <subscribers xmi:id="_EJ-rwR6XEfCT7KcWzHeW2w" name="TCDC_Dummy" id="_EJ-EsB6XEfCT7KcWzHeW2w" label="TCDC_Dummy">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rwh6XEfCT7KcWzHeW2w" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rwx6XEfCT7KcWzHeW2w" name="TALEND_CDC_STATE" label="TALEND_CDC_STATE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rxB6XEfCT7KcWzHeW2w" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rxR6XEfCT7KcWzHeW2w" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rxh6XEfCT7KcWzHeW2w" name="ID" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
+            <initialValue xmi:id="_EJ-rxx6XEfCT7KcWzHeW2w"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_EJ-ryB6XEfCT7KcWzHeW2w" name="TCDC_VIEW_Dummy" id="_EJ-rwB6XEfCT7KcWzHeW2w" label="TCDC_VIEW_Dummy">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-ryR6XEfCT7KcWzHeW2w" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-ryh6XEfCT7KcWzHeW2w" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-ryx6XEfCT7KcWzHeW2w" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rzB6XEfCT7KcWzHeW2w" name="ID" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
+            <initialValue xmi:id="_EJ-rzR6XEfCT7KcWzHeW2w"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-rzh6XEfCT7KcWzHeW2w" name="Name" label="Name" length="40" sourceType="BPCHAR" talendType="id_String">
+            <initialValue xmi:id="_EJ-rzx6XEfCT7KcWzHeW2w"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EJ-r0B6XEfCT7KcWzHeW2w" name="Salary" label="Salary" length="10" sourceType="INT4" talendType="id_Integer">
+            <initialValue xmi:id="_EJ-r0R6XEfCT7KcWzHeW2w"/>
+          </feature>
+        </subscribers>
       </cdcTypes>
     </cdcConns>
     <parameters xmi:id="_mSmTgh5uEfCrbdHDhZZY3g" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
@@ -105,7 +128,7 @@
           <sqlDataType xmi:id="_xAOT8B5uEfCrbdHDhZZY3g" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_9t284B6WEfCT7KcWzHeW2w" name="Dummy" id="_9t1uwB6WEfCT7KcWzHeW2w" label="Dummy" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_9t284B6WEfCT7KcWzHeW2w" name="Dummy" id="_9t1uwB6WEfCT7KcWzHeW2w" label="Dummy" tableType="TABLE" attachedCDC="true" activatedCDC="true">
         <feature xsi:type="relational:TdColumn" xmi:id="_9t284R6WEfCT7KcWzHeW2w" name="ID" label="ID" length="10" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
           <taggedValue xmi:id="_9t284h6WEfCT7KcWzHeW2w" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_9t284x6WEfCT7KcWzHeW2w" language="COLUMN_DEF"/>
