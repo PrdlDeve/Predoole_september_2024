@@ -577,6 +577,33 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_Wbzi8CpAEfCsibudtbSKtg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_19f7ACozEfCsibudtbSKtg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_qDS2ACo3EfCsibudtbSKtg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_19f7ACozEfCsibudtbSKtg - products",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_19f7ACozEfCsibudtbSKtg - sales_raw",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_19f7ACozEfCsibudtbSKtg - stores",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_XfziMKC6Ee-Nee7K9MFJsQ",
     "version" : "2.7",
     "type" : "job"
