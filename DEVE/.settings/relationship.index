@@ -1158,6 +1158,14 @@
     "id" : "_19f7ACozEfCsibudtbSKtg",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_19f7ACozEfCsibudtbSKtg - products",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_19f7ACozEfCsibudtbSKtg - stores",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
