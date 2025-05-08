@@ -1150,6 +1150,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_v3EOgCvDEfC48bpVjmKbcg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_19f7ACozEfCsibudtbSKtg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_19f7ACozEfCsibudtbSKtg - sales_raw",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_wA7u8MZnEe-vSrnAX_1txQ",
     "version" : "0.16",
     "type" : "job"
