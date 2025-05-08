@@ -1158,10 +1158,6 @@
     "id" : "_19f7ACozEfCsibudtbSKtg",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_19f7ACozEfCsibudtbSKtg - sales_raw",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
