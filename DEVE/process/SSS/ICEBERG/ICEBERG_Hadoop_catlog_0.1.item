@@ -3,6 +3,8 @@
   <context confirmationNeeded="false" hide="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -97,4 +99,100 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
+  <node componentName="tIcebergTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergTable_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tIcebergConnection_1"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;myTable&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_TABLE"/>
+    <elementParameter field="CLOSED_LIST" name="ALTER_TABLE_ACTION" value="ADD_COLUMNS" show="false"/>
+    <elementParameter field="TABLE" name="NEW_PARTITIONS" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_LIKE" value="false"/>
+    <elementParameter field="CHECK" name="CREATE_AS_SELECT" value="false"/>
+    <elementParameter field="CHECK" name="PURGE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TABLE" value="&quot;sourceTable&quot;" show="false"/>
+    <elementParameter field="MEMO" name="AS_SELECT_QUERY" value="&quot;SELECT * FROM sourceTable&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FORMAT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="FORMAT" value="AVRO"/>
+    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
+    <elementParameter field="CHECK" name="SET_PARTITIONS" value="false"/>
+    <elementParameter field="CHECK" name="SET_CATALOG" value="true"/>
+    <elementParameter field="TEXT" name="CATALOG" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SET_LOCATION" value="false"/>
+    <elementParameter field="TEXT" name="LOCATION" value="&quot;scheme://location/path&quot;" show="false"/>
+    <elementParameter field="TABLE" name="TABLE_PROPERTIES"/>
+    <elementParameter field="TABLE" name="COLUMN_MAPPING" show="false"/>
+    <elementParameter field="TEXT" name="BRANCH" value="&quot;mybranch&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="BRANCH_ORIGIN" value="USING_DEFAULT_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="BRANCH_ORIGIN_SNAPSHOT_ID" value="&quot;12345&quot;" show="false"/>
+    <elementParameter field="TEXT" name="BRANCH_ORIGIN_SYSTEM_TIME" value="&quot;2024-01-01 00:00:00.000 Etc/UTC&quot;" show="false"/>
+    <elementParameter field="TEXT" name="BRANCH_ORIGIN_TAG" value="&quot;myTag&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_BRANCH_RETENTION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="BRANCH_RETENTION" value="10" show="false"/>
+    <elementParameter field="TEXT" name="TAG" value="&quot;mytag&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TAG_ORIGIN" value="USING_DEFAULT_PROPERTIES" show="false"/>
+    <elementParameter field="TEXT" name="TAG_ORIGIN_SNAPSHOT_ID" value="&quot;XXXXX&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TAG_ORIGIN_SYSTEM_TIME" value="&quot;2024-01-01 00:00:00.000 Etc/UTC&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tIcebergTable_1"/>
+    <metadata connector="FLOW" name="tIcebergTable_1"/>
+    <metadata connector="FLOW" name="tIcebergTable_1"/>
+    <metadata connector="PARTITIONS" name="PARTITIONS"/>
+  </node>
+  <node componentName="tIcebergOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tIcebergConnection_1"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;TTT&quot;"/>
+    <elementParameter field="CHECK" name="USE_BATCH" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10" show="false"/>
+    <elementParameter field="CHECK" name="USE_INSERT_OVERWRITE" value="false"/>
+    <elementParameter field="RADIO" name="ALL_ROWS_FROM_SOURCE_TABLE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_A_CUSTOM_QUERY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TABLE_NAME" value="&quot;mySourceTable&quot;" show="false"/>
+    <elementParameter field="MEMO" name="CUSTOM_QUERY" value="&quot;SELECT * FROM source&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tIcebergOutput_1"/>
+  </node>
+  <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:hive2://&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;user&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:9xYEHA0KCvf683/RLSZwn9eHJvByCE9itNm2ouvP"/>
+    <elementParameter field="TABLE" name="JDBC_DRIVER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tIcebergCatalog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergCatalog_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tIcebergConnection_1"/>
+    <elementParameter field="TEXT" name="NAME" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPE" value="HADOOP"/>
+    <elementParameter field="TEXT" name="WAREHOUSE_PATH" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_URI" value="&quot;thrift://example.com:9083&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_POOL_SIZE" value="2" show="false"/>
+    <elementParameter field="TEXT" name="IMPLEMENTATION" value="&quot;org.company.MyCatalog&quot;" show="false"/>
+    <elementParameter field="TABLE" name="CATALOG_PROPERTIES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergTable_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergOutput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergCatalog_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
 </talendfile:ProcessType>
