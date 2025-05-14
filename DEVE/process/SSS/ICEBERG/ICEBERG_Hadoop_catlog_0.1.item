@@ -135,8 +135,6 @@
     <elementParameter field="TEXT" name="TAG_ORIGIN_SYSTEM_TIME" value="&quot;2024-01-01 00:00:00.000 Etc/UTC&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tIcebergTable_1"/>
-    <metadata connector="FLOW" name="tIcebergTable_1"/>
-    <metadata connector="FLOW" name="tIcebergTable_1"/>
     <metadata connector="PARTITIONS" name="PARTITIONS"/>
   </node>
   <node componentName="tIcebergOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="80">
@@ -156,10 +154,12 @@
   </node>
   <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:hive2://&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;user&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:9xYEHA0KCvf683/RLSZwn9eHJvByCE9itNm2ouvP"/>
-    <elementParameter field="TABLE" name="JDBC_DRIVER"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jjdbc:mysql://192.168.50.226:3306/spark_metastore&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;spark&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:C+fU7Yuql/B+T7mB0iGLSCX1y39U+y8cYsW4XHJd/YFWjzX/zUJJppIJgw=="/>
+    <elementParameter field="TABLE" name="JDBC_DRIVER">
+      <elementValue elementRef="JAR_NAME" value="mvn:com.mysql/mysql-connector-j/8.0.33/jar" id="0"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tIcebergCatalog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="40">
