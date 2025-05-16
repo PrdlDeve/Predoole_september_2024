@@ -25,7 +25,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_NBjGMDIbEfCsJKXCyWmFNw" name="Jay_Demo" dataManager="_M2UGkDIbEfCsJKXCyWmFNw">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_NBjGMTIbEfCsJKXCyWmFNw" name="fl">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_dqUPQDIbEfCsJKXCyWmFNw" name="Dummy" id="_dqRL8DIbEfCsJKXCyWmFNw" label="Dummy" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_dqUPQDIbEfCsJKXCyWmFNw" name="Dummy" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_dqRL8DIbEfCsJKXCyWmFNw" label="Dummy" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_dqUPQTIbEfCsJKXCyWmFNw" name="ID" label="ID" length="10" sourceType="INT4" talendType="id_Integer">
           <taggedValue xmi:id="_dqUPQjIbEfCsJKXCyWmFNw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_dqUPQzIbEfCsJKXCyWmFNw" language="COLUMN_DEF"/>
