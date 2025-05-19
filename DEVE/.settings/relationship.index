@@ -377,6 +377,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_IbthoDCpEfCIgv0vaXypTg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_KOFowDCqEfCIgv0vaXypTg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_JDshkA4hEfCNGPWQR4btOw",
     "version" : "0.1",
     "type" : "job"
