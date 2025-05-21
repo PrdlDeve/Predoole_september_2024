@@ -155,7 +155,7 @@
   <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jjdbc:mysql://192.168.50.226:3306/spark_metastore&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:mysql://192.168.50.226:3306/spark_metastore&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;spark&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:C+fU7Yuql/B+T7mB0iGLSCX1y39U+y8cYsW4XHJd/YFWjzX/zUJJppIJgw=="/>
     <elementParameter field="TABLE" name="JDBC_DRIVER">
@@ -179,13 +179,13 @@
   <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HDFS" value="" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CUSTOM"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_62_x" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="SPARK"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="SPARK_3_4_x"/>
     <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
-    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
     <elementParameter field="LABEL" name="DEPRECATE_NOTE" value="This distribution is deprecated" show="false"/>
     <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
-    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
     <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://74.225.254.153:9000/&quot;"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
     <elementParameter field="CHECK" name="USE_KRB" value="false"/>
@@ -193,7 +193,7 @@
     <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
     <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
     <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;admin&quot;"/>
     <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:YhsXLyq+JyXIszs6ejRAGOYeNeeBUf8+9LJlA6dT" show="false"/>
