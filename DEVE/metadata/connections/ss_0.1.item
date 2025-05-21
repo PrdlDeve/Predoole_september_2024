@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_W8jPdzY8EfCRwvu4-aPrkg" name="ss" id="_VCOQwDY8EfCRwvu4-aPrkg" label="ss" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://localhost:10000/&lt;sid>" dbVersionString="STANDALONE" Port="10000" Username="" ServerName="localhost" SqlSynthax="" StringQuote="" NullChar="" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true" SQLMode="false" supportNLS="false">
+  <taggedValue xmi:id="_W8jPeDY8EfCRwvu4-aPrkg" tag="Is Conn Need Reload" value="true"/>
+  <parameters xmi:id="_W8jPeTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DB_PORT"/>
+  <parameters xmi:id="_W8jPejY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+  <parameters xmi:id="_W8jPezY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="localhost:8030"/>
+  <parameters xmi:id="_W8jPfDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+  <parameters xmi:id="_W8jPfTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://localhost:8020"/>
+  <parameters xmi:id="_W8jPfjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_USERNAME" value=""/>
+  <parameters xmi:id="_W8jPfzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_HS7zEDY4EfCRwvu4-aPrkg"/>
+  <parameters xmi:id="_W8jPgDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value=""/>
+  <parameters xmi:id="_W8jPgTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HBASE_VERSION" value="SPARK_3_4_x"/>
+  <parameters xmi:id="_W8jPgjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="localhost:8032"/>
+  <parameters xmi:id="_W8jPgzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="0.0.0.0:10020"/>
+  <parameters xmi:id="_W8jPhDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_VERSION" value="SPARK_3_4_x"/>
+  <parameters xmi:id="_W8jPhTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+  <parameters xmi:id="_W8jPhjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DB_SERVER" value="localhost"/>
+  <parameters xmi:id="_W8jPhzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_GOOGLE_PROJECT_ID" value=""/>
+  <parameters xmi:id="_W8jPiDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_GOOGLE_CLUSTER_ID" value=""/>
+  <parameters xmi:id="_W8jPiTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
+  <parameters xmi:id="_W8jPijY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_W8jPizY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_PATH_TO_GOOGLE_CREDENTIALS"/>
+  <parameters xmi:id="_W8jPjDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value=""/>
+  <parameters xmi:id="_W8jPjTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_DEFINE_PATH_TO_GOOGLE_CREDENTIALS"/>
+  <parameters xmi:id="_W8jPjjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="SPARK"/>
+  <parameters xmi:id="_W8jPjzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_MAPRDB_VERSION" value="SPARK_3_4_x"/>
+  <parameters xmi:id="_W8jPkDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="SPARK"/>
+  <parameters xmi:id="_W8jPkTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_GOOGLE_REGION" value=""/>
+  <parameters xmi:id="_W8jPkjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_USE_KRB" value="false"/>
+  <parameters xmi:id="_W8jPkzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="SPARK"/>
+  <parameters xmi:id="_W8jPlDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="/user"/>
+  <parameters xmi:id="_W8jPlTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
+  <parameters xmi:id="_W8jPljY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value=""/>
+  <parameters xmi:id="_W8jPlzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DB_PRODUCT" value="HIVE"/>
+  <parameters xmi:id="_W8jPmDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_W8jPmTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SPARK_MODE" value="STANDALONE"/>
+  <parameters xmi:id="_W8jPmjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_GOOGLE_JARS_BUCKET" value=""/>
+  <parameters xmi:id="_W8jPmzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_W8jPnDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  <parameters xmi:id="_W8jPnTY8EfCRwvu4-aPrkg" key="HIVE_HADOOP_VERSION" value="HADOOP3"/>
+  <parameters xmi:id="_W8jPnjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_MODE" value="STANDALONE"/>
+  <parameters xmi:id="_W8jPnzY8EfCRwvu4-aPrkg" key="HIVE_SERVER_VERSION" value="HIVE2"/>
+  <parameters xmi:id="_W8jPoDY8EfCRwvu4-aPrkg" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value=""/>
+  <parameters xmi:id="_W8jPoTY8EfCRwvu4-aPrkg" key="HIVE_AUTHENTICATION_METASTOREURL" value=""/>
+  <parameters xmi:id="_W8jPojY8EfCRwvu4-aPrkg" key="HIVE_AUTHENTICATION_DRIVERCLASS" value=""/>
+  <parameters xmi:id="_W8jPozY8EfCRwvu4-aPrkg" key="HIVE_AUTHENTICATION_USERNAME" value=""/>
+  <parameters xmi:id="_W8jPpDY8EfCRwvu4-aPrkg" key="HIVE_AUTHENTICATION_PASSWORD" value=""/>
+  <parameters xmi:id="_W8jPpTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value=""/>
+  <parameters xmi:id="_W8jPpjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_KEYTAB" value=""/>
+  <parameters xmi:id="_W8jPpzY8EfCRwvu4-aPrkg" key="HIVE_EXECUTION_ENGINE"/>
+  <parameters xmi:id="_W8jPqDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_WEB_HCAT_HOSTNAME" value=""/>
+  <parameters xmi:id="_W8jPqTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_WEB_HCAT_PORT" value=""/>
+  <parameters xmi:id="_W8jPqjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_WEB_HCAT_USERNAME" value=""/>
+  <parameters xmi:id="_W8jPqzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_WEB_HCAT_JOB_RESULT_FOLDER" value=""/>
+  <parameters xmi:id="_W8jPrDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HDI_USERNAME" value=""/>
+  <parameters xmi:id="_W8jPrTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HDI_PASSWORD" value=""/>
+  <parameters xmi:id="_W8jPrjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_AZURE_HOSTNAME" value=""/>
+  <parameters xmi:id="_W8jPrzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_AZURE_CONTAINER" value=""/>
+  <parameters xmi:id="_W8jPsDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_AZURE_USERNAME" value=""/>
+  <parameters xmi:id="_W8jPsTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_AZURE_PASSWORD" value=""/>
+  <parameters xmi:id="_W8jPsjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_AZURE_DEPLOY_BLOB" value=""/>
+  <parameters xmi:id="_W8jPszY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_USE_SSL" value="false"/>
+  <parameters xmi:id="_W8jPtDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_NEED_CLIENT_AUTH" value="false"/>
+  <parameters xmi:id="_W8jPtTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DISABLE_CBC_PROTECTION" value="false"/>
+  <parameters xmi:id="_W8jPtjY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+  <parameters xmi:id="_W8jPtzY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+  <parameters xmi:id="_W8jPuDY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SSL_KEY_STORE_PATH" value=""/>
+  <parameters xmi:id="_W8jPuTY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SSL_KEY_STORE_PASSWORD" value=""/>
+  <parameters xmi:id="_W8jPujY8EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HIVE_THRIFTPORT" value="9083"/>
+</TalendMetadata:DatabaseConnection>
