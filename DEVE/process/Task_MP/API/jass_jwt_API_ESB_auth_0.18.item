@@ -106,30 +106,30 @@
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/jass_jwt&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="get_movies"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/movies&quot;"/>
-      <elementValue elementRef="CONSUMES" value=""/>
-      <elementValue elementRef="PRODUCES" value="XML"/>
-      <elementValue elementRef="STREAMING" value=""/>
-      <elementValue elementRef="SCHEMA" value="post_movies"/>
-      <elementValue elementRef="HTTP_VERB" value="POST"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/movies&quot;"/>
-      <elementValue elementRef="CONSUMES" value="XML"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
-      <elementValue elementRef="SCHEMA" value="put_movies"/>
-      <elementValue elementRef="HTTP_VERB" value="PUT"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/movies&quot;"/>
-      <elementValue elementRef="CONSUMES" value="XML"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
-      <elementValue elementRef="SCHEMA" value="Delete_movies"/>
-      <elementValue elementRef="HTTP_VERB" value="DELETE"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/movies/{id}&quot;"/>
-      <elementValue elementRef="CONSUMES" value="JSON"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
+      <elementValue elementRef="SCHEMA" value="get_movies" id="0"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/movies&quot;" id="2"/>
+      <elementValue elementRef="CONSUMES" value="" id="3"/>
+      <elementValue elementRef="PRODUCES" value="XML" id="4"/>
+      <elementValue elementRef="STREAMING" value="" id="5"/>
+      <elementValue elementRef="SCHEMA" value="post_movies" id="6"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" id="7"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/movies&quot;" id="8"/>
+      <elementValue elementRef="CONSUMES" value="XML" id="9"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="10"/>
+      <elementValue elementRef="STREAMING" value="" id="11"/>
+      <elementValue elementRef="SCHEMA" value="put_movies" id="12"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" id="13"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/movies&quot;" id="14"/>
+      <elementValue elementRef="CONSUMES" value="XML" id="15"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="16"/>
+      <elementValue elementRef="STREAMING" value="" id="17"/>
+      <elementValue elementRef="SCHEMA" value="Delete_movies" id="18"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" id="19"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/movies/{id}&quot;" id="20"/>
+      <elementValue elementRef="CONSUMES" value="JSON" id="21"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="22"/>
+      <elementValue elementRef="STREAMING" value="" id="23"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="JWT"/>
@@ -139,7 +139,7 @@
     <elementParameter field="FILE" name="JWT_KEYSTORE_FILE" value="&quot;/opt/Talend-8.0.1/runtime/etc/keystores/stsstore.jks&quot;"/>
     <elementParameter field="PASSWORD" name="JWT_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:cLKjTQ/0xtney+HbxyFiSg5pg1gjlGt+zSo3c72X8hP6iqvi32M="/>
     <elementParameter field="TEXT" name="JWT_KEYSTORE_ALIAS" value="&quot;mystskey&quot;"/>
-    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;http://192.168.1.133:8040/services/jass_jwt&quot;"/>
+    <elementParameter field="TEXT" name="JWT_AUDIENCE" value="&quot;http://192.168.1.163:8040/services/jass_jwt&quot;"/>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;movie_of_API_ESB_auth&quot;" show="false"/>
@@ -152,10 +152,10 @@
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
     <elementParameter field="TABLE" name="JAXRS_PROPS">
-      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.signature.algorithm&quot;"/>
-      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;RS256&quot;"/>
-      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.accept.public.key&quot;"/>
-      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;true&quot;"/>
+      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.signature.algorithm&quot;" id="0"/>
+      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;RS256&quot;" id="1"/>
+      <elementValue elementRef="JAXRS_PROP_NAME" value="&quot;rs.security.accept.public.key&quot;" id="2"/>
+      <elementValue elementRef="JAXRS_PROP_VALUE" value="&quot;true&quot;" id="3"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="movies_mp"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -188,7 +188,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;20.204.123.250&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;98.70.31.45&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
@@ -199,7 +199,7 @@
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;movies&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="REPOSITORY"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select dbo.movies.City,dbo.movies.Region,dbo.movies.director,dbo.movies.movieId,dbo.movies.price,dbo.movies.releaseYear,dbo.movies.title &#xA;from dbo.movies&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -215,20 +215,20 @@
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="director"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="movieId"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="price"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="releaseYear"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
-      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Region" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="director" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movieId" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="price" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="releaseYear" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
