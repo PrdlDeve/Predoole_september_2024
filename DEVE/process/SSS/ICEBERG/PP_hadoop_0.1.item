@@ -102,7 +102,7 @@
   <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:mysql://74.225.254.153:3306/hive_metastore&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;hive&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hive_1&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:RNUZVJthcT41Ia3JjQgk4L93YUYkx5AzIFKdI7Aqm4rhAjPP3wdV10Mt"/>
     <elementParameter field="TABLE" name="JDBC_DRIVER">
       <elementValue elementRef="JAR_NAME" value="mvn:com.mysql/mysql-connector-j/8.0.33/jar" id="0"/>
