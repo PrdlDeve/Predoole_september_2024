@@ -116,17 +116,17 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_TABLE"/>
     <elementParameter field="CLOSED_LIST" name="ALTER_TABLE_ACTION" value="ADD_COLUMNS" show="false"/>
     <elementParameter field="TABLE" name="NEW_PARTITIONS" show="false"/>
-    <elementParameter field="CHECK" name="CREATE_LIKE" value="false"/>
-    <elementParameter field="CHECK" name="CREATE_AS_SELECT" value="false"/>
+    <elementParameter field="CHECK" name="CREATE_LIKE" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_AS_SELECT" value="false" show="false"/>
     <elementParameter field="CHECK" name="PURGE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="SOURCE_TABLE" value="&quot;sourceTable&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE_TABLE" value="&quot;sourceTable_ss&quot;"/>
     <elementParameter field="MEMO" name="AS_SELECT_QUERY" value="&quot;SELECT * FROM sourceTable&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_FORMAT" value="false"/>
     <elementParameter field="CLOSED_LIST" name="FORMAT" value="PARQUET"/>
     <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
     <elementParameter field="CHECK" name="SET_PARTITIONS" value="false"/>
-    <elementParameter field="CHECK" name="SET_CATALOG" value="true"/>
-    <elementParameter field="TEXT" name="CATALOG" value="&quot;location_based_table&quot;"/>
+    <elementParameter field="CHECK" name="SET_CATALOG" value="false"/>
+    <elementParameter field="TEXT" name="CATALOG" value="&quot;location_based_table&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_LOCATION" value="false"/>
     <elementParameter field="TEXT" name="LOCATION" value="&quot;scheme://location/path&quot;" show="false"/>
     <elementParameter field="TABLE" name="TABLE_PROPERTIES"/>
