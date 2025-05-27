@@ -104,9 +104,7 @@
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:mysql://74.225.254.153:3306/hive_metastore&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;hive&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:1tN4INaM2kiMqD5/vzPuYAUvNKJ8BVmG7itOa/jGOhb7IDqHVUxmnqLO"/>
-    <elementParameter field="TABLE" name="JDBC_DRIVER">
-      <elementValue elementRef="JAR_NAME" value="mvn:com.mysql/mysql-connector-j/8.0.33/jar" id="0"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="JDBC_DRIVER"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
@@ -115,6 +113,26 @@
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_2" show="false"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:hive2://&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;user&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:TP4N5souWYzqM7OMXO8IdOfIkFDeaUtBafEJ+60x"/>
+    <elementParameter field="TABLE" name="JDBC_DRIVER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tIcebergCatalog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergCatalog_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tIcebergConnection_1"/>
+    <elementParameter field="TEXT" name="NAME" value="&quot;spark_catlog&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPE" value="HIVE"/>
+    <elementParameter field="TEXT" name="WAREHOUSE_PATH" value="&quot;/usr/hive/warehouse&quot;"/>
+    <elementParameter field="TEXT" name="METASTORE_URI" value="&quot;thrift://74.225.254.153:9083&quot;"/>
+    <elementParameter field="TEXT" name="CLIENT_POOL_SIZE" value="5"/>
+    <elementParameter field="TEXT" name="IMPLEMENTATION" value="&quot;org.company.MyCatalog&quot;" show="false"/>
+    <elementParameter field="TABLE" name="CATALOG_PROPERTIES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tIcebergConnection_1" offsetLabelX="0" offsetLabelY="0" source="tIcebergConnection_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
@@ -126,6 +144,16 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergCatalog_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
