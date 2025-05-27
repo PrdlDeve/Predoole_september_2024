@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendHadoopCluster:HadoopClusterConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmi:id="__2gBQDY4EfCRwvu4-aPrkg" name="Hadoop_cluster_spark" label="Hadoop_cluster_spark" distribution="SPARK" dfVersion="SPARK_3_4_x" useYarn="true" nameNodeURI="hdfs://localhost:8020" jobTrackerURI="localhost:8032" group="" authMode="USERNAME" useSparkProperties="true" rmScheduler="localhost:8030" jobHistory="0.0.0.0:10020" stagingDirectory="/user" useDNHost="true" useCustomConfs="true" preloadAuthentification="true">
+  <parameters xmi:id="__2gBQTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DATABRICKS_ENDPOINT" value="https://westeurope.azuredatabricks.net"/>
+  <parameters xmi:id="__2gBQjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DATABRICKS_CLOUD_PROVIDER" value="AZURE"/>
+  <parameters xmi:id="__2gBQzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DATABRICKS_RUN_MODE" value="CREATE_RUN_JOB"/>
+  <parameters xmi:id="__2gBRDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DATABRICKS_CLUSTER_ID" value=""/>
+  <parameters xmi:id="__2gBRTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DATABRICKS_TOKEN" value=""/>
+  <parameters xmi:id="__2gBRjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_DATABRICKS_DBFS_DEP_FOLDER" value=""/>
+  <parameters xmi:id="__2gBRzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_SUBMIT_MODE" value="SPARK_SUBMIT"/>
+  <parameters xmi:id="__2gBSDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_MASTER" value="k8s://https://0.0.0.0:12345"/>
+  <parameters xmi:id="__2gBSTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_INSTANCES" value="5"/>
+  <parameters xmi:id="__2gBSjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_REGISTRYSECRET" value="registry-secret"/>
+  <parameters xmi:id="__2gBSzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_IMAGE" value="registry:port/image:tag"/>
+  <parameters xmi:id="__2gBTDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_NAMESPACE" value="default"/>
+  <parameters xmi:id="__2gBTTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_SERVICEACCOUNT" value="spark"/>
+  <parameters xmi:id="__2gBTjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_DISTUPLOAD" value="S3"/>
+  <parameters xmi:id="__2gBTzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_S3BUCKET" value=""/>
+  <parameters xmi:id="__2gBUDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_S3FOLDER" value="/path/to/folder"/>
+  <parameters xmi:id="__2gBUTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_S3CREDENTIALS" value="ACCESSANDSECRET"/>
+  <parameters xmi:id="__2gBUjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_S3ACCESSKEY" value=""/>
+  <parameters xmi:id="__2gBUzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_S3SECRETKEY" value=""/>
+  <parameters xmi:id="__2gBVDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_BLOBACCOUNT" value=""/>
+  <parameters xmi:id="__2gBVTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_BLOBCONTAINER" value=""/>
+  <parameters xmi:id="__2gBVjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_BLOBSECRETKEY" value=""/>
+  <parameters xmi:id="__2gBVzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZUREACCOUNT" value=""/>
+  <parameters xmi:id="__2gBWDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZURECREDENTIALS" value="SECRET"/>
+  <parameters xmi:id="__2gBWTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZURECONTAINER" value=""/>
+  <parameters xmi:id="__2gBWjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZURESECRETKEY" value=""/>
+  <parameters xmi:id="__2gBWzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZUREAADKEY" value=""/>
+  <parameters xmi:id="__2gBXDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZUREAADCLIENTID" value=""/>
+  <parameters xmi:id="__2gBXTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_K8S_AZUREAADDIRECTORYID" value=""/>
+  <parameters xmi:id="__2gBXjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_HADOOP_CONF_SPECIFIC_JAR" value=""/>
+  <parameters xmi:id="__2gBXzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_CUSTOM_CLASSPATH" value=""/>
+  <parameters xmi:id="__2gBYDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SET_HADOOP_CONF" value="false"/>
+  <parameters xmi:id="__2gBYTY4EfCRwvu4-aPrkg" key="CLUSTER" value="CONN_PARA_KEY_SPARK_MODE"/>
+  <parameters xmi:id="__2gBYjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_SPARK_MODE" value="STANDALONE"/>
+  <parameters xmi:id="__2gBYzY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_UNIV_STANDALONE_MASTER" value="spark://74.225.254.153:7077"/>
+  <parameters xmi:id="__2gBZDY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_UNIV_STANDALONE_EXEC_MEMORY" value=""/>
+  <parameters xmi:id="__2gBZTY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_UNIV_STANDALONE_EXEC_CORE" value=""/>
+  <parameters xmi:id="__2gBZjY4EfCRwvu4-aPrkg" key="CONN_PARA_KEY_UNIV_STANDALONE_CONFIGURE_EXEC" value="false"/>
+</TalendHadoopCluster:HadoopClusterConnection>

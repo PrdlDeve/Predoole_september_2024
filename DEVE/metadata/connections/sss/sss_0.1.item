@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_CRxNgCs7EfCeAvTudOVKww" name="sss" id="_1Gk-kCs6EfCeAvTudOVKww" label="sss" dataPackage="_CYij4Cs7EfCeAvTudOVKww" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.244.15.185:1433;DatabaseName=SSS;" dbVersionString="MSSQL_PROP" Port="1433" Username="User2" Password="enc:system.encryption.key.v1:HbNF4n2vY2ixAv2RLOdRPVKEEV94/r8L32C2Y30Cdrs9uP4k3tMiEDQ=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="SSS" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_CRxNgSs7EfCeAvTudOVKww" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_CTP0MCs7EfCeAvTudOVKww" tag="package filter" value=""/>
+    <taggedValue xmi:id="_CTUssCs7EfCeAvTudOVKww" tag="Status" value=""/>
+    <taggedValue xmi:id="_CTUssSs7EfCeAvTudOVKww" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_CTUssis7EfCeAvTudOVKww" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_CTUssys7EfCeAvTudOVKww" tag="Description" value=""/>
+    <taggedValue xmi:id="_CTUstCs7EfCeAvTudOVKww" tag="Author" value=""/>
+    <taggedValue xmi:id="_CTUstSs7EfCeAvTudOVKww" tag="otherParameter"/>
+    <taggedValue xmi:id="_CUrXkCs7EfCeAvTudOVKww" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_CUrXkSs7EfCeAvTudOVKww" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_CUrXkis7EfCeAvTudOVKww" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_CRxNgis7EfCeAvTudOVKww" key="CONN_PARA_KEY_USERNAME" value="User2"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_CYij4Cs7EfCeAvTudOVKww" name="SSS" dataManager="_CRxNgCs7EfCeAvTudOVKww">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij4Ss7EfCeAvTudOVKww" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij4is7EfCeAvTudOVKww" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij4ys7EfCeAvTudOVKww" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij5Cs7EfCeAvTudOVKww" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij5Ss7EfCeAvTudOVKww" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij5is7EfCeAvTudOVKww" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij5ys7EfCeAvTudOVKww" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij6Cs7EfCeAvTudOVKww" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij6Ss7EfCeAvTudOVKww" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij6is7EfCeAvTudOVKww" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij6ys7EfCeAvTudOVKww" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij7Cs7EfCeAvTudOVKww" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij7Ss7EfCeAvTudOVKww" name="sys"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij7is7EfCeAvTudOVKww" name="file_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_CYij7ys7EfCeAvTudOVKww" name="USER1"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

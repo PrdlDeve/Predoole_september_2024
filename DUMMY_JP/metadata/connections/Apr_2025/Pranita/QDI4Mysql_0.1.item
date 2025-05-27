@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_1A80sFllEe-zColVVpzJkQ" name="QDI4Mysql" supplierDependency="_5ZocsO3EEe-zx_kbOP0qMw" id="_sD294FllEe-zColVVpzJkQ" label="QDI4Mysql" dataPackage="_DvWSIB5_EfCT7KcWzHeW2w _1eKVIFllEe-zColVVpzJkQ" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://98.70.31.45:3306/test?" dbVersionString="MYSQL_8" Port="3306" Username="User1" Password="enc:system.encryption.key.v1:Aw+RJnPAiSkSqT909ud4xSKI/664airXYWhKhz7RQ/haYKEd3H5lqIQ=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="test" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_1A80sVllEe-zColVVpzJkQ" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_1EvIgFllEe-zColVVpzJkQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_1FUXUFllEe-zColVVpzJkQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_1FUXUVllEe-zColVVpzJkQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_1FUXUlllEe-zColVVpzJkQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_1FUXU1llEe-zColVVpzJkQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_1FUXVFllEe-zColVVpzJkQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_1FUXVVllEe-zColVVpzJkQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_1HHHEFllEe-zColVVpzJkQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_1HHHEVllEe-zColVVpzJkQ" tag="DB ProductVersion" value="8.0.32"/>
+    <taggedValue xmi:id="_1HHHElllEe-zColVVpzJkQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_1A80slllEe-zColVVpzJkQ" key="CONN_PARA_KEY_USERNAME" value="User1"/>
+    <parameters xmi:id="_0iJtAB5vEfCrbdHDhZZY3g" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_DvWSIB5_EfCT7KcWzHeW2w" name="test" dataManager="_1A80sFllEe-zColVVpzJkQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_1eKVIFllEe-zColVVpzJkQ" name="tranning" dataManager="_1A80sFllEe-zColVVpzJkQ">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_5-BLoFllEe-zColVVpzJkQ" name="movies" id="_59eZEFllEe-zColVVpzJkQ" label="movies" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-BysFllEe-zColVVpzJkQ" name="movieID" label="movieID" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-BysVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-ByslllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Bys1llEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-BytFllEe-zColVVpzJkQ" name="title" label="title" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-BytVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-BytlllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Byt1llEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-ByuFllEe-zColVVpzJkQ" name="director" label="director" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-ByuVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-ByulllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Byu1llEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-ByvFllEe-zColVVpzJkQ" name="releaseDate" label="releaseDate" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-ByvVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-ByvlllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Byv1llEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-BywFllEe-zColVVpzJkQ" name="runtime" label="runtime" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_5-BywVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-BywlllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Byw1llEe-zColVVpzJkQ" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-ByxFllEe-zColVVpzJkQ" name="studio" label="studio" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-ByxVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-ByxlllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Byx1llEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-ByyFllEe-zColVVpzJkQ" name="price" label="price" length="22" sourceType="DOUBLE" talendType="id_Double">
+        <taggedValue xmi:id="_5-ByyVllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-ByylllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-Byy1llEe-zColVVpzJkQ" name="DOUBLE" numericPrecisionRadix="10" javaDataType="8" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_5-OnAVllEe-zColVVpzJkQ" name="customers" id="_5-OnAFllEe-zColVVpzJkQ" label="customers" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnAlllEe-zColVVpzJkQ" name="ID" label="ID" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnA1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnBFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnBVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnBlllEe-zColVVpzJkQ" name="NAME" label="NAME" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnB1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnCFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnCVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnClllEe-zColVVpzJkQ" name="LAST_NAME" label="LAST_NAME" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnC1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnDFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnDVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnDlllEe-zColVVpzJkQ" name="EMAIL" label="EMAIL" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnD1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnEFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnEVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnElllEe-zColVVpzJkQ" name="JOB_TITLE" label="JOB_TITLE" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnE1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnFFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnFVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnFlllEe-zColVVpzJkQ" name="CREDITCARDNUMBER" label="CREDITCARDNUMBER" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnF1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnGFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnGVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnGlllEe-zColVVpzJkQ" name="COMPANY" label="COMPANY" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnG1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnHFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnHVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnHlllEe-zColVVpzJkQ" name="CITY" label="CITY" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnH1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnIFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnIVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_5-OnIlllEe-zColVVpzJkQ" name="STATE" label="STATE" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_5-OnI1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_5-OnJFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_5-OnJVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_6DVJcVllEe-zColVVpzJkQ" name="books" id="_6DVJcFllEe-zColVVpzJkQ" label="books" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJclllEe-zColVVpzJkQ" name="bookID" id="bookID" label="bookID" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6DVJc1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJdFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJdVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJdlllEe-zColVVpzJkQ" name="title" id="title" label="title" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6DVJd1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJeFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJeVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJelllEe-zColVVpzJkQ" name="author" id="author" label="author" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6DVJe1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJfFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJfVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJflllEe-zColVVpzJkQ" name="publisher" id="publisher" label="publisher" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6DVJf1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJgFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJgVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJglllEe-zColVVpzJkQ" name="publishDate" id="publishDate" label="publishDate" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6DVJg1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJhFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJhVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJhlllEe-zColVVpzJkQ" name="pages" id="pages" label="pages" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6DVJh1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <taggedValue xmi:id="_jCN5U-3FEe-zx_kbOP0qMw" tag="Content Type" value="Nominal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJiFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJiVllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6DVJilllEe-zColVVpzJkQ" name="price" id="price" label="price" length="22" sourceType="DOUBLE" talendType="id_Double">
+        <taggedValue xmi:id="_6DVJi1llEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6DVJjFllEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6DVJjVllEe-zColVVpzJkQ" name="DOUBLE" numericPrecisionRadix="10" javaDataType="8" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_6ZmUYFllEe-zColVVpzJkQ" name="products" id="_6ZltUFllEe-zColVVpzJkQ" label="products" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_6ZmUYVllEe-zColVVpzJkQ" name="id" label="id" length="10" sourceType="INT" talendType="id_Integer">
+        <taggedValue xmi:id="_6ZmUYlllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6ZmUY1llEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6ZmUZFllEe-zColVVpzJkQ" name="INT" numericPrecisionRadix="10" javaDataType="4" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_6ZmUZVllEe-zColVVpzJkQ" name="Product" label="Product" length="65535" sourceType="TEXT" talendType="id_String">
+        <taggedValue xmi:id="_6ZmUZlllEe-zColVVpzJkQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_6ZmUZ1llEe-zColVVpzJkQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_6ZmUaFllEe-zColVVpzJkQ" name="TEXT" numericPrecisionRadix="10" javaDataType="-1" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFsO3EEe-zx_kbOP0qMw" name="tdq_v_all_run_analysis" label="tdq_v_all_run_analysis" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFse3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_all_run_analysis' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFsu3EEe-zx_kbOP0qMw" name="tdq_v_all_run_match_analysis" label="tdq_v_all_run_match_analysis" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFs-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_all_run_match_analysis' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFtO3EEe-zx_kbOP0qMw" name="tdq_v_all_run_overview_analy" label="tdq_v_all_run_overview_analy" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFte3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_all_run_overview_analy' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFtu3EEe-zx_kbOP0qMw" name="tdq_v_analysis" label="tdq_v_analysis" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFt-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_analysis' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFuO3EEe-zx_kbOP0qMw" name="tdq_v_analyzed_element" label="tdq_v_analyzed_element" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFue3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_analyzed_element' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFuu3EEe-zx_kbOP0qMw" name="tdq_v_ind_histo" label="tdq_v_ind_histo" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFu-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_ind_histo' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFvO3EEe-zx_kbOP0qMw" name="tdq_v_indicator_definition" label="tdq_v_indicator_definition" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFve3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_indicator_definition' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFvu3EEe-zx_kbOP0qMw" name="tdq_v_last_analysis" label="tdq_v_last_analysis" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFv-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_analysis' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFwO3EEe-zx_kbOP0qMw" name="tdq_v_last_analysis_exec" label="tdq_v_last_analysis_exec" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFwe3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_analysis_exec' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFwu3EEe-zx_kbOP0qMw" name="tdq_v_last_analyzed_element" label="tdq_v_last_analyzed_element" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFw-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_analyzed_element' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFxO3EEe-zx_kbOP0qMw" name="tdq_v_last_indicator_def" label="tdq_v_last_indicator_def" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFxe3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_indicator_def' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFxu3EEe-zx_kbOP0qMw" name="tdq_v_last_match_analysis_exec" label="tdq_v_last_match_analysis_exec" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFx-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_match_analysis_exec' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFyO3EEe-zx_kbOP0qMw" name="tdq_v_last_overview_analy_exec" label="tdq_v_last_overview_analy_exec" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFye3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_overview_analy_exec' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFyu3EEe-zx_kbOP0qMw" name="tdq_v_last_run_analysis" label="tdq_v_last_run_analysis" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFy-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_run_analysis' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFzO3EEe-zx_kbOP0qMw" name="tdq_v_last_run_match_analysis" label="tdq_v_last_run_match_analysis" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFze3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_run_match_analysis' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaFzu3EEe-zx_kbOP0qMw" name="tdq_v_last_run_overview_analy" label="tdq_v_last_run_overview_analy" tableType="VIEW">
+      <taggedValue xmi:id="_8vaFz-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_last_run_overview_analy' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaF0O3EEe-zx_kbOP0qMw" name="tdq_v_olap_simpl_indicator" label="tdq_v_olap_simpl_indicator" tableType="VIEW">
+      <taggedValue xmi:id="_8vaF0e3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_olap_simpl_indicator' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaF0u3EEe-zx_kbOP0qMw" name="tdq_v_olap_summary_indicator" label="tdq_v_olap_summary_indicator" tableType="VIEW">
+      <taggedValue xmi:id="_8vaF0-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_olap_summary_indicator' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaF1O3EEe-zx_kbOP0qMw" name="tdq_v_olap_textstat_indicator" label="tdq_v_olap_textstat_indicator" tableType="VIEW">
+      <taggedValue xmi:id="_8vaF1e3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_olap_textstat_indicator' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdView" xmi:id="_8vaF1u3EEe-zx_kbOP0qMw" name="tdq_v_simple_indics" label="tdq_v_simple_indics" tableType="VIEW">
+      <taggedValue xmi:id="_8vaF1-3EEe-zx_kbOP0qMw" tag="Comment" value="View 'tranning.tdq_v_simple_indics' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them"/>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_5ZocsO3EEe-zx_kbOP0qMw" kind="Usage" supplier="_1A80sFllEe-zColVVpzJkQ"/>
+</xmi:XMI>
