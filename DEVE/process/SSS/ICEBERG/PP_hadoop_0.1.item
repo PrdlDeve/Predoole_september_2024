@@ -101,10 +101,12 @@
   </parameters>
   <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:mysql://74.225.254.153:3306/hive_metastore&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;hive&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:mysql://74.225.254.153:3306/metastore&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hiveuser&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:1tN4INaM2kiMqD5/vzPuYAUvNKJ8BVmG7itOa/jGOhb7IDqHVUxmnqLO"/>
-    <elementParameter field="TABLE" name="JDBC_DRIVER"/>
+    <elementParameter field="TABLE" name="JDBC_DRIVER">
+      <elementValue elementRef="JAR_NAME" value="mvn:com.mysql/mysql-connector-j/8.0.33/jar" id="0"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
@@ -116,6 +118,7 @@
   </node>
   <node componentName="tIcebergConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergConnection_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:hive2://&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;user&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:TP4N5souWYzqM7OMXO8IdOfIkFDeaUtBafEJ+60x"/>
@@ -124,6 +127,7 @@
   </node>
   <node componentName="tIcebergCatalog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tIcebergCatalog_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tIcebergConnection_1"/>
     <elementParameter field="TEXT" name="NAME" value="&quot;spark_catlog&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TYPE" value="HIVE"/>
