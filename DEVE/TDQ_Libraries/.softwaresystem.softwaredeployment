@@ -5,4 +5,6 @@
   <softwaredeployment:TdSoftwareSystem xmi:id="_Qsp-MLYVEe-UlNNH1Krl9A" name="MySQL" subtype="MySQL" version="8.0.33"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_s1qfkL3REe-CMdIPiwrwhw" name="Oracle" subtype="Oracle" version="Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production&#xA;Version 19.3.0.0.0"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_NCx1QDIbEfCsJKXCyWmFNw" name="PostgreSQL" subtype="PostgreSQL" version="17.4"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_CzwPQD0NEfCW4KswTRHI7w" name="SparkSQL" subtype="SparkSQL" version="3.1.1"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_C0eA8D0NEfCW4KswTRHI7w" name="MySQL" subtype="MySQL" version="8.0.36"/>
 </xmi:XMI>
