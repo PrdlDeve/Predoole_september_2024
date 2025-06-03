@@ -189,7 +189,7 @@
       <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING" id="1"/>
       <elementValue elementRef="FUNCTION" value="REPLACE_FIRST_CHARS" id="2"/>
       <elementValue elementRef="METHOD" value="AES_CBC_PRF" id="3"/>
-      <elementValue elementRef="ALPHABET" value="BEST_GUESS" id="4"/>
+      <elementValue elementRef="ALPHABET" value="DEFAULT_LATIN" id="4"/>
       <elementValue elementRef="EXTRA_PARAMETER" value="&quot;2&quot;" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="true" id="6"/>
     </elementParameter>
