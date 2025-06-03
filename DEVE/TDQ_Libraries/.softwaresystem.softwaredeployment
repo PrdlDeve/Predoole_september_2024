@@ -7,4 +7,5 @@
   <softwaredeployment:TdSoftwareSystem xmi:id="_NCx1QDIbEfCsJKXCyWmFNw" name="PostgreSQL" subtype="PostgreSQL" version="17.4"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_CzwPQD0NEfCW4KswTRHI7w" name="SparkSQL" subtype="SparkSQL" version="3.1.1"/>
   <softwaredeployment:TdSoftwareSystem xmi:id="_C0eA8D0NEfCW4KswTRHI7w" name="MySQL" subtype="MySQL" version="8.0.36"/>
+  <softwaredeployment:TdSoftwareSystem xmi:id="_MUTEQEA1EfCqstSIzksyQQ" name="MySQL" subtype="MySQL" version="8.0.32"/>
 </xmi:XMI>
