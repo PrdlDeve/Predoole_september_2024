@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_lt-Cl0A1EfCqstSIzksyQQ" name="sql_northwind" id="_P6NbAEA1EfCqstSIzksyQQ" label="sql_northwind" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.244.15.185:1433;DatabaseName=RM_Northwind;" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:Nh7BIHN1sy6Q0ZrOzGj7NporP7P1aLiYHwdbSNI7Qn3+KeNWBR0e8oo=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="RM_Northwind" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
-  <taggedValue xmi:id="_lt-CmEA1EfCqstSIzksyQQ" tag="Is Conn Need Reload" value="true"/>
-  <parameters xmi:id="_lt-CmUA1EfCqstSIzksyQQ" key="CONN_PARA_KEY_USERNAME" value="User1"/>
-</TalendMetadata:DatabaseConnection>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_lt-Cl0A1EfCqstSIzksyQQ" name="sql_northwind" id="_P6NbAEA1EfCqstSIzksyQQ" label="sql_northwind" dataPackage="_l06-0EA1EfCqstSIzksyQQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.244.15.185:1433;DatabaseName=RM_Northwind;" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:Nh7BIHN1sy6Q0ZrOzGj7NporP7P1aLiYHwdbSNI7Qn3+KeNWBR0e8oo=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="RM_Northwind" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+    <taggedValue xmi:id="_lt-CmEA1EfCqstSIzksyQQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_lxEZkEA1EfCqstSIzksyQQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_lxID8EA1EfCqstSIzksyQQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_lxID8UA1EfCqstSIzksyQQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_lxID8kA1EfCqstSIzksyQQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_lxID80A1EfCqstSIzksyQQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_lxID9EA1EfCqstSIzksyQQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_lxIrAEA1EfCqstSIzksyQQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_lzIPEEA1EfCqstSIzksyQQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_lzIPEUA1EfCqstSIzksyQQ" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_lzIPEkA1EfCqstSIzksyQQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_lt-CmUA1EfCqstSIzksyQQ" key="CONN_PARA_KEY_USERNAME" value="User1"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_l06-0EA1EfCqstSIzksyQQ" name="RM_Northwind" dataManager="_lt-Cl0A1EfCqstSIzksyQQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_l06-0UA1EfCqstSIzksyQQ" name="dbo"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
