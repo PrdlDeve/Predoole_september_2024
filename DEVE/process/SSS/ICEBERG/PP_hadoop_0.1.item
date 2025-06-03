@@ -194,20 +194,6 @@
       <elementValue elementRef="ALPHABET" value="DIGITS" id="4"/>
       <elementValue elementRef="EXTRA_PARAMETER" value="4" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="false" id="6"/>
-      <elementValue elementRef="INPUT_COLUMN" value="id" id="7"/>
-      <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING" id="8"/>
-      <elementValue elementRef="FUNCTION" value="SET_TO_NULL" id="9"/>
-      <elementValue elementRef="METHOD" value="EMPTY" id="10"/>
-      <elementValue elementRef="ALPHABET" value="BEST_GUESS" id="11"/>
-      <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="12"/>
-      <elementValue elementRef="KEEP_FORMAT" value="false" id="13"/>
-      <elementValue elementRef="INPUT_COLUMN" value="name" id="14"/>
-      <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING" id="15"/>
-      <elementValue elementRef="FUNCTION" value="REPLACE_ALL" id="16"/>
-      <elementValue elementRef="METHOD" value="RANDOM" id="17"/>
-      <elementValue elementRef="ALPHABET" value="BEST_GUESS" id="18"/>
-      <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="19"/>
-      <elementValue elementRef="KEEP_FORMAT" value="false" id="20"/>
     </elementParameter>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:fbTkUO0qR5rCzpAEl7CWwH0zSOVH5IU4q7ghO/6y"/>
     <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
