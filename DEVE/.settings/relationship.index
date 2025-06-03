@@ -418,11 +418,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_xCEEUEBDEfCAWqAclhAvPw - DPDP",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_O7Q6wKstEe-C04Xv6CW6Ew",
