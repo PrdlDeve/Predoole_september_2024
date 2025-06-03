@@ -186,11 +186,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataMasking_1" show="false"/>
     <elementParameter field="TABLE" name="MODIF_TABLE">
       <elementValue elementRef="INPUT_COLUMN" value="adhar" id="0"/>
-      <elementValue elementRef="CATEGORY" value="CREDIT_CARD_MASKING" id="1"/>
-      <elementValue elementRef="FUNCTION" value="GENERATE_UNIQUE_CREDIT_CARD" id="2"/>
+      <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING" id="1"/>
+      <elementValue elementRef="FUNCTION" value="KEEP_LAST_AND_GENERATE" id="2"/>
       <elementValue elementRef="METHOD" value="AES_CBC_PRF" id="3"/>
-      <elementValue elementRef="ALPHABET" value="" id="4"/>
-      <elementValue elementRef="EXTRA_PARAMETER" value="&quot;4&quot;" id="5"/>
+      <elementValue elementRef="ALPHABET" value="DIGITS" id="4"/>
+      <elementValue elementRef="EXTRA_PARAMETER" value="&quot;&quot;" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="true" id="6"/>
     </elementParameter>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:fbTkUO0qR5rCzpAEl7CWwH0zSOVH5IU4q7ghO/6y"/>
