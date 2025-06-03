@@ -190,7 +190,7 @@
       <elementValue elementRef="FUNCTION" value="REPLACE_FIRST_CHARS" id="2"/>
       <elementValue elementRef="METHOD" value="RANDOM" id="3"/>
       <elementValue elementRef="ALPHABET" value="DIGITS" id="4"/>
-      <elementValue elementRef="EXTRA_PARAMETER" value="4" id="5"/>
+      <elementValue elementRef="EXTRA_PARAMETER" value="&quot;4&quot;" id="5"/>
       <elementValue elementRef="KEEP_FORMAT" value="false" id="6"/>
     </elementParameter>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:fbTkUO0qR5rCzpAEl7CWwH0zSOVH5IU4q7ghO/6y"/>
