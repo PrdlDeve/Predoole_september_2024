@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.schema="http://dataquality.indicators.schema" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmi:id="_BqLq8EA1EfCqstSIzksyQQ" name="test" creationDate="2025-06-03T10:11:28.427+0530">
+  <clientDependency href="../../metadata/connections/Mrunal/test_mp_0.1.item#_BEMB8EA1EfCqstSIzksyQQ"/>
+  <taggedValue xmi:id="_BqLq8UA1EfCqstSIzksyQQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_BqLq8kA1EfCqstSIzksyQQ" tag="Author" value="admin@t.com"/>
+  <taggedValue xmi:id="_BqLq80A1EfCqstSIzksyQQ" tag="Purpose"/>
+  <taggedValue xmi:id="_BqLq9EA1EfCqstSIzksyQQ" tag="Description"/>
+  <taggedValue xmi:id="_BqLq9UA1EfCqstSIzksyQQ" tag="Version" value="0.1"/>
+  <context xmi:id="_BqLq9kA1EfCqstSIzksyQQ">
+    <connection href="../../metadata/connections/Mrunal/test_mp_0.1.item#_4u8QYP8cEe-rC7sQPAsKQQ"/>
+    <analysedElements xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Mrunal/test_mp_0.1.item#_4zVoPv8cEe-rC7sQPAsKQQ"/>
+  </context>
+  <results xmi:id="_BqLq90A1EfCqstSIzksyQQ">
+    <resultMetadata xmi:id="_BqLq-EA1EfCqstSIzksyQQ"/>
+    <indicators xsi:type="dataquality.indicators.schema:SchemaIndicator" xmi:id="_BqLq-UA1EfCqstSIzksyQQ">
+      <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Mrunal/test_mp_0.1.item#_4zVoPv8cEe-rC7sQPAsKQQ"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_BqLq-kA1EfCqstSIzksyQQ" analysisType="Schema Analysis"/>
+</dataquality.analysis:Analysis>
