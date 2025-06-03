@@ -188,10 +188,10 @@
       <elementValue elementRef="INPUT_COLUMN" value="adhar" id="0"/>
       <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING" id="1"/>
       <elementValue elementRef="FUNCTION" value="REPLACE_FIRST_CHARS" id="2"/>
-      <elementValue elementRef="METHOD" value="RANDOM" id="3"/>
+      <elementValue elementRef="METHOD" value="CONSISTENT" id="3"/>
       <elementValue elementRef="ALPHABET" value="DIGITS" id="4"/>
       <elementValue elementRef="EXTRA_PARAMETER" value="&quot;4&quot;" id="5"/>
-      <elementValue elementRef="KEEP_FORMAT" value="false" id="6"/>
+      <elementValue elementRef="KEEP_FORMAT" value="true" id="6"/>
     </elementParameter>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:fbTkUO0qR5rCzpAEl7CWwH0zSOVH5IU4q7ghO/6y"/>
     <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
