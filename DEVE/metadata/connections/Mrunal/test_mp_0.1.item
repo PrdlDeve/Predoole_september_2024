@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_4u8QYP8cEe-rC7sQPAsKQQ" name="test_mp" id="_8QVI8P8bEe-rC7sQPAsKQQ" label="test_mp" dataPackage="_4zVoMP8cEe-rC7sQPAsKQQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.204.123.250:1433;DatabaseName=Banking;" dbVersionString="MSSQL_PROP" Port="1433" Username="megha" Password="enc:system.encryption.key.v1:A7wNXu5MuboSqbjMC77AOaqIJnxjp/bYU2oAUaF4zOGvEjSL08XYvKg=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Banking" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_4u8QYP8cEe-rC7sQPAsKQQ" name="test_mp" supplierDependency="_BEMB8EA1EfCqstSIzksyQQ" id="_8QVI8P8bEe-rC7sQPAsKQQ" label="test_mp" dataPackage="_4zVoMP8cEe-rC7sQPAsKQQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.204.123.250:1433;DatabaseName=Banking;" dbVersionString="MSSQL_PROP" Port="1433" Username="megha" Password="enc:system.encryption.key.v1:A7wNXu5MuboSqbjMC77AOaqIJnxjp/bYU2oAUaF4zOGvEjSL08XYvKg=" ServerName="20.204.123.250" DatasourceName="" FileFieldName="" SID="Banking" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
     <taggedValue xmi:id="_4u8QYf8cEe-rC7sQPAsKQQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_4v2PUP8cEe-rC7sQPAsKQQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_4v8V8P8cEe-rC7sQPAsKQQ" tag="Status" value=""/>
@@ -88,4 +88,7 @@
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4zVoPf8cEe-rC7sQPAsKQQ" name="sys"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4zVoPv8cEe-rC7sQPAsKQQ" name="landing"/>
   </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_BEMB8EA1EfCqstSIzksyQQ" kind="Usage" supplier="_4u8QYP8cEe-rC7sQPAsKQQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/test_0.1.ana#_BqLq8EA1EfCqstSIzksyQQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
