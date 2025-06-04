@@ -38,8 +38,30 @@
           <sqlDataType xmi:id="_Z-rh30D_EfCKT6tZr2ICxw" name="IMAGE" javaDataType="-4" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye9kA1EfCqstSIzksyQQ" name="CustomerCustomerDemo" id="_t4X34UA1EfCqstSIzksyQQ" label="CustomerCustomerDemo" tableType="TABLE"/>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye90A1EfCqstSIzksyQQ" name="CustomerDemographics" id="_t4X34kA1EfCqstSIzksyQQ" label="CustomerDemographics" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye9kA1EfCqstSIzksyQQ" name="CustomerCustomerDemo" id="_t4X34UA1EfCqstSIzksyQQ" label="CustomerCustomerDemo" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_dzbB8EEDEfCKT6tZr2ICxw" name="CustomerID" label="CustomerID" length="5" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_dzbB8UEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_dzbB8kEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_dzbB80EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_dzbB9EEDEfCKT6tZr2ICxw" name="CustomerTypeID" label="CustomerTypeID" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_dzbB9UEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_dzbB9kEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_dzbB90EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye90A1EfCqstSIzksyQQ" name="CustomerDemographics" id="_t4X34kA1EfCqstSIzksyQQ" label="CustomerDemographics" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7IEEDEfCKT6tZr2ICxw" name="CustomerTypeID" label="CustomerTypeID" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_eRW7IUEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_eRW7IkEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_eRW7I0EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7JEEDEfCKT6tZr2ICxw" name="CustomerDesc" label="CustomerDesc" length="1073741823" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_eRW7JUEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_eRW7JkEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_eRW7J0EDEfCKT6tZr2ICxw" name="NTEXT" javaDataType="-16" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye-EA1EfCqstSIzksyQQ" name="Customers" id="_t4X340A1EfCqstSIzksyQQ" label="Customers" tableType="TABLE"/>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye-UA1EfCqstSIzksyQQ" name="Employees" id="_t4X35EA1EfCqstSIzksyQQ" label="Employees" tableType="TABLE"/>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye-kA1EfCqstSIzksyQQ" name="EmployeeTerritories" id="_t4X35UA1EfCqstSIzksyQQ" label="EmployeeTerritories" tableType="TABLE"/>
