@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_lt-Cl0A1EfCqstSIzksyQQ" name="sql_northwind" id="_P6NbAEA1EfCqstSIzksyQQ" label="sql_northwind" dataPackage="_l06-0EA1EfCqstSIzksyQQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.244.15.185:1433;DatabaseName=RM_Northwind;" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:Nh7BIHN1sy6Q0ZrOzGj7NporP7P1aLiYHwdbSNI7Qn3+KeNWBR0e8oo=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="RM_Northwind" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_lt-Cl0A1EfCqstSIzksyQQ" name="sql_northwind" supplierDependency="_ziV7kED6EfCqstSIzksyQQ" id="_P6NbAEA1EfCqstSIzksyQQ" label="sql_northwind" dataPackage="_l06-0EA1EfCqstSIzksyQQ" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://20.244.15.185:1433;DatabaseName=RM_Northwind;" dbVersionString="MSSQL_PROP" Port="1433" Username="User1" Password="enc:system.encryption.key.v1:Nh7BIHN1sy6Q0ZrOzGj7NporP7P1aLiYHwdbSNI7Qn3+KeNWBR0e8oo=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="RM_Northwind" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
     <taggedValue xmi:id="_lt-CmEA1EfCqstSIzksyQQ" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_lxEZkEA1EfCqstSIzksyQQ" tag="package filter" value=""/>
     <taggedValue xmi:id="_lxID8EA1EfCqstSIzksyQQ" tag="Status" value=""/>
@@ -16,9 +16,52 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_l06-0EA1EfCqstSIzksyQQ" name="RM_Northwind" dataManager="_lt-Cl0A1EfCqstSIzksyQQ">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_l06-0UA1EfCqstSIzksyQQ" name="dbo">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye9UA1EfCqstSIzksyQQ" name="Categories" id="_t4X34EA1EfCqstSIzksyQQ" label="Categories" tableType="TABLE"/>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye9kA1EfCqstSIzksyQQ" name="CustomerCustomerDemo" id="_t4X34UA1EfCqstSIzksyQQ" label="CustomerCustomerDemo" tableType="TABLE"/>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye90A1EfCqstSIzksyQQ" name="CustomerDemographics" id="_t4X34kA1EfCqstSIzksyQQ" label="CustomerDemographics" tableType="TABLE"/>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye9UA1EfCqstSIzksyQQ" name="Categories" id="_t4X34EA1EfCqstSIzksyQQ" label="Categories" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z-rh0ED_EfCKT6tZr2ICxw" name="CategoryID" id="CategoryID" label="CategoryID" length="10" sourceType="INT" talendType="id_Integer" nullable="false">
+          <taggedValue xmi:id="_Z-rh0UD_EfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z-rh0kD_EfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z-rh00D_EfCKT6tZr2ICxw" name="INT" numericPrecisionRadix="10" javaDataType="4"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z-rh1ED_EfCKT6tZr2ICxw" name="CategoryName" id="CategoryName" label="CategoryName" length="15" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_Z-rh1UD_EfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z-rh1kD_EfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z-rh10D_EfCKT6tZr2ICxw" name="NVARCHAR" javaDataType="-9"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z-rh2ED_EfCKT6tZr2ICxw" name="Description" id="Description" label="Description" length="1073741823" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_Z-rh2UD_EfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z-rh2kD_EfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z-rh20D_EfCKT6tZr2ICxw" name="NTEXT" javaDataType="-16" nullable="columnNullable"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_Z-rh3ED_EfCKT6tZr2ICxw" name="Picture" id="Picture" label="Picture" length="2147483647" sourceType="VARBINARY" talendType="id_Object">
+          <taggedValue xmi:id="_Z-rh3UD_EfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_Z-rh3kD_EfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_Z-rh30D_EfCKT6tZr2ICxw" name="IMAGE" javaDataType="-4" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye9kA1EfCqstSIzksyQQ" name="CustomerCustomerDemo" id="_t4X34UA1EfCqstSIzksyQQ" label="CustomerCustomerDemo" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_dzbB8EEDEfCKT6tZr2ICxw" name="CustomerID" label="CustomerID" length="5" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_dzbB8UEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_dzbB8kEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_dzbB80EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_dzbB9EEDEfCKT6tZr2ICxw" name="CustomerTypeID" label="CustomerTypeID" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_dzbB9UEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_dzbB9kEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_dzbB90EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
+        </feature>
+      </ownedElement>
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye90A1EfCqstSIzksyQQ" name="CustomerDemographics" id="_t4X34kA1EfCqstSIzksyQQ" label="CustomerDemographics" tableType="TABLE">
+        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7IEEDEfCKT6tZr2ICxw" name="CustomerTypeID" id="CustomerTypeID" label="CustomerTypeID" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
+          <taggedValue xmi:id="_eRW7IUEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_eRW7IkEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_eRW7I0EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
+        </feature>
+        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7JEEDEfCKT6tZr2ICxw" name="CustomerDesc" id="CustomerDesc" label="CustomerDesc" length="1073741823" sourceType="VARCHAR" talendType="id_String">
+          <taggedValue xmi:id="_eRW7JUEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
+          <initialValue xsi:type="relational:TdExpression" xmi:id="_eRW7JkEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
+          <sqlDataType xmi:id="_eRW7J0EDEfCKT6tZr2ICxw" name="NTEXT" javaDataType="-16" nullable="columnNullable"/>
+        </feature>
+      </ownedElement>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye-EA1EfCqstSIzksyQQ" name="Customers" id="_t4X340A1EfCqstSIzksyQQ" label="Customers" tableType="TABLE"/>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye-UA1EfCqstSIzksyQQ" name="Employees" id="_t4X35EA1EfCqstSIzksyQQ" label="Employees" tableType="TABLE"/>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye-kA1EfCqstSIzksyQQ" name="EmployeeTerritories" id="_t4X35UA1EfCqstSIzksyQQ" label="EmployeeTerritories" tableType="TABLE"/>
@@ -31,4 +74,7 @@
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4YfAUA1EfCqstSIzksyQQ" name="Territories" id="_t4Ye9EA1EfCqstSIzksyQQ" label="Territories" tableType="TABLE"/>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_ziV7kED6EfCqstSIzksyQQ" kind="Usage" supplier="_lt-Cl0A1EfCqstSIzksyQQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/test2_0.1.ana#_103X0ED6EfCqstSIzksyQQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
