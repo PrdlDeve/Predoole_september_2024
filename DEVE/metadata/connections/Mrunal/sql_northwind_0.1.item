@@ -51,12 +51,12 @@
         </feature>
       </ownedElement>
       <ownedElement xsi:type="relational:TdTable" xmi:id="_t4Ye90A1EfCqstSIzksyQQ" name="CustomerDemographics" id="_t4X34kA1EfCqstSIzksyQQ" label="CustomerDemographics" tableType="TABLE">
-        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7IEEDEfCKT6tZr2ICxw" name="CustomerTypeID" label="CustomerTypeID" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7IEEDEfCKT6tZr2ICxw" name="CustomerTypeID" id="CustomerTypeID" label="CustomerTypeID" length="10" sourceType="VARCHAR" talendType="id_String" nullable="false">
           <taggedValue xmi:id="_eRW7IUEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_eRW7IkEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_eRW7I0EDEfCKT6tZr2ICxw" name="NCHAR" javaDataType="-15"/>
         </feature>
-        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7JEEDEfCKT6tZr2ICxw" name="CustomerDesc" label="CustomerDesc" length="1073741823" sourceType="VARCHAR" talendType="id_String">
+        <feature xsi:type="relational:TdColumn" xmi:id="_eRW7JEEDEfCKT6tZr2ICxw" name="CustomerDesc" id="CustomerDesc" label="CustomerDesc" length="1073741823" sourceType="VARCHAR" talendType="id_String">
           <taggedValue xmi:id="_eRW7JUEDEfCKT6tZr2ICxw" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_eRW7JkEDEfCKT6tZr2ICxw" language="COLUMN_DEF"/>
           <sqlDataType xmi:id="_eRW7J0EDEfCKT6tZr2ICxw" name="NTEXT" javaDataType="-16" nullable="columnNullable"/>
