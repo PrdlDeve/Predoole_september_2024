@@ -11,10 +11,49 @@
     <analysedElements xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Mrunal/sql_northwind_0.1.item#_l06-0UA1EfCqstSIzksyQQ"/>
   </context>
   <results xmi:id="_axqIF0BpEfCqstSIzksyQQ">
-    <resultMetadata xmi:id="_axqIGEBpEfCqstSIzksyQQ"/>
-    <indicators xsi:type="dataquality.indicators.schema:SchemaIndicator" xmi:id="_axqIGUBpEfCqstSIzksyQQ">
+    <resultMetadata xmi:id="_axqIGEBpEfCqstSIzksyQQ" executionDate="2025-06-04T10:47:03.399+0530" executionDuration="1211" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators.schema:SchemaIndicator" xmi:id="_axqIGUBpEfCqstSIzksyQQ" computed="true" tableCount="13" tableRowCount="3308">
       <analyzedElement xsi:type="orgomg.cwm.resource.relational:Schema" href="../../metadata/connections/Mrunal/sql_northwind_0.1.item#_l06-0UA1EfCqstSIzksyQQ"/>
       <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Schema_Overview_0.1.definition#_V4SA0MYUEd27NP4lvE0A4w"/>
+      <tableIndicators xmi:id="_Jt3B4EEDEfCKT6tZr2ICxw" rowCount="8" tableName="Categories">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JuFrYEEDEfCKT6tZr2ICxw" tableName="CustomerCustomerDemo">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JuZNYEEDEfCKT6tZr2ICxw" tableName="CustomerDemographics">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_Jun24EEDEfCKT6tZr2ICxw" rowCount="91" tableName="Customers">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_Ju3HcEEDEfCKT6tZr2ICxw" rowCount="9" tableName="Employees">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JvOT0EEDEfCKT6tZr2ICxw" rowCount="49" tableName="EmployeeTerritories">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_Jvh10EEDEfCKT6tZr2ICxw" rowCount="2155" tableName="Order Details">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JvyUgEEDEfCKT6tZr2ICxw" rowCount="830" tableName="Orders">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JwF2gEEDEfCKT6tZr2ICxw" rowCount="77" tableName="Products">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_Jw9ZMEEDEfCKT6tZr2ICxw" rowCount="4" tableName="Region">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JxSwYEEDEfCKT6tZr2ICxw" rowCount="3" tableName="Shippers">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JyDlYEEDEfCKT6tZr2ICxw" rowCount="29" tableName="Suppliers">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
+      <tableIndicators xmi:id="_JyTdAEEDEfCKT6tZr2ICxw" rowCount="53" tableName="Territories">
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Overview/Table_Overview_0.1.definition#_hgO7YMYUEd27NP4lvE0A4w"/>
+      </tableIndicators>
     </indicators>
   </results>
   <parameters xmi:id="_axqIGkBpEfCqstSIzksyQQ" analysisType="Schema Analysis"/>
