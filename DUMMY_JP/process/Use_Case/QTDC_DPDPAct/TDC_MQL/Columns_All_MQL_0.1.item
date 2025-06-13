@@ -356,13 +356,13 @@
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Model']/value&quot;" id="19"/>
       <elementValue elementRef="NODECHECK" value="false" id="20"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Parent_Name" id="21"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Parent Name']/value&quot;" id="22"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Parent.Name']/value&quot;" id="22"/>
       <elementValue elementRef="NODECHECK" value="false" id="23"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Object_Stable_Id" id="24"/>
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Object Stable Id']/value&quot;" id="25"/>
       <elementValue elementRef="NODECHECK" value="false" id="26"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classification" id="27"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Classification']/value&quot;" id="28"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Classifications']/value&quot;" id="28"/>
       <elementValue elementRef="NODECHECK" value="false" id="29"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Model_Name" id="30"/>
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Model Name']/value&quot;" id="31"/>
@@ -443,7 +443,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputDelimited_1">
