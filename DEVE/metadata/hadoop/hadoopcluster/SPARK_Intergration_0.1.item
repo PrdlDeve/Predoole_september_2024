@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendHadoopCluster:HadoopClusterConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmi:id="_11yaIEgnEfCkSs7iwMXkhQ" name="SPARK_Intergration" label="SPARK_Intergration" distribution="SPARK" dfVersion="SPARK_3_2_x" useYarn="true" nameNodeURI="hdfs://localhost:8020" jobTrackerURI="localhost:8032" principal="hdfs/_HOST@EXAMPLE.COM" jtOrRmPrincipal="yarn/_HOST@EXAMPLE.COM" jobHistoryPrincipal="mapred/_HOST@EXAMPLE.COM" group="" authMode="USERNAME" useSparkProperties="true" rmScheduler="localhost:8030" jobHistory="0.0.0.0:10020" stagingDirectory="/user" useDNHost="true" clouderaNaviUserName="username" clouderaNaviUrl="http://localhost:7187/api/v8/" clouderaNaviMetadataUrl="http://localhost:7187/api/v8/metadata/plugin" clouderaNaviClientUrl="http://localhost" preloadAuthentification="true">
+<TalendHadoopCluster:HadoopClusterConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmi:id="_11yaIEgnEfCkSs7iwMXkhQ" name="SPARK_Intergration" label="SPARK_Intergration" distribution="CUSTOM" useCustomVersion="true" useYarn="true" nameNodeURI="hdfs://192.168.1.163:9000" jobTrackerURI="192.168.1.163:8032" userName="talend" group="" authMode="USERNAME" useSparkProperties="true" rmScheduler="192.168.1.163:8032" jobHistory="0.0.0.0:10020" stagingDirectory="/user/talend" useDNHost="true" clouderaNaviUserName="username" clouderaNaviUrl="http://localhost:7187/api/v8/" clouderaNaviMetadataUrl="http://localhost:7187/api/v8/metadata/plugin" clouderaNaviClientUrl="http://localhost" preloadAuthentification="true">
   <parameters xmi:id="_11yaIUgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_DATABRICKS_ENDPOINT" value="https://westeurope.azuredatabricks.net"/>
   <parameters xmi:id="_11yaIkgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_DATABRICKS_CLOUD_PROVIDER" value="AZURE"/>
   <parameters xmi:id="_11yaI0gnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_DATABRICKS_RUN_MODE" value="CREATE_RUN_JOB"/>
@@ -68,7 +68,7 @@
   <parameters xmi:id="_11yaYkgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_DRIVER_CORES" value="1"/>
   <parameters xmi:id="_11yaY0gnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_EXECUTOR_MEMORY" value="2g"/>
   <parameters xmi:id="_11yaZEgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_EXECUTOR_CORES" value="1"/>
-  <parameters xmi:id="_11yaZUgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_UNIV_STANDALONE_MASTER" value="spark://192.168.50.249:7077"/>
+  <parameters xmi:id="_11yaZUgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_UNIV_STANDALONE_MASTER" value="spark://192.168.1.:7077"/>
   <parameters xmi:id="_11yaZkgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_UNIV_STANDALONE_EXEC_CORE" value="100"/>
   <parameters xmi:id="_11yaZ0gnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_UNIV_STANDALONE_EXEC_MEMORY" value="20G"/>
   <parameters xmi:id="_11yaaEgnEfCkSs7iwMXkhQ" key="CONN_PARA_KEY_UNIV_SPARK_SUBMIT_SCRIPT_HOME" value="/opt/mapr/spark/spark-3.3.1/"/>
