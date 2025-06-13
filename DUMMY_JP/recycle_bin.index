@@ -2,6 +2,8 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>process/Apr_2025/Use_Case</deletedFolders>
   <deletedFolders>process/Apr_2025/Use_Case/CSV_File_Generation_based_on_column_values</deletedFolders>
+  <deletedFolders>process/Use_Case/Use_Case</deletedFolders>
+  <deletedFolders>process/Use_Case/Use_Case/QTDC_DPDPAct</deletedFolders>
   <deletedItems id="_863-EBOQEfC7seMLi8h1Ow" path="Apr_2025" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_GX3jUBOZEfC7seMLi8h1Ow" path="Apr_2025" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_b--S0BOSEfC7seMLi8h1Ow" path="Apr_2025" type="METADATA_CONNECTIONS"/>
