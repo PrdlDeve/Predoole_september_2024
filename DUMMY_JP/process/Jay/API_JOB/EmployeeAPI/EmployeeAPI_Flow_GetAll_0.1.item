@@ -214,33 +214,24 @@
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CategoryID" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CategoryName" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="age" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Description" id="4"/>
       <elementValue elementRef="TRIM" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="department" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Picture" id="6"/>
       <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="position" id="8"/>
-      <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="salary" id="10"/>
-      <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="hireDate" id="12"/>
-      <elementValue elementRef="TRIM" value="false" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="localhost_SQL_server"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_2">
-      <column comment="" defaultValue="" key="false" length="10" name="id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="age" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="department" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="position" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="salary" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="hireDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CategoryID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CategoryName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Description" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2147483647" name="Picture" nullable="true" pattern="" precision="0" sourceType="IMAGE" type="id_Object" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
@@ -257,13 +248,10 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="id" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/id" nullable="false"/>
-        <nodes name="name" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/name"/>
-        <nodes name="age" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/age"/>
-        <nodes name="department" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/department"/>
-        <nodes name="position" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/position"/>
-        <nodes name="salary" type="id_BigDecimal" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/salary"/>
-        <nodes name="hireDate" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/hireDate"/>
+        <nodes name="CategoryID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/CategoryID" nullable="false"/>
+        <nodes name="CategoryName" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/CategoryName" nullable="false"/>
+        <nodes name="Description" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/Description"/>
+        <nodes name="Picture" type="id_Object" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/Picture"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" minimized="true" name="out2" reject="true" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="out2/body">
@@ -281,14 +269,11 @@
       <outputTrees activateCondensedTool="true" name="out" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="out/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out.body:/root" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="employees" expression="" type="id_String" xpath="out.body:/root/employees" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="out.body:/root/employees/id"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="name" expression="row1.name" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="out.body:/root/employees/name"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="age" expression="row1.age" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="out.body:/root/employees/age"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="department" expression="row1.department" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="out.body:/root/employees/department"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="position" expression="row1.position" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.4" xpath="out.body:/root/employees/position"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="salary" expression="row1.salary" type="id_BigDecimal" incomingConnections="//@node.3/@nodeData/@connections.5" xpath="out.body:/root/employees/salary"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="hireDate" expression="row1.hireDate" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.6" xpath="out.body:/root/employees/hireDate"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Categories" expression="" type="id_String" xpath="out.body:/root/Categories" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryID" expression="row1.CategoryID" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="out.body:/root/Categories/CategoryID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryName" expression="row1.CategoryName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="out.body:/root/Categories/CategoryName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Description" expression="row1.Description" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="out.body:/root/Categories/Description"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Picture" expression="row1.Picture" type="id_Object" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="out.body:/root/Categories/Picture"/>
             </children>
           </children>
         </nodes>
@@ -298,9 +283,6 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.1"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.2"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.4"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.5"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.6" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.6"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
