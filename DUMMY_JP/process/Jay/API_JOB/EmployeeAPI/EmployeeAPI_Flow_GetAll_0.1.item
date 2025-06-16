@@ -234,17 +234,17 @@
       <column comment="" defaultValue="" key="false" length="2147483647" name="Picture" nullable="true" pattern="" precision="0" sourceType="IMAGE" type="id_Object" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out2">
-      <column comment="" defaultValue="" key="false" length="-1" name="body" nullable="true" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    <metadata label="Categories" name="Categories">
+      <column comment="" key="false" length="-1" name="Body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="FLOW" name="out">
-      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="Category">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
@@ -253,27 +253,17 @@
         <nodes name="Description" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.2" xpath="row1/Description"/>
         <nodes name="Picture" type="id_Object" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/Picture"/>
       </inputTrees>
-      <outputTrees activateCondensedTool="true" minimized="true" name="out2" reject="true" allInOne="true">
-        <nodes name="body" expression="" type="id_Document" xpath="out2/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out2.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_String" xpath="out2.body:/root/id"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="name" expression="row1.name" type="id_String" xpath="out2.body:/root/name"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="age" expression="row1.age" type="id_String" xpath="out2.body:/root/age"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="dept" expression="row1.department" type="id_String" xpath="out2.body:/root/dept"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="position" expression="row1.position" type="id_String" xpath="out2.body:/root/position"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="salary" expression="row1.salary" type="id_String" xpath="out2.body:/root/salary"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="hireDate" expression="row1.hireDate" type="id_String" xpath="out2.body:/root/hireDate"/>
-          </children>
-        </nodes>
+      <outputTrees name="Categories">
+        <nodes name="Body" type="id_String" xpath="Categories/Body" pattern=""/>
       </outputTrees>
-      <outputTrees activateCondensedTool="true" name="out" allInOne="true">
-        <nodes name="body" expression="" type="id_Document" xpath="out/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out.body:/root" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Categories" expression="" type="id_String" xpath="out.body:/root/Categories" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryID" expression="row1.CategoryID" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="out.body:/root/Categories/CategoryID"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryName" expression="row1.CategoryName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="out.body:/root/Categories/CategoryName"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Description" expression="row1.Description" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="out.body:/root/Categories/Description"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Picture" expression="row1.Picture" type="id_Object" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="out.body:/root/Categories/Picture"/>
+      <outputTrees name="Category">
+        <nodes name="body" expression="" type="id_Document" xpath="Category/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="Category.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Category" expression="" type="id_String" xpath="Category.body:/root/Category" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryID" expression="row1.CategoryID" type="id_Integer" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="Category.body:/root/Category/CategoryID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryName" expression="row1.CategoryName" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="Category.body:/root/Category/CategoryName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Description" expression="row1.Description" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.2" xpath="Category.body:/root/Category/Description"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Picture" expression="row1.Picture" type="id_Object" incomingConnections="//@node.3/@nodeData/@connections.3" xpath="Category.body:/root/Category/Picture"/>
             </children>
           </children>
         </nodes>
@@ -298,6 +288,48 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" defaultValue="" key="false" length="-1" name="body" nullable="true" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="out">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <outputTrees activateCondensedTool="true" minimized="true" name="out2" reject="true" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="out2/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out2.body:/root" loop="true" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.id" type="id_String" xpath="out2.body:/root/id"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="name" expression="row1.name" type="id_String" xpath="out2.body:/root/name"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="age" expression="row1.age" type="id_String" xpath="out2.body:/root/age"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="dept" expression="row1.department" type="id_String" xpath="out2.body:/root/dept"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="position" expression="row1.position" type="id_String" xpath="out2.body:/root/position"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="salary" expression="row1.salary" type="id_String" xpath="out2.body:/root/salary"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="hireDate" expression="row1.hireDate" type="id_String" xpath="out2.body:/root/hireDate"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <outputTrees activateCondensedTool="true" name="out" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="out/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out.body:/root" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Categories" expression="" type="id_String" xpath="out.body:/root/Categories" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryID" expression="row1.CategoryID" type="id_Integer" xpath="out.body:/root/Categories/CategoryID"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CategoryName" expression="row1.CategoryName" type="id_String" xpath="out.body:/root/Categories/CategoryName"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Description" expression="row1.Description" type="id_String" xpath="out.body:/root/Categories/Description"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="Picture" expression="row1.Picture" type="id_Object" xpath="out.body:/root/Categories/Picture"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+    </nodeData>
+  </node>
   <connection connectorName="FLOW" label="Employees_List" lineStyle="0" metaname="Employees_List" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tFlowToIterate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Employees_List" show="false"/>
@@ -307,16 +339,21 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tXMLMap_2">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_1">
+  <connection connectorName="FLOW" label="Category" lineStyle="0" metaname="Category" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Category" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
