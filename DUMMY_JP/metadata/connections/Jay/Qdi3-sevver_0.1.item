@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_kmuR0F3iEe-5W9f3y9Dx1Q" name="localhost_SQL_server" id="_acX9sF3iEe-5W9f3y9Dx1Q" label="localhost_SQL_server" dataPackage="_ktr1cF3iEe-5W9f3y9Dx1Q" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://localhost:1433;DatabaseName=SQL_Queries;" dbVersionString="MSSQL_PROP" Port="1433" Username="jay" Password="enc:system.encryption.key.v1:GBojIwpaK6A/q4AMWz0xGvv8mLW2S3G8D0FQUWuCQ0c=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="SQL_Queries" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
+  <TalendMetadata:DatabaseConnection xmi:id="_kmuR0F3iEe-5W9f3y9Dx1Q" name="Qdi3-sevver" id="_acX9sF3iEe-5W9f3y9Dx1Q" label="Qdi3-sevver" dataPackage="_ktr1cF3iEe-5W9f3y9Dx1Q" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://localhost:1433;DatabaseName=SQL_Queries;" dbVersionString="MSSQL_PROP" Port="1433" Username="" Password="enc:system.encryption.key.v1:GBojIwpaK6A/q4AMWz0xGvv8mLW2S3G8D0FQUWuCQ0c=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="SQL_Queries" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="dbo" supportNLS="false">
     <taggedValue xmi:id="_kmuR0V3iEe-5W9f3y9Dx1Q" tag="Is Conn Need Reload" value="false"/>
     <taggedValue xmi:id="_kpAw0F3iEe-5W9f3y9Dx1Q" tag="package filter" value=""/>
     <taggedValue xmi:id="_kpUS0F3iEe-5W9f3y9Dx1Q" tag="Status" value=""/>
@@ -12,7 +12,8 @@
     <taggedValue xmi:id="_kqG9AF3iEe-5W9f3y9Dx1Q" tag="DB ProductName" value="Microsoft SQL Server"/>
     <taggedValue xmi:id="_kqG9AV3iEe-5W9f3y9Dx1Q" tag="DB ProductVersion" value="16.00.1000"/>
     <taggedValue xmi:id="_kqG9Al3iEe-5W9f3y9Dx1Q" tag="DB IdentifierQuoteString" value="&quot;"/>
-    <parameters xmi:id="_kmuR0l3iEe-5W9f3y9Dx1Q" key="CONN_PARA_KEY_USERNAME" value="jay"/>
+    <parameters xmi:id="_kmuR0l3iEe-5W9f3y9Dx1Q" key="CONN_PARA_KEY_USERNAME" value=""/>
+    <parameters xmi:id="_DK3DAEqHEfCGRa4aLpOtIw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_ktr1cF3iEe-5W9f3y9Dx1Q" name="SQL_Queries" dataManager="_kmuR0F3iEe-5W9f3y9Dx1Q">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_ktr1cV3iEe-5W9f3y9Dx1Q" name="dbo">
