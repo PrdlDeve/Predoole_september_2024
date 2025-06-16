@@ -106,9 +106,9 @@
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="DisplayCategories" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Categories&quot;" id="2"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer&quot;" id="2"/>
       <elementValue elementRef="CONSUMES" value="NONE" id="3"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON" id="4"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="4"/>
       <elementValue elementRef="STREAMING" value="false" id="5"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
