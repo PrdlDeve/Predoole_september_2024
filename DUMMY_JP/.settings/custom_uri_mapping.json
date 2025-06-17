@@ -1,0 +1,3 @@
+{
+  "mvn:org.talend.libraries/mssql-jdbc-12.4.2.jre11/6.0.0-SNAPSHOT/jar" : "mvn:com.microsoft.sqlserver/mssql-jdbc/12.4.2/jar"
+}
