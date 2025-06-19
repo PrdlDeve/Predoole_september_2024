@@ -53,5 +53,7 @@
     "id" : "org.talend.studio.components.tck.salesforcemarketingstudio.feature.feature.group"
   }, {
     "id" : "org.talend.studio.components.tcompv0.salesforce.feature.feature.group"
+  }, {
+    "id" : "org.talend.studio.components.tcompv0.snowflakeee.feature.feature.group"
   } ]
 }
