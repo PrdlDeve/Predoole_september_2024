@@ -247,7 +247,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
       <elementValue elementRef="VALUE" value="" id="1"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="string" id="2"/>
-      <elementValue elementRef="VALUE" value="&quot;{\&quot;select\&quot;:\&quot;\\\&quot;User Tags\\\&quot;, Name, \\\&quot;Object Type\\\&quot;, \\\&quot;Object Id\\\&quot;, Certified, \\\&quot;Conditional Labels\\\&quot;, Model, Parent.Name, \\\&quot;Object Stable Id\\\&quot;, \\\&quot;Data Classifications\\\&quot;, \\\&quot;Model Name\\\&quot;, \\\&quot;Sensitivity Label\\\&quot;, \\\&quot;Import Bridge\\\&quot;\&quot;,\&quot;from\&quot;:\&quot;/DPDP/DPDP Dev/DPDP Dev/2025-06-03 09:44:59\&quot;,\&quot;where\&quot;:\&quot;category = ANY('MySQL.Columns', 'PostgreSql.Columns', 'Microsoft SQL Server.Columns', 'Database.Columns')\&quot;,\&quot;orderby\&quot;:\&quot;Relevance\&quot;,\&quot;pageSize\&quot;:1000,\&quot;pageNumber\&quot;:1}&quot;" id="3"/>
+      <elementValue elementRef="VALUE" value="&quot;{\&quot;select\&quot;:\&quot;\\\&quot;User Tags\\\&quot;, Name, \\\&quot;Object Type\\\&quot;, \\\&quot;Object Id\\\&quot;, Certified, \\\&quot;Conditional Labels\\\&quot;, Model, Parent.Name, \\\&quot;Object Stable Id\\\&quot;, \\\&quot;Data Classifications\\\&quot;, \\\&quot;Model Name\\\&quot;, \\\&quot;Sensitivity Label\\\&quot;, \\\&quot;Import Bridge\\\&quot;, \\\&quot;Data Classifications Approved\\\&quot;, \\\&quot;Data Classifications Matched\\\&quot;, \\\&quot;Data Profiling\\\&quot;.\\\&quot;Avg Length\\\&quot;, \\\&quot;Data Profiling\\\&quot;.\\\&quot;Distinct\\\&quot;, \\\&quot;Data Profiling\\\&quot;.Mean, \\\&quot;Data Profiling\\\&quot;.Median, \\\&quot;Data Profiling\\\&quot;.Min, \\\&quot;Data Profiling\\\&quot;.\\\&quot;Min Length\\\&quot;\&quot;,\&quot;from\&quot;:\&quot;/DPDP/DPDP Dev/DPDP Dev/2025-06-03 09:44:59\&quot;,\&quot;where\&quot;:\&quot;\\\&quot;Object Type\\\&quot; = 'RDBMS Relational Database (Database).Column'\&quot;,\&quot;orderby\&quot;:\&quot;Relevance\&quot;,\&quot;pageSize\&quot;:1000,\&quot;pageNumber\&quot;:1}&quot;" id="3"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -373,6 +373,30 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Import_Bridge" id="36"/>
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Import Bridge']/value&quot;" id="37"/>
       <elementValue elementRef="NODECHECK" value="false" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Approved" id="39"/>
+      <elementValue elementRef="QUERY" value="22617474726962757465735b617474726962757465547970652f6e616d653d224461746120436c617373696669636174696f6e7320417070726f766564225d2f76616c75650d0a22" hexValue="true" id="40"/>
+      <elementValue elementRef="NODECHECK" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Matched" id="42"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Classifications Matched&quot;]/value&quot;" id="43"/>
+      <elementValue elementRef="NODECHECK" value="false" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Avg_Length" id="45"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Avg Length&quot;]/value&quot;" id="46"/>
+      <elementValue elementRef="NODECHECK" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Distinct" id="48"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Distinct&quot;]/value&quot;" id="49"/>
+      <elementValue elementRef="NODECHECK" value="false" id="50"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Mean" id="51"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Mean&quot;]/value&quot;" id="52"/>
+      <elementValue elementRef="NODECHECK" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Median" id="54"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Median&quot;]/value&quot;" id="55"/>
+      <elementValue elementRef="NODECHECK" value="false" id="56"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Min" id="57"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Min&quot;]/value&quot;" id="58"/>
+      <elementValue elementRef="NODECHECK" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Min_Length" id="60"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Min Length&quot;]/value&quot;" id="61"/>
+      <elementValue elementRef="NODECHECK" value="false" id="62"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -396,6 +420,14 @@
       <column comment="" key="false" length="-1" name="Model_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Sensitivity_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Import_Bridge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Matched" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Avg_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Distinct" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Mean" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Median" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Min" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Min_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="UserTags" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -411,6 +443,14 @@
       <column comment="" key="false" length="-1" name="Model_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Sensitivity_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Import_Bridge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Matched" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Avg_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Distinct" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Mean" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Median" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Min" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Min_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorXMLField" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -460,6 +500,14 @@
       <column comment="" key="false" length="-1" name="Model_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Sensitivity_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Import_Bridge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Matched" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Avg_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Distinct" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Mean" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Median" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Min" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Profiling_Min_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="400">
@@ -614,12 +662,35 @@
       <elementValue elementRef="TRACE_COLUMN" value="Parent_Name" id="48"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Classifications_Approved" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Profiling_Avg_Length" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Profiling_Median" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Profiling_Min_Length" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Profiling_Distinct" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Profiling_Min" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Classifications_Matched" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="Data_Profiling_Mean" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
