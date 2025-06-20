@@ -373,14 +373,14 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Import_Bridge" id="36"/>
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Import Bridge']/value&quot;" id="37"/>
       <elementValue elementRef="NODECHECK" value="false" id="38"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Approved" id="39"/>
-      <elementValue elementRef="QUERY" value="22617474726962757465735b617474726962757465547970652f6e616d653d274461746120436c617373696669636174696f6e7320417070726f766564275d2f76616c75650d0a22" hexValue="true" id="40"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Matched" id="39"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Classifications Matched']/value&quot;" id="40"/>
       <elementValue elementRef="NODECHECK" value="false" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Matched" id="42"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Classifications Matched']/value&quot;" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Avg_Length" id="42"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Avg Length']/value&quot;" id="43"/>
       <elementValue elementRef="NODECHECK" value="false" id="44"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Avg_Length" id="45"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Avg Length']/value&quot;" id="46"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Approved" id="45"/>
+      <elementValue elementRef="QUERY" value="22617474726962757465735b617474726962757465547970652f6e616d653d274461746120436c617373696669636174696f6e7320417070726f766564275d2f76616c75650d0a22" hexValue="true" id="46"/>
       <elementValue elementRef="NODECHECK" value="false" id="47"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Distinct" id="48"/>
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Distinct']/value&quot;" id="49"/>
@@ -420,9 +420,9 @@
       <column comment="" key="false" length="-1" name="Model_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Sensitivity_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Import_Bridge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Classifications_Matched" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Avg_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Distinct" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Mean" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Median" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -443,9 +443,9 @@
       <column comment="" key="false" length="-1" name="Model_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Sensitivity_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Import_Bridge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Classifications_Matched" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Avg_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Distinct" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Mean" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Median" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -500,9 +500,9 @@
       <column comment="" key="false" length="-1" name="Model_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Sensitivity_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Import_Bridge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Classifications_Matched" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Avg_Length" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Data_Classifications_Approved" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Distinct" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Mean" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Data_Profiling_Median" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
