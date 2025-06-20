@@ -380,7 +380,7 @@
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Avg Length']/value&quot;" id="43"/>
       <elementValue elementRef="NODECHECK" value="false" id="44"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Approved" id="45"/>
-      <elementValue elementRef="QUERY" value="22617474726962757465735b617474726962757465547970652f6e616d653d274461746120436c617373696669636174696f6e7320417070726f766564275d2f76616c75650d0a22" hexValue="true" id="46"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Classifications Approved']/value&quot;" id="46"/>
       <elementValue elementRef="NODECHECK" value="false" id="47"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Distinct" id="48"/>
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Distinct']/value&quot;" id="49"/>
