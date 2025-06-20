@@ -374,28 +374,28 @@
       <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Import Bridge']/value&quot;" id="37"/>
       <elementValue elementRef="NODECHECK" value="false" id="38"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Approved" id="39"/>
-      <elementValue elementRef="QUERY" value="22617474726962757465735b617474726962757465547970652f6e616d653d224461746120436c617373696669636174696f6e7320417070726f766564225d2f76616c75650d0a22" hexValue="true" id="40"/>
+      <elementValue elementRef="QUERY" value="22617474726962757465735b617474726962757465547970652f6e616d653d274461746120436c617373696669636174696f6e7320417070726f766564275d2f76616c75650d0a22" hexValue="true" id="40"/>
       <elementValue elementRef="NODECHECK" value="false" id="41"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Classifications_Matched" id="42"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Classifications Matched&quot;]/value&quot;" id="43"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Classifications Matched']/value&quot;" id="43"/>
       <elementValue elementRef="NODECHECK" value="false" id="44"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Avg_Length" id="45"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Avg Length&quot;]/value&quot;" id="46"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Avg Length']/value&quot;" id="46"/>
       <elementValue elementRef="NODECHECK" value="false" id="47"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Distinct" id="48"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Distinct&quot;]/value&quot;" id="49"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Distinct']/value&quot;" id="49"/>
       <elementValue elementRef="NODECHECK" value="false" id="50"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Mean" id="51"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Mean&quot;]/value&quot;" id="52"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Mean']/value&quot;" id="52"/>
       <elementValue elementRef="NODECHECK" value="false" id="53"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Median" id="54"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Median&quot;]/value&quot;" id="55"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Median']/value&quot;" id="55"/>
       <elementValue elementRef="NODECHECK" value="false" id="56"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Min" id="57"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Min&quot;]/value&quot;" id="58"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Min']/value&quot;" id="58"/>
       <elementValue elementRef="NODECHECK" value="false" id="59"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Data_Profiling_Min_Length" id="60"/>
-      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name=&quot;Data Profiling.Min Length&quot;]/value&quot;" id="61"/>
+      <elementValue elementRef="QUERY" value="&quot;attributes[attributeType/name='Data Profiling.Min Length']/value&quot;" id="61"/>
       <elementValue elementRef="NODECHECK" value="false" id="62"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
