@@ -401,7 +401,7 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/root/result&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="ID" id="0"/>
-      <elementValue elementRef="QUERY" value="&quot;/root/result/links[1]/links[1]/&quot;" id="1"/>
+      <elementValue elementRef="QUERY" value="&quot;/root/result/links[1]/links[1]&quot;" id="1"/>
       <elementValue elementRef="NODECHECK" value="true" id="2"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
