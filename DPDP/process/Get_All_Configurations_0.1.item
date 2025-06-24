@@ -398,10 +398,10 @@
     <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="body"/>
     <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
     <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/result []&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;result/links/links/id&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="QUERY" value="&quot;/result//links[objectTypeName='Configuration Version']/id&quot;" id="1"/>
+      <elementValue elementRef="QUERY" value="&quot;//id&quot;" id="1"/>
       <elementValue elementRef="NODECHECK" value="true" id="2"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
