@@ -330,7 +330,7 @@
   </node>
   <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="840" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_4" show="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://192.168.1.253:11480/MM/rest/v1/operations/repositoryBrowse?objectTypes=Configuration%2CVersion%2CPath&amp;repositoryPath=%2F&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://192.168.1.253:11480/MM/rest/v1/operations/repositoryBrowse?objectTypes=Configuration%2CVersion&amp;repositoryPath=%2F&quot;"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
     <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/json" show="false"/>
