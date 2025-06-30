@@ -886,13 +886,9 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_6Rvc4EWxEe-jRLftcPihSQ",
+    "id" : "__8ShkBkrEfC1ZeQjciH7bA",
     "version" : "Latest",
     "type" : "property"
-  }, {
-    "id" : "_6Rvc4EWxEe-jRLftcPihSQ - Persons",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
