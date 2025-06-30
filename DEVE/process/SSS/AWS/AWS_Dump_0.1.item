@@ -327,6 +327,7 @@
     <elementParameter field="CHECK" name="SET_OBJECT_TAGS" value="false"/>
     <elementParameter field="TABLE" name="OBJECT_TAGS" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
   </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
