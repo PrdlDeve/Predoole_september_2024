@@ -295,7 +295,7 @@
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;metastore-unity&quot;"/>
     <elementParameter field="TEXT" name="KEY" value="&quot;&quot;"/>
-    <elementParameter field="FILE" name="FILE" value="&quot;D:/INSTALL/studio/workspace/catlog.csv&quot;"/>
+    <elementParameter field="FILE" name="FILE" value="&quot;C:/Users/Laptop_User/Downloads/catalog.csv&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_SERVER_SIDE_ENCRYPTION" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_KMS" value="false" show="false"/>
     <elementParameter field="TEXT" name="KMSID" value="&quot;&quot;" show="false"/>
