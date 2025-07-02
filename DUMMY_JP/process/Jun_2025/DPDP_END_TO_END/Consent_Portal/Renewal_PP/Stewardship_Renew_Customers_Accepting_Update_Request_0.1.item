@@ -106,84 +106,6 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="920">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="idcustomer" id="0"/>
-      <elementValue elementRef="VALUE" value="context.customerId" id="1"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false">
-      <elementValue elementRef="idcustomer" value="" id="0"/>
-      <elementValue elementRef="idcustomer" value="" id="1"/>
-      <elementValue elementRef="idcustomer" value="" id="2"/>
-      <elementValue elementRef="idcustomer" value="" id="3"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SetCustomerId"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="idcustomer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="920">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;20.244.15.185&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.databaseName"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:N4geZ0i4jKpnoKbaGS8rRjG0vDOgG7i/KBFt1X87yn4UtkgncattT15C6w=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="context.tableName"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="DELETE"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="idcustomer" id="0"/>
-      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
-      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
-      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
-      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false" show="false"/>
-    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="deleteCustomer"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="-1" name="idcustomer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="idcustomer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_2" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
@@ -354,7 +276,7 @@
         <nodes name="body" expression="" type="id_Document" xpath="row1/body">
           <children name="root" expression="" type="id_String" xpath="row1.body:/root" main="true">
             <children name="result" expression="" type="id_String" xpath="row1.body:/root/result" loop="true" main="true">
-              <children name="token" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row1.body:/root/result/token"/>
+              <children name="token" type="id_String" outgoingConnections="//@node.5/@nodeData/@connections.0" xpath="row1.body:/root/result/token"/>
             </children>
             <children name="error" type="id_String" xpath="row1.body:/root/error"/>
           </children>
@@ -363,10 +285,10 @@
       </inputTrees>
       <outputTrees name="copyOfsetToken">
         <nodes name="key" expression="&quot;token&quot;" type="id_String" xpath="copyOfsetToken/key"/>
-        <nodes name="value" expression="[row1.body:/root/result/token]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="copyOfsetToken/value"/>
+        <nodes name="value" expression="[row1.body:/root/result/token]" type="id_String" incomingConnections="//@node.5/@nodeData/@connections.0" xpath="copyOfsetToken/value"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.5/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.1"/>
     </nodeData>
   </node>
   <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="240">
@@ -505,10 +427,10 @@
             <children name="result" expression="" type="id_String" xpath="sendTable.body:/root/result" main="true">
               <children name="attributes" expression="" type="id_String" xpath="sendTable.body:/root/result/attributes" loop="true" main="true">
                 <children name="attributeType" expression="" type="id_String" xpath="sendTable.body:/root/result/attributes/attributeType">
-                  <children name="name" type="id_String" filterOutGoingConnections="//@node.11/@nodeData/@connections.0 //@node.11/@nodeData/@connections.2" xpath="sendTable.body:/root/result/attributes/attributeType/name"/>
+                  <children name="name" type="id_String" filterOutGoingConnections="//@node.9/@nodeData/@connections.0 //@node.9/@nodeData/@connections.2" xpath="sendTable.body:/root/result/attributes/attributeType/name"/>
                   <children name="type" type="id_String" xpath="sendTable.body:/root/result/attributes/attributeType/type"/>
                 </children>
-                <children name="value" type="id_String" outgoingConnections="//@node.11/@nodeData/@connections.1 //@node.11/@nodeData/@connections.3" xpath="sendTable.body:/root/result/attributes/value"/>
+                <children name="value" type="id_String" outgoingConnections="//@node.9/@nodeData/@connections.1 //@node.9/@nodeData/@connections.3" xpath="sendTable.body:/root/result/attributes/value"/>
               </children>
             </children>
             <children name="error" type="id_String" xpath="sendTable.body:/root/error"/>
@@ -516,19 +438,19 @@
         </nodes>
         <nodes name="string" type="id_String" xpath="sendTable/string"/>
       </inputTrees>
-      <outputTrees expressionFilter="&quot;Parent&quot;.equals([sendTable.body:/root/result/attributes/attributeType/name])" activateExpressionFilter="true" name="databaseId" filterIncomingConnections="//@node.11/@nodeData/@connections.0">
+      <outputTrees expressionFilter="&quot;Parent&quot;.equals([sendTable.body:/root/result/attributes/attributeType/name])" activateExpressionFilter="true" name="databaseId" filterIncomingConnections="//@node.9/@nodeData/@connections.0">
         <nodes name="key" expression="&quot;databaseName&quot;" type="id_String" xpath="databaseId/key" pattern=""/>
-        <nodes name="value" expression="[sendTable.body:/root/result/attributes/value] " type="id_String" incomingConnections="//@node.11/@nodeData/@connections.1" xpath="databaseId/value"/>
+        <nodes name="value" expression="[sendTable.body:/root/result/attributes/value] " type="id_String" incomingConnections="//@node.9/@nodeData/@connections.1" xpath="databaseId/value"/>
       </outputTrees>
-      <outputTrees expressionFilter="&quot;Name&quot;.equals([sendTable.body:/root/result/attributes/attributeType/name])" activateExpressionFilter="true" name="setTableName" filterIncomingConnections="//@node.11/@nodeData/@connections.2">
+      <outputTrees expressionFilter="&quot;Name&quot;.equals([sendTable.body:/root/result/attributes/attributeType/name])" activateExpressionFilter="true" name="setTableName" filterIncomingConnections="//@node.9/@nodeData/@connections.2">
         <nodes name="key" expression="&quot;tableName&quot;" type="id_String" xpath="setTableName/key" pattern=""/>
-        <nodes name="value" expression="  [sendTable.body:/root/result/attributes/value]" type="id_String" incomingConnections="//@node.11/@nodeData/@connections.3" xpath="setTableName/value" pattern=""/>
+        <nodes name="value" expression="  [sendTable.body:/root/result/attributes/value]" type="id_String" incomingConnections="//@node.9/@nodeData/@connections.3" xpath="setTableName/value" pattern=""/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.11/@nodeData/@outputTrees.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.1" target="//@node.11/@nodeData/@outputTrees.0/@nodes.1"/>
-      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.11/@nodeData/@outputTrees.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.1" target="//@node.11/@nodeData/@outputTrees.1/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.9/@nodeData/@outputTrees.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.1" target="//@node.9/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.0/@children.0" target="//@node.9/@nodeData/@outputTrees.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.9/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.0/@children.0/@children.1" target="//@node.9/@nodeData/@outputTrees.1/@nodes.1"/>
     </nodeData>
   </node>
   <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="400">
@@ -617,135 +539,6 @@
       <column key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1040">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SetDeleteMesssage"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="sendDeleteMessage">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <outputTrees name="sendDeleteMessage">
-        <nodes name="body" expression="" type="id_Document" xpath="sendDeleteMessage/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="sendDeleteMessage.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="row6.newColumn + &quot; has beed deleted from table: &quot; + context.tableName + &quot; and database: &quot; + context.databaseName " type="id_String" xpath="sendDeleteMessage.body:/root/message"/>
-          </children>
-        </nodes>
-      </outputTrees>
-      <varTables name="Var" minimized="true"/>
-    </nodeData>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="1040">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="LogDeleteAction"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="920" posY="1040">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
-    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
-    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
-    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
-    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
-    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="DeleteResponse"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTResponse_1">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="840">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="response" id="0"/>
-      <elementValue elementRef="VALUE" value="&quot;Customer has been deleted&quot;" id="1"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SetMessage"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_3">
-      <column comment="" key="false" length="-1" name="response" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="920" posY="840">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
-    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
-    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="BuildDeleteResponse"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="sendDeleteResponse">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="sendMessage" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="response" type="id_String" outgoingConnections="//@node.20/@nodeData/@connections.0" xpath="sendMessage/response"/>
-      </inputTrees>
-      <outputTrees name="sendDeleteResponse">
-        <nodes name="body" expression="" type="id_Document" xpath="sendDeleteResponse/body">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="sendDeleteResponse.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression=" sendMessage.response" type="id_String" incomingConnections="//@node.20/@nodeData/@connections.0" xpath="sendDeleteResponse.body:/root/message"/>
-          </children>
-        </nodes>
-      </outputTrees>
-      <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.20/@nodeData/@inputTrees.0/@nodes.0" target="//@node.20/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
-    </nodeData>
-  </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="840">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
-    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
-    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
-    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
-    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
-    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
-    <elementParameter field="TEXT" name="LABEL" value="ConfirmDeletion"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tRESTResponse_2">
-      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -806,17 +599,17 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row6" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="newColumn" type="id_String" outgoingConnections="//@node.23/@nodeData/@connections.0" xpath="row6/newColumn"/>
+        <nodes name="newColumn" type="id_String" outgoingConnections="//@node.15/@nodeData/@connections.0" xpath="row6/newColumn"/>
       </inputTrees>
       <outputTrees name="copyOfsendDeleteMessage1">
         <nodes name="body" expression="" type="id_Document" xpath="copyOfsendDeleteMessage1/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="copyOfsendDeleteMessage1.body:/root" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="row6.newColumn + &quot; has beed deleted from table: &quot; + context.tableName + &quot; and database: &quot; + context.databaseName " type="id_String" incomingConnections="//@node.23/@nodeData/@connections.0" xpath="copyOfsendDeleteMessage1.body:/root/message"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="row6.newColumn + &quot; has beed deleted from table: &quot; + context.tableName + &quot; and database: &quot; + context.databaseName " type="id_String" incomingConnections="//@node.15/@nodeData/@connections.0" xpath="copyOfsendDeleteMessage1.body:/root/message"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.23/@nodeData/@inputTrees.0/@nodes.0" target="//@node.23/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.15/@nodeData/@inputTrees.0/@nodes.0" target="//@node.15/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="720">
@@ -858,11 +651,6 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="sendCustomerId" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tDBOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendCustomerId" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="deleteCustomer" lineStyle="0" metaname="deleteCustomer" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_2" target="tFlowToIterate_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="databaseName" id="0"/>
@@ -939,31 +727,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="sendDeleteMessage" lineStyle="0" metaname="sendDeleteMessage" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendDeleteMessage" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="sendResponse" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tRESTResponse_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendResponse" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="sendMessage" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tXMLMap_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="response" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendMessage" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="sendDeleteResponse" lineStyle="0" metaname="sendDeleteResponse" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendDeleteResponse" show="false"/>
-  </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tXMLMap_5">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="newColumn" id="0"/>
@@ -995,11 +758,6 @@
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
   </note>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
@@ -1011,16 +769,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTClient_3" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
