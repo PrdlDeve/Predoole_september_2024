@@ -4,9 +4,6 @@
     "contextName" : "Default",
     "repoId" : "_phxz8Dx4EfC_WOda8ZGOjA",
     "parameterList" : [ {
-      "id" : "_gvOjwjx5EfC_WOda8ZGOjA",
-      "name" : "Stewardship_Password"
-    }, {
       "id" : "_gvOjwDx5EfC_WOda8ZGOjA",
       "name" : "Stewardship_URL"
     }, {
