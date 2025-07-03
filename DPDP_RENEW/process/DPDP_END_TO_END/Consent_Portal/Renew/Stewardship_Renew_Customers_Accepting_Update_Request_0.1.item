@@ -187,7 +187,7 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_2" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://192.168.1.163:8040/services/renew/apply&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;renew/apply&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="deleteCustomer" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="DELETE" id="1"/>
