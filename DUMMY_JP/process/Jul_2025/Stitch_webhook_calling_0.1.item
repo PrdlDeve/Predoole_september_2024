@@ -126,11 +126,11 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Name" id="2"/>
       <elementValue elementRef="QUERY" value="&quot;$.data.customer.name&quot;" id="3"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Product_Id" id="4"/>
-      <elementValue elementRef="QUERY" value="&quot;$.data.items[*].product_id&quot;" id="5"/>
+      <elementValue elementRef="QUERY" value="&quot;$.data.[*].product_id&quot;" id="5"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Product_Name" id="6"/>
-      <elementValue elementRef="QUERY" value="&quot;$.data.items[*].name&quot;" id="7"/>
+      <elementValue elementRef="QUERY" value="&quot;$.data.[*].name&quot;" id="7"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Quantity" id="8"/>
-      <elementValue elementRef="QUERY" value="&quot;$.data.items[*].quantity&quot;" id="9"/>
+      <elementValue elementRef="QUERY" value="&quot;$.data.[*].quantity&quot;" id="9"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="OrderId" id="0"/>
