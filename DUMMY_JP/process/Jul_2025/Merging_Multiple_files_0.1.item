@@ -110,8 +110,8 @@
     <elementParameter field="TABLE" name="FILES">
       <elementValue elementRef="FILEMASK" value="&quot;*.out&quot;" id="0"/>
     </elementParameter>
-    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
-    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
     <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
     <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
