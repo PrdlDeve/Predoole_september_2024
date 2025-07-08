@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_D7yTUBDkEfC80qGuslKB3g" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_iu6pUBDkEfC80qGuslKB3g" comment="" name="SF_UserID" prompt="SF_UserID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_iu6pURDkEfC80qGuslKB3g" comment="" name="SF_Password" prompt="SF_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_iu6pUhDkEfC80qGuslKB3g" comment="" name="SF_Warehouse" prompt="SF_Warehouse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEMO_WH"/>
+  <contextParameter xmi:id="_iu6pUxDkEfC80qGuslKB3g" comment="" name="SF_Schema" prompt="SF_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LANDING"/>
+  <contextParameter xmi:id="_iu6pVBDkEfC80qGuslKB3g" comment="" name="SF_Database" prompt="SF_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="RGS_DEMO_DB"/>
+  <contextParameter xmi:id="_iu6pVRDkEfC80qGuslKB3g" comment="" name="SF_Table" prompt="SF_Table?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEMOGRAPHICS"/>
+  <contextParameter xmi:id="_wwwzcBDkEfC80qGuslKB3g" comment="" name="SF_Account" prompt="SF_Account?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+</talendfile:ContextType>
