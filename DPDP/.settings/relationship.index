@@ -50,7 +50,19 @@
     "version" : "Latest",
     "type" : "property"
   }, {
+    "id" : "_XrGyMF2GEfCH5J3lQ7IgFQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_9wx-MF2FEfCH5J3lQ7IgFQ - addresses",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_9wx-MF2FEfCH5J3lQ7IgFQ - investors",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_XrGyMF2GEfCH5J3lQ7IgFQ - INVESTORDETAILS",
     "version" : "Latest",
     "type" : "schema"
   } ]
