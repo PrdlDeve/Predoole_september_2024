@@ -46,19 +46,11 @@
     "type" : "job"
   },
   "relatedItems" : [ {
-    "id" : "_WO8wgF12EfCH5J3lQ7IgFQ",
+    "id" : "_9wx-MF2FEfCH5J3lQ7IgFQ",
     "version" : "Latest",
     "type" : "property"
   }, {
-    "id" : "_eQ1_0F11EfCH5J3lQ7IgFQ",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_eQ1_0F11EfCH5J3lQ7IgFQ - addresses",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
-    "id" : "_eQ1_0F11EfCH5J3lQ7IgFQ - investors",
+    "id" : "_9wx-MF2FEfCH5J3lQ7IgFQ - investors",
     "version" : "Latest",
     "type" : "schema"
   } ]
