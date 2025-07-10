@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Job1_ToStewardship-feature">
+    <feature name="Job1_ToStewardship-feature" version="0.2.0">
+        <bundle>mvn:org.example.dpdp_renew.service/Job1_ToStewardship/0.2.0</bundle>
+        <config name="Job1_ToStewardship.talendcontext.Default" override="true">
+year=
+id=
+</config>
+    </feature>
+</features>
