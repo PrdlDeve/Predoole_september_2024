@@ -3,5 +3,5 @@
   <contextParameter xmi:id="_DwW_En8fEeqv5OUyPzpEiA" comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.us.cloud.talend.com/data-stewardship"/>
   <contextParameter xmi:id="_DwW_E38fEeqv5OUyPzpEiA" comment="" name="TDC_User" prompt="TDC_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   <contextParameter xmi:id="_DwW_FH8fEeqv5OUyPzpEiA" comment="" name="TDC_Pass" prompt="TDC_Pass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
-  <contextParameter xmi:id="_DwW_GH8fEeqv5OUyPzpEiA" comment="" name="Directory" prompt="Directory?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Test/"/>
+  <contextParameter xmi:id="_DwW_GH8fEeqv5OUyPzpEiA" comment="" name="Directory" prompt="Directory?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Users/Laptop_User/Downloads/Data Integration End-to-End  - Demo Kit (1)/Data Integration End-to-End  - Demo Kit/Talend/"/>
 </talendfile:ContextType>
