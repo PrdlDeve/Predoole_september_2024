@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Portal_Get_Request-feature">
+    <feature name="Portal_Get_Request-feature" version="0.4.0">
+        <bundle>mvn:org.example.dpdp.service/Portal_Get_Request/0.4.0</bundle>
+        <config name="Portal_Get_Request.talendcontext.Default" override="true">
+Stewardship_Password=2ZVKGVf9RIm2Nf2WTA4TdKXoIfgE_uFEpIHwfAZ96CopHgSta1mLEXj_4_NXosCz
+Stewardship_UserName=pranita.p@predoole.com
+Stewardship_URL=https://tds.ap.cloud.talend.com/data-stewardship
+</config>
+    </feature>
+</features>

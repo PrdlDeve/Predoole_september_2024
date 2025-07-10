@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+
+
+
+
+    <jaxrs:server xmlns:jaxrs="http://cxf.apache.org/blueprint/jaxrs"
+            id="service"
+
+    address="http://192.168.1.163:8050/steward">
+
+        <jaxrs:serviceBeans>
+            <ref component-id="serviceBean" />
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <bean class="dpdp.batch_steward_withdraw_customers_sending_request_copy_0_3.Batch_Steward_Withdraw_Customers_Sending_Request_Copy.ExceptionMapper4TalendJobRestService">
+                <argument ref="serviceBean" />
+            </bean>
+            <bean class="org.apache.cxf.jaxrs.provider.json.JSONProvider">
+                <property name="ignoreNamespaces" value="true" />
+                <property name="supportUnwrapped" value="false" />
+                <property name="wrapperName" value="root" />
+                <property name="dropRootElement" value="false" />
+                <property name="convertTypesToStrings" value="false" />
+                <property name="attributesToElements" value="true" />
+            </bean>
+            <bean class="org.apache.cxf.jaxrs.provider.dom4j.DOM4JProvider" />
+        </jaxrs:providers>
+        <jaxrs:features>
+             <bean class="org.apache.cxf.metrics.MetricsFeature" />
+        </jaxrs:features>
+        <jaxrs:properties>
+ 
+ 
+
+
+         </jaxrs:properties>
+    </jaxrs:server>
+
+    <bean id="serviceBean" class="dpdp.batch_steward_withdraw_customers_sending_request_copy_0_3.Batch_Steward_Withdraw_Customers_Sending_Request_Copy.RestServiceProviderImpl4TalendJob">
+        <argument ref="job" />
+    </bean>
+
+    <bean id="job" class="dpdp.batch_steward_withdraw_customers_sending_request_copy_0_3.Batch_Steward_Withdraw_Customers_Sending_Request_Copy" destroy-method="destroy">
+        <property name="runInTalendEsbRuntimeContainer" value="true" />
+
+    </bean>
+
+
+    <service ref="job">
+        <interfaces>
+            <value>routines.system.api.TalendJob</value>
+        </interfaces>
+        <service-properties>
+            <entry key="name" value="Batch_Steward_Withdraw_Customers_Sending_Request_Copy" />
+            <entry key="type" value="job" />
+        </service-properties>
+    </service>
+
+
+
+</blueprint>

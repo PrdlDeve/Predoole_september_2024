@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Batch_Steward_Withdraw_Customers_Sending_Request_Copy-feature">
+    <feature name="Batch_Steward_Withdraw_Customers_Sending_Request_Copy-feature" version="0.6.0">
+        <bundle>mvn:org.example.dpdp.service/Batch_Steward_Withdraw_Customers_Sending_Request_Copy/0.6.0</bundle>
+        <config name="Batch_Steward_Withdraw_Customers_Sending_Request_Copy.talendcontext.Default" override="true">
+Stewardship_Password=rQwJl8YLSb-eiZprqn-lRVHreS4a5VNvHaM9vERIbMrEE8HHJWLBHd9KAlGKWH4H
+Stewardship_UserName=pranita.p@predoole.com
+customerId=
+Stewardship_URL=https://tds.ap.cloud.talend.com/data-stewardship
+token=
+</config>
+    </feature>
+</features>

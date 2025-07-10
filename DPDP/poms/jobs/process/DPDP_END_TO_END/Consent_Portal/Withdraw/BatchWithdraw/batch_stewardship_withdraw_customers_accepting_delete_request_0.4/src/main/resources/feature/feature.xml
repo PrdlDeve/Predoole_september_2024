@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Batch_Stewardship_Withdraw_Customers_Accepting_Delete_Request-feature">
+    <feature name="Batch_Stewardship_Withdraw_Customers_Accepting_Delete_Request-feature" version="0.4.0">
+        <bundle>mvn:org.example.dpdp.service/Batch_Stewardship_Withdraw_Customers_Accepting_Delete_Request/0.4.0</bundle>
+        <config name="Batch_Stewardship_Withdraw_Customers_Accepting_Delete_Request.talendcontext.Default" override="true">
+Stewardship_Password=rQwJl8YLSb-eiZprqn-lRVHreS4a5VNvHaM9vERIbMrEE8HHJWLBHd9KAlGKWH4H
+databaseName=
+Stewardship_UserName=pranita.p@predoole.com
+customerId=
+tableId=
+Stewardship_URL=https://tds.ap.cloud.talend.com/data-stewardship
+tableName=
+token=
+</config>
+    </feature>
+</features>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+	<!-- Talend Job OSGi blueprint descriptor -->
+
+
+	<bean id="job" class="dpdp.batch_steward_withdraw_customers_sending_request_copy_0_1.Batch_Steward_Withdraw_Customers_Sending_Request_Copy" destroy-method="destroy">
+
+	</bean>
+
+	<service ref="job">
+		<interfaces>
+			<value>routines.system.api.TalendJob</value>
+		</interfaces>
+		<service-properties>
+			<entry key="name" value="Batch_Steward_Withdraw_Customers_Sending_Request_Copy" />
+			<entry key="version" value="0.1.0" />
+			<entry key="type" value="job" />
+		</service-properties>
+	</service>
+	
+</blueprint>

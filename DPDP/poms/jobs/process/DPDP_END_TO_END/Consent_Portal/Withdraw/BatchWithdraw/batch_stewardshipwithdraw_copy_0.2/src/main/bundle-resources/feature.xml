@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Batch_StewardshipWithdraw_Copy-feature">
+    <feature name="Batch_StewardshipWithdraw_Copy-feature" version="0.2.0">
+        <bundle>mvn:org.example.dpdp.service/Batch_StewardshipWithdraw_Copy/0.2.0</bundle>
+        <config name="Batch_StewardshipWithdraw_Copy.talendcontext.Default" override="true">
+Stewardship_Password=2ZVKGVf9RIm2Nf2WTA4TdKXoIfgE_uFEpIHwfAZ96CopHgSta1mLEXj_4_NXosCz
+Stewardship_UserName=pranita.p@predoole.com
+Stewardship_URL=https://tds.ap.cloud.talend.com/data-stewardship
+</config>
+    </feature>
+</features>

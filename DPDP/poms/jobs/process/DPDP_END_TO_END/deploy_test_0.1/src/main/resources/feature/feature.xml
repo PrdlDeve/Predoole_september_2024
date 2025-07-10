@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Deploy_Test-feature">
+    <feature name="Deploy_Test-feature" version="0.1.0">
+        <bundle>mvn:org.example.dpdp.service/Deploy_Test/0.1.0</bundle>
+        <config name="Deploy_Test.talendcontext.Default" override="true">
+</config>
+    </feature>
+</features>

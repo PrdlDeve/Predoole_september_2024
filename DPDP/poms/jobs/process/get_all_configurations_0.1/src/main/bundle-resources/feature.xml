@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="Get_All_Configurations-feature">
+    <feature name="Get_All_Configurations-feature" version="0.1.0">
+        <bundle>mvn:org.example.dpdp.service/Get_All_Configurations/0.1.0</bundle>
+        <config name="Get_All_Configurations.talendcontext.Default" override="true">
+token=
+</config>
+    </feature>
+</features>

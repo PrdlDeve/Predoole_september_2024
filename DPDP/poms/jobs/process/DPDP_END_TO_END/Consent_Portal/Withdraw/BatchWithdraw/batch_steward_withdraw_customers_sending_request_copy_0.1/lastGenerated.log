@@ -1,0 +1,147 @@
+[INFO] Scanning for projects...
+[WARNING] The POM for org.apache.commons:commons-compress:jar:1.23.0 is missing, no dependency information available
+[WARNING] The POM for commons-io:commons-io:jar:2.16.1 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:3.3.1 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:3.4.1 is missing, no dependency information available
+[WARNING] The POM for org.slf4j:slf4j-api:jar:1.7.30 is missing, no dependency information available
+[WARNING] The POM for com.google.guava:guava:jar:25.1-android is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:1.5.7 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:1.4.5 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-classworlds:jar:1.2-alpha-9 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:1.4.1 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-20 is missing, no dependency information available
+[WARNING] The POM for org.osgi:org.osgi.core:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven:maven-artifact:jar:3.1.1 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven:maven-model:jar:3.1.1 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven:maven-core:jar:3.1.1 is missing, no dependency information available
+[WARNING] The POM for commons-io:commons-io:jar:2.6 is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-compress:jar:1.20 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-archiver:jar:4.2.7 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.plexus:plexus-utils:jar:1.5.8 is missing, no dependency information available
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.example.dpdp.service:Batch_Steward_Withdraw_Customers_Sending_Request_Copy:bundle:0.1.0
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: commons-codec:commons-codec:jar -> version 1.14 vs 1.15 @ line 206, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.commons:commons-lang3:jar -> version 3.10 vs 3.17.0 @ line 283, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.google.guava:guava:jar -> version 32.1.2-jre vs 33.3.0-jre @ line 712, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.fasterxml.jackson.core:jackson-annotations:jar -> version 2.16.0 vs 2.17.2 @ line 778, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.fasterxml.jackson.core:jackson-core:jar -> version 2.16.0 vs 2.17.2 @ line 800, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.fasterxml.jackson.core:jackson-databind:jar -> version 2.16.0 vs 2.17.2 @ line 833, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: joda-time:joda-time:jar -> version 2.8.2 vs 2.12.7 @ line 1383, column 17
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.nimbusds:nimbus-jose-jwt:jar -> version 9.37.2 vs 9.37.3 @ line 1614, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[WARNING] The requested profile "signature" could not be activated because it does not exist.
+[INFO] 
+[INFO] --< org.example.dpdp.service:Batch_Steward_Withdraw_Customers_Sending_Request_Copy >--
+[INFO] Building DPDP Batch_Steward_Withdraw_Customers_Sending_Request_Copy-0.1.0 (0.1,Job Designs) Bundle 0.1.0
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] The POM for org.eclipse.angus:angus-activation:jar:2.0.2 is missing, no dependency information available
+[WARNING] The POM for com.google.auto:auto-common:jar:0.3 is missing, no dependency information available
+[WARNING] The POM for com.google.auto.service:auto-service:jar:1.0-rc2 is missing, no dependency information available
+[WARNING] The POM for org.checkerframework:checker-qual:jar:3.5.0 is missing, no dependency information available
+[WARNING] The POM for org.talend.components:components-api:jar:0.37.46 is missing, no dependency information available
+[WARNING] The POM for org.talend.components:components-common:jar:0.37.46 is missing, no dependency information available
+[WARNING] The POM for org.talend.components:components-datastewardship:jar:0.37.46 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-core:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-bindings-soap:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-databinding-jaxb:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-features-logging:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-frontend-jaxrs:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-management:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-rs-client:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-security:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-security-saml:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-transports-http:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-transports-http-jetty:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-ws-security:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.cxf:cxf-rt-wsdl:jar:4.1.0 is missing, no dependency information available
+[WARNING] The POM for org.talend.components:datastewardship-client:jar:0.37.46 is missing, no dependency information available
+[WARNING] The POM for com.google.errorprone:error_prone_annotations:jar:2.3.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.httpcomponents:fluent-hc:jar:4.5.13 is missing, no dependency information available
+[WARNING] The POM for com.google.j2objc:j2objc-annotations:jar:1.3 is missing, no dependency information available
+[WARNING] The POM for jakarta.activation:jakarta.activation-api:jar:2.1.3 is missing, no dependency information available
+[WARNING] The POM for jakarta.annotation:jakarta.annotation-api:jar:2.1.1 is missing, no dependency information available
+[WARNING] The POM for jakarta.jws:jakarta.jws-api:jar:3.0.0 is missing, no dependency information available
+[WARNING] The POM for jakarta.servlet:jakarta.servlet-api:jar:6.1.0 is missing, no dependency information available
+[WARNING] The POM for jakarta.ws.rs:jakarta.ws.rs-api:jar:3.1.0 is missing, no dependency information available
+[WARNING] The POM for jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2 is missing, no dependency information available
+[WARNING] The POM for jakarta.xml.soap:jakarta.xml.soap-api:jar:3.0.2 is missing, no dependency information available
+[WARNING] The POM for jakarta.xml.ws:jakarta.xml.ws-api:jar:4.0.2 is missing, no dependency information available
+[WARNING] The POM for org.jasypt:jasypt:jar:1.9.3 is missing, no dependency information available
+[WARNING] The POM for org.glassfish.jaxb:jaxb-runtime:jar:4.0.5 is missing, no dependency information available
+[WARNING] The POM for com.github.stephenc.jcip:jcip-annotations:jar:1.0-1 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.jettison:jettison:jar:1.5.4 is missing, no dependency information available
+[WARNING] The POM for com.google.code.findbugs:jsr305:jar:1.3.9 is missing, no dependency information available
+[WARNING] The POM for org.projectlombok:lombok:jar:1.18.24 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven.resolver:maven-resolver-api:jar:1.8.2 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven.resolver:maven-resolver-impl:jar:1.8.2 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven.resolver:maven-resolver-named-locks:jar:1.8.2 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven.resolver:maven-resolver-spi:jar:1.8.2 is missing, no dependency information available
+[WARNING] The POM for org.apache.maven.resolver:maven-resolver-util:jar:1.8.2 is missing, no dependency information available
+[WARNING] The POM for org.apache.neethi:neethi:jar:3.2.1 is missing, no dependency information available
+[WARNING] The POM for com.nimbusds:nimbus-jose-jwt:jar:9.37.3 is missing, no dependency information available
+[WARNING] The POM for org.osgi:org.osgi.service.component.annotations:jar:1.3.0 is missing, no dependency information available
+[WARNING] The POM for org.mozilla:rhino:jar:1.7.14 is missing, no dependency information available
+[WARNING] The POM for org.jvnet.staxex:stax-ex:jar:1.8.3 is missing, no dependency information available
+[WARNING] The POM for org.codehaus.woodstox:stax2-api:jar:4.2.1 is missing, no dependency information available
+[WARNING] The POM for org.talend.components:talendcsv:jar:1.1.0 is missing, no dependency information available
+[WARNING] The POM for org.glassfish.jaxb:txw2:jar:4.0.5 is missing, no dependency information available
+[WARNING] The POM for com.fasterxml.woodstox:woodstox-core:jar:7.1.0 is missing, no dependency information available
+[WARNING] The POM for wsdl4j:wsdl4j:jar:1.6.3 is missing, no dependency information available
+[WARNING] The POM for org.apache.wss4j:wss4j-bindings:jar:3.0.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.wss4j:wss4j-policy:jar:3.0.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.wss4j:wss4j-ws-security-common:jar:3.0.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.wss4j:wss4j-ws-security-dom:jar:3.0.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.wss4j:wss4j-ws-security-policy-stax:jar:3.0.4 is missing, no dependency information available
+[WARNING] The POM for org.apache.wss4j:wss4j-ws-security-stax:jar:3.0.4 is missing, no dependency information available
+[WARNING] The POM for com.fasterxml.jackson.core:jackson-core:jar:2.14.0 is missing, no dependency information available
+[WARNING] The POM for com.fasterxml.jackson.core:jackson-annotations:jar:2.14.0 is missing, no dependency information available
+[WARNING] The POM for org.ow2.asm:asm:jar:9.3 is missing, no dependency information available
+[INFO] 
+[INFO] --- osgihelper:8.0.11:generate (osgi-helper) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[INFO] Resolve mvn:org.example.dpdp.service/Batch_Steward_Withdraw_Customers_Sending_Request_Copy/0.1.0
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[WARNING] The POM for commons-io:commons-io:jar:2.11.0 is missing, no dependency information available
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[WARNING] The POM for org.bouncycastle:bcpg-jdk18on:jar:1.77 is missing, no dependency information available
+[WARNING] The POM for org.bouncycastle:bcprov-jdk18on:jar:1.77 is missing, no dependency information available
+[WARNING] The POM for commons-codec:commons-codec:jar:1.17.0 is missing, no dependency information available
+[WARNING] The POM for org.slf4j:slf4j-api:jar:2.0.13 is missing, no dependency information available
+[INFO] Not compiling main sources
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- surefire:3.3.0:test (default-test) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- bundle:6.0.0:bundle (default-bundle) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[WARNING] Bundle org.example.dpdp.service:Batch_Steward_Withdraw_Customers_Sending_Request_Copy:bundle:0.1.0 : Invalid package name: '@BundleConfigExportPackage@' in Export-Package
+[WARNING] Bundle org.example.dpdp.service:Batch_Steward_Withdraw_Customers_Sending_Request_Copy:bundle:0.1.0 : Invalid package name: '@BundleConfigImportPackage@' in Import-Package
+[INFO] Building bundle: C:\Program Files (x86)\Talend-Studio\studio\workspace\LOCALS\Predoole_september_2024-598023001\DPDP\poms\jobs\process\DPDP_END_TO_END\Consent_Portal\Withdraw\BatchWithdraw\batch_steward_withdraw_customers_sending_request_copy_0.1\target\Batch_Steward_Withdraw_Customers_Sending_Request_Copy-bundle-0.1.0.jar
+[INFO] Writing manifest: C:\Program Files (x86)\Talend-Studio\studio\workspace\LOCALS\Predoole_september_2024-598023001\DPDP\poms\jobs\process\DPDP_END_TO_END\Consent_Portal\Withdraw\BatchWithdraw\batch_steward_withdraw_customers_sending_request_copy_0.1\target\classes\META-INF\MANIFEST.MF
+[INFO] 
+[INFO] --- assembly:3.6.0:single (default) @ Batch_Steward_Withdraw_Customers_Sending_Request_Copy ---
+[WARNING] The POM for org.codehaus.plexus:plexus-archiver:jar:4.4.0 is missing, no dependency information available
+[INFO] Reading assembly descriptor: C:\Program Files (x86)\Talend-Studio\studio\workspace\LOCALS\Predoole_september_2024-598023001\DPDP\poms\jobs\process\DPDP_END_TO_END\Consent_Portal\Withdraw\BatchWithdraw\batch_steward_withdraw_customers_sending_request_copy_0.1/src/main/assemblies/assembly.xml
+[WARNING] The following patterns were never triggered in this artifact inclusion filter:
+o  'org.example.dpdp.service:Batch_Steward_Withdraw_Customers_Sending_Request_Copy:jar:0.1.0'
+
+[INFO] Building jar: C:\Program Files (x86)\Talend-Studio\studio\workspace\LOCALS\Predoole_september_2024-598023001\DPDP\poms\jobs\process\DPDP_END_TO_END\Consent_Portal\Withdraw\BatchWithdraw\batch_steward_withdraw_customers_sending_request_copy_0.1\target\Batch_Steward_Withdraw_Customers_Sending_Request_Copy-bundle-0.1.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.504 s
+[INFO] Finished at: 2025-06-26T11:33:46+05:30
+[INFO] ------------------------------------------------------------------------
+[WARNING] The requested profile "signature" could not be activated because it does not exist.
