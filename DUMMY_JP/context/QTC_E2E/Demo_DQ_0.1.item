@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_DwW_EH8fEeqv5OUyPzpEiA" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_DwW_En8fEeqv5OUyPzpEiA" comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.us.cloud.talend.com/data-stewardship"/>
+  <contextParameter xmi:id="_DwW_En8fEeqv5OUyPzpEiA" comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://tds.ap.cloud.talend.com/data-stewardship"/>
   <contextParameter xmi:id="_DwW_E38fEeqv5OUyPzpEiA" comment="" name="TDC_User" prompt="TDC_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-  <contextParameter xmi:id="_DwW_FH8fEeqv5OUyPzpEiA" comment="" name="TDC_Pass" prompt="TDC_Pass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_DwW_FH8fEeqv5OUyPzpEiA" comment="" name="TDC_Pass" prompt="TDC_Pass?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:NI+Hu6FwKLwsXgt+mVG6PoA/QBwnwmq5pxGyL2redqWo2ElDnxX8rcVfKfdMRr/CjxOWj/H/vwrNiqD9nfhqnxWZlxphxmFFjK2xLb4YZWam5tJSGReaNhgP9Nk="/>
   <contextParameter xmi:id="_DwW_GH8fEeqv5OUyPzpEiA" comment="" name="Directory" prompt="Directory?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Users/Laptop_User/Downloads/Data Integration End-to-End  - Demo Kit (1)/Data Integration End-to-End  - Demo Kit/Talend/"/>
 </talendfile:ContextType>
