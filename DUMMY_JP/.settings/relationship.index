@@ -46,11 +46,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_obInwBRyEfCB-PfziSPupA",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_E7xI8BRuEfCB-PfziSPupA",
