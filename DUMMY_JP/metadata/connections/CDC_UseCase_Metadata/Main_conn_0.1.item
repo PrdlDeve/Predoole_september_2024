@@ -12,6 +12,15 @@
     <taggedValue xmi:id="_m0NXcGE4EfC5YK630F4Chg" tag="DB ProductName" value="Microsoft SQL Server"/>
     <taggedValue xmi:id="_m0NXcWE4EfC5YK630F4Chg" tag="DB ProductVersion" value="16.00.1000"/>
     <taggedValue xmi:id="_m0NXcmE4EfC5YK630F4Chg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <cdcConns xmi:id="_nT0ZsGE6EfC5YK630F4Chg">
+      <cdcTypes xmi:id="_nT0ZsWE6EfC5YK630F4Chg" linkDB="_S-BlQGE6EfC5YK630F4Chg" cdcConnection="_nT0ZsGE6EfC5YK630F4Chg">
+        <subscribers xmi:id="_nT0Zs2E6EfC5YK630F4Chg" name="TSUBSCRIBERS" id="_nT0ZsmE6EfC5YK630F4Chg" label="TSUBSCRIBERS" system="true">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT0ZtGE6EfC5YK630F4Chg" name="TALEND_CDC_TABLE_TO_WATCH" label="TALEND_CDC_TABLE_TO_WATCH" length="35" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT0ZtWE6EfC5YK630F4Chg" name="TALEND_CDC_SUBSCRIBER_NAME" label="TALEND_CDC_SUBSCRIBER_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nT0ZtmE6EfC5YK630F4Chg" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date" nullable="false"/>
+        </subscribers>
+      </cdcTypes>
+    </cdcConns>
     <parameters xmi:id="_mxnWcmE4EfC5YK630F4Chg" key="CONN_PARA_KEY_USERNAME" value="QDI4"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_m2czIGE4EfC5YK630F4Chg" name="RM_Northwind" dataManager="_mxnWcGE4EfC5YK630F4Chg">
