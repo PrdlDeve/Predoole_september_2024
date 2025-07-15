@@ -161,19 +161,19 @@
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
     <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" key="false" length="20" name="Source" nullable="true" originalDbColumnName="0012" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="aadhaar_no" nullable="true" originalDbColumnName="0000" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="consent_status" nullable="true" originalDbColumnName="0001" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="consent_time" nullable="true" originalDbColumnName="0002" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="created_at" nullable="true" originalDbColumnName="0003" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="dob" nullable="true" originalDbColumnName="0005" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="email" nullable="true" originalDbColumnName="0006" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="first_name" nullable="true" originalDbColumnName="0007" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="gender" nullable="true" originalDbColumnName="0008" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="last_name" nullable="true" originalDbColumnName="0009" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="pan_no" nullable="true" originalDbColumnName="0010" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="1073741823" name="phone" nullable="true" originalDbColumnName="0011" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="aadhaar_no" nullable="true" originalDbColumnName="0000" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="consent_status" nullable="true" originalDbColumnName="0001" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="consent_time" nullable="true" originalDbColumnName="0002" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="created_at" nullable="true" originalDbColumnName="0003" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" originalDbColumnName="0005" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="email" nullable="true" originalDbColumnName="0006" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="first_name" nullable="true" originalDbColumnName="0007" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="gender" nullable="true" originalDbColumnName="0008" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="last_name" nullable="true" originalDbColumnName="0009" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="pan_no" nullable="true" originalDbColumnName="0010" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="phone" nullable="true" originalDbColumnName="0011" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Source" nullable="true" originalDbColumnName="0012" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="40">
@@ -191,19 +191,19 @@
     <elementParameter field="CHECK" name="EXCLUDE_TECHNICAL_COLUMNS" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataPrepRun_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="aadhaar_no" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="consent_status" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="consent_time" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="created_at" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="dob" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="email" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="first_name" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="gender" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="last_name" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="pan_no" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="phone" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Source" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="aadhaar_no" nullable="false" originalDbColumnName="0000" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="consent_status" nullable="false" originalDbColumnName="0001" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="consent_time" nullable="false" originalDbColumnName="0002" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="created_at" nullable="false" originalDbColumnName="0003" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="false" originalDbColumnName="0005" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="email" nullable="false" originalDbColumnName="0006" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="first_name" nullable="false" originalDbColumnName="0007" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="gender" nullable="false" originalDbColumnName="0008" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="last_name" nullable="false" originalDbColumnName="0009" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="pan_no" nullable="false" originalDbColumnName="0010" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="phone" nullable="false" originalDbColumnName="0011" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Source" nullable="false" originalDbColumnName="0012" pattern="" precision="0" sourceType="String" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="40">
@@ -320,34 +320,34 @@
     <elementParameter field="TEXT" name="LABEL" value="mysql_newserver"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="aadhaar_no" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="consent_status" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="consent_time" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="created_at" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="dob" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="email" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="first_name" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="gender" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="last_name" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="pan_no" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="phone" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Source" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="aadhaar_no" nullable="false" originalDbColumnName="0000" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="consent_status" nullable="false" originalDbColumnName="0001" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="consent_time" nullable="false" originalDbColumnName="0002" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="created_at" nullable="false" originalDbColumnName="0003" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="false" originalDbColumnName="0005" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="email" nullable="false" originalDbColumnName="0006" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="first_name" nullable="false" originalDbColumnName="0007" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="gender" nullable="false" originalDbColumnName="0008" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="last_name" nullable="false" originalDbColumnName="0009" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="pan_no" nullable="false" originalDbColumnName="0010" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="phone" nullable="false" originalDbColumnName="0011" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Source" nullable="false" originalDbColumnName="0012" pattern="" precision="0" sourceType="String" type="id_String" originalLength="20" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="-1" name="aadhaar_no" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="consent_status" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="consent_time" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="created_at" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="dob" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="email" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="first_name" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="gender" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="last_name" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="pan_no" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="phone" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Source" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="aadhaar_no" nullable="false" originalDbColumnName="0000" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="consent_status" nullable="false" originalDbColumnName="0001" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="consent_time" nullable="false" originalDbColumnName="0002" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="26" name="created_at" nullable="false" originalDbColumnName="0003" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="customer_id" nullable="false" originalDbColumnName="0004" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="false" originalDbColumnName="0005" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="email" nullable="false" originalDbColumnName="0006" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="first_name" nullable="false" originalDbColumnName="0007" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="gender" nullable="false" originalDbColumnName="0008" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="last_name" nullable="false" originalDbColumnName="0009" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="pan_no" nullable="false" originalDbColumnName="0010" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="phone" nullable="false" originalDbColumnName="0011" pattern="" precision="0" sourceType="String" type="id_String" originalLength="1073741823" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Source" nullable="false" originalDbColumnName="0012" pattern="" precision="0" sourceType="String" type="id_String" originalLength="20" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
