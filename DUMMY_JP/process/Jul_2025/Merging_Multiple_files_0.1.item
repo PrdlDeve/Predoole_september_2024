@@ -180,7 +180,7 @@
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*&quot; + ((String)globalMap.get(&quot;row3.identifier&quot;)) + &quot;.out&quot;​" id="0"/>
+      <elementValue elementRef="FILEMASK" value="&quot;*&quot;+((String)globalMap.get(&quot;row3.identifier&quot;))+&quot;.out&quot;​" id="0"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -209,7 +209,7 @@
   </node>
   <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputJSON_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/J5/json_data&quot; + ((String)globalMap.get(&quot;row3.identifier&quot;)) + &quot;.json&quot;​"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/J5/json_data&quot;+((String)globalMap.get(&quot;row3.identifier&quot;))+&quot;.json&quot;​"/>
     <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
     <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
