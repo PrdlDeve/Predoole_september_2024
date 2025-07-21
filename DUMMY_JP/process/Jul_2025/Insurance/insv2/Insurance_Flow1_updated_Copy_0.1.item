@@ -170,7 +170,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataPrepRun_2" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.ap.cloud.talend.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;megha.m@predoole.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:lQOlDMtHCpeaKqJP2W6g/p3Vme2L7WF4mQklAZ7Vpgvl+XaEudMbNzu3dh72W24X19Nk1TBYFb9LGtT2mNIZLV7zZ4Uy5mKbcrvsk09AuwIEER19e8V1NFstAzKEpg=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:zyRwEOmQWd1SnynYtDqLRlB0Yq+8NLX6dityquSJxB6bAvZQmkUmqp0tG9AF9hhY5kH2GbhFXjeoK10pv08wi+48oMheKE0DwQQ14tX/nUFtyxSxpoRbUQdTxjJHVw=="/>
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;07ae0d77-db01-4ad1-8aa9-6a875f8f5f5c&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" value="Megha_Insurance_Demo_Updated" show="false"/>
