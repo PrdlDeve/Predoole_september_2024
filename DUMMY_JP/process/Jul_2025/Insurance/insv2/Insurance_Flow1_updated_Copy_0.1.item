@@ -159,11 +159,11 @@
     <elementParameter field="TEXT" name="LABEL" value="PolicyHolder"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_3">
-      <column comment="" key="false" length="255" name="Address" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="PANNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="PolicyholderName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Address" nullable="true" originalDbColumnName="0002" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Email" nullable="true" originalDbColumnName="0003" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PANNumber" nullable="true" originalDbColumnName="0004" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PolicyholderID" nullable="false" originalDbColumnName="0000" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="500" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PolicyholderName" nullable="true" originalDbColumnName="0001" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="40">
@@ -183,11 +183,11 @@
     <elementParameter field="CHECK" name="EXCLUDE_TECHNICAL_COLUMNS" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataPrepRun_2">
-      <column comment="" key="false" length="-1" name="PolicyholderID" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PolicyholderName" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Address" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Email" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PANNumber" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="500" name="PolicyholderID" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_Integer" originalLength="500" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="PolicyholderName" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Address" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Email" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PANNumber" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="100" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="160">
