@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_7ddiIGYUEfClCfPuW_yduw" name="Insurancelanding_Copy" id="_E-9wgEQxEe-FgvMNFvOBnw" label="Insurancelanding_Copy" dataPackage="_LZZfnmqMEe-0HJID-nAxdg" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.31.45:1433;DatabaseName=Insurance_Demo;" dbVersionString="MSSQL_PROP" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:evnk22KStwCgpA7/h8TP3IZhjg2eMHderBR5DyiWz4x/e61/0E5xkAI=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="Insurance_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="landing" supportNLS="false">
+    <taggedValue xmi:id="_IzxUV0QwEe-FgvMNFvOBnw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_I0o3AEQwEe-FgvMNFvOBnw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_I0o3AUQwEe-FgvMNFvOBnw" tag="Status" value=""/>
+    <taggedValue xmi:id="_I0o3AkQwEe-FgvMNFvOBnw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_I0o3A0QwEe-FgvMNFvOBnw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_I0o3BEQwEe-FgvMNFvOBnw" tag="Description" value=""/>
+    <taggedValue xmi:id="_I0o3BUQwEe-FgvMNFvOBnw" tag="Author" value=""/>
+    <taggedValue xmi:id="_I0o3BkQwEe-FgvMNFvOBnw" tag="otherParameter"/>
+    <taggedValue xmi:id="_I2iUcEQwEe-FgvMNFvOBnw" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_I2iUcUQwEe-FgvMNFvOBnw" tag="DB ProductVersion" value="15.00.2000"/>
+    <taggedValue xmi:id="_I2iUckQwEe-FgvMNFvOBnw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_IzxUWEQwEe-FgvMNFvOBnw" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+    <parameters xmi:id="_KWYWkEQwEe-FgvMNFvOBnw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_LZZfnmqMEe-0HJID-nAxdg" name="Insurance_Demo" dataManager="_7ddiIGYUEfClCfPuW_yduw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_LZZfn2qMEe-0HJID-nAxdg" name="landing"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
