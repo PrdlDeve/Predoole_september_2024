@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_7YQSAGYUEfClCfPuW_yduw" name="Insurancedbo_Copy" id="_7VtUUGYUEfClCfPuW_yduw" label="Insurancedbo_Copy" dataPackage="_lnCZsGYaEfClCfPuW_yduw" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.31.45:1433;DatabaseName=Insurance_Demo;" dbVersionString="MSSQL_PROP" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:+EF9Mdh7XTvv13/N8In8+V78ML/hyKsEu4O1ip6KWMU7MJUYFxQ5AC4=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="Insurance_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="bronze" supportNLS="false">
+  <TalendMetadata:DatabaseConnection xmi:id="_7YQSAGYUEfClCfPuW_yduw" name="Insurancedemo_bronze" id="_7VtUUGYUEfClCfPuW_yduw" label="Insurancedemo_bronze" dataPackage="_HfSGgGYbEfClCfPuW_yduw" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.31.45:1433;DatabaseName=Insurance_Demo;" dbVersionString="MSSQL_PROP" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:+EF9Mdh7XTvv13/N8In8+V78ML/hyKsEu4O1ip6KWMU7MJUYFxQ5AC4=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="Insurance_Demo" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="bronze" supportNLS="false">
     <taggedValue xmi:id="_IzxUV0QwEe-FgvMNFvOBnw" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_I0o3AEQwEe-FgvMNFvOBnw" tag="package filter" value=""/>
     <taggedValue xmi:id="_I0o3AUQwEe-FgvMNFvOBnw" tag="Status" value=""/>
@@ -15,7 +15,7 @@
     <parameters xmi:id="_IzxUWEQwEe-FgvMNFvOBnw" key="CONN_PARA_KEY_USERNAME" value="sa"/>
     <parameters xmi:id="_KWYWkEQwEe-FgvMNFvOBnw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_lnCZsGYaEfClCfPuW_yduw" name="Insurance_Demo" dataManager="_7YQSAGYUEfClCfPuW_yduw">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_lnCZsWYaEfClCfPuW_yduw" name="bronze"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_HfSGgGYbEfClCfPuW_yduw" name="Insurance_Demo" dataManager="_7YQSAGYUEfClCfPuW_yduw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_HfSGgWYbEfClCfPuW_yduw" name="bronze"/>
   </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
