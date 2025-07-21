@@ -363,7 +363,7 @@
     <metadata connector="FLOW" name="tDBOutput_2">
       <column comment="" key="false" length="100" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="PolicyholderName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="PANNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -375,7 +375,7 @@
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="100" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="PolicyholderName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="PANNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
