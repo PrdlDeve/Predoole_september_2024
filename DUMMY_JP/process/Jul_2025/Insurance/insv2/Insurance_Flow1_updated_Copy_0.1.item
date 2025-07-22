@@ -233,7 +233,7 @@
         <mapperTableEntries name="PolicyID" expression="" type="id_Integer"/>
         <mapperTableEntries name="ExpiryDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CoverageDetails" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EffectiveDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EffectiveDate" expression="" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Endorsements" type="id_String" nullable="true"/>
         <mapperTableEntries name="PolicyNumber" type="id_String" nullable="true"/>
         <mapperTableEntries name="PremiumAmount" type="id_BigDecimal" nullable="true"/>
@@ -298,10 +298,10 @@
       <column comment="" defaultValue="" key="false" length="10" name="PolicyholderID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="PolicyID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="ExpiryDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="CoverageDetails" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="CoverageDetails" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="EffectiveDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="PremiumAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
