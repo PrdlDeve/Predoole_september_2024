@@ -456,7 +456,7 @@
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Policy" name="tDBInput_2">
-      <column comment="" key="true" length="10" name="PolicyID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="PolicyID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PolicyholderID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
