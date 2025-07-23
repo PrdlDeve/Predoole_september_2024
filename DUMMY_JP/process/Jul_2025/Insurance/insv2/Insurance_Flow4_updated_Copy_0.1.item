@@ -462,10 +462,10 @@
       <column comment="" key="false" length="10" name="PolicyholderID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="255" name="CoverageDetails" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="255" name="CoverageDetails" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="PremiumAmount" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
@@ -477,7 +477,7 @@
       <column comment="" key="false" length="10" name="ExpiryDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
