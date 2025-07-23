@@ -217,16 +217,18 @@
   <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
     <elementParameter field="TABLE" name="GROUPBYS">
-      <elementValue elementRef="OUTPUT_COLUMN" value="PolicyholderID" id="0"/>
-      <elementValue elementRef="INPUT_COLUMN" value="PolicyholderID" id="1"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="PolicyholderName" id="2"/>
-      <elementValue elementRef="INPUT_COLUMN" value="PolicyholderName" id="3"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="PolicyholderName" id="0"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PolicyholderName" id="1"/>
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="OUTPUT_COLUMN" value="ClaimAmount" id="0"/>
       <elementValue elementRef="FUNCTION" value="sum" id="1"/>
       <elementValue elementRef="INPUT_COLUMN" value="ClaimAmount" id="2"/>
       <elementValue elementRef="IGNORE_NULL" value="false" id="3"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="PolicyholderID" id="4"/>
+      <elementValue elementRef="FUNCTION" value="count" id="5"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PolicyholderID" id="6"/>
+      <elementValue elementRef="IGNORE_NULL" value="false" id="7"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
     <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
