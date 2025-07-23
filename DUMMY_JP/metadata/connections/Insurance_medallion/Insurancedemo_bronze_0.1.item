@@ -76,7 +76,7 @@
           <sqlDataType xmi:id="_iUvo5GbmEfCbA_oBpWBKGg" name="NVARCHAR" javaDataType="-9" nullable="columnNullable"/>
         </feature>
       </ownedElement>
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_iVUQkGbmEfCbA_oBpWBKGg" name="Policyholder" id="_iVTpgGbmEfCbA_oBpWBKGg" label="Policyholder" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_iVUQkGbmEfCbA_oBpWBKGg" name="Policyholder" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_iVTpgGbmEfCbA_oBpWBKGg" label="Policyholder" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_iVUQkWbmEfCbA_oBpWBKGg" name="PolicyholderID" label="PolicyholderID" length="10" sourceType="INT IDENTITY" talendType="id_Integer" nullable="false">
           <taggedValue xmi:id="_iVUQkmbmEfCbA_oBpWBKGg" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_iVUQk2bmEfCbA_oBpWBKGg" language="COLUMN_DEF"/>
