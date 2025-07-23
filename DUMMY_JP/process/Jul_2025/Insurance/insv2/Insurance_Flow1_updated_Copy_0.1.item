@@ -451,11 +451,11 @@
     <elementParameter field="TEXT" name="LABEL" value="Insurancedemo_silver"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tDBOutput_1">
-      <column comment="" key="false" length="10" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="String" type="id_Integer" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="PolicyholderName" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Address" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Email" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="PANNumber" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PolicyholderName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Address" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Email" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PANNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CoverageDetails" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="EffectiveDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -463,11 +463,11 @@
       <column comment="" key="false" length="20" name="PolicyNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="out1" name="REJECT">
-      <column comment="" key="false" length="10" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="String" type="id_Integer" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="PolicyholderName" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="Address" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Email" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="PANNumber" nullable="false" pattern="" precision="0" sourceType="String" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PolicyholderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PolicyholderName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Address" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Email" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="PANNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="CoverageDetails" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="EffectiveDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
