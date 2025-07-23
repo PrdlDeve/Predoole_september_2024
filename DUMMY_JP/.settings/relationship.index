@@ -486,6 +486,17 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_nOHuIGeMEfC2WasBVS1qPw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_gbniwGeQEfC2WasBVS1qPw - UserLogins",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_odu3wGbPEfCjn5IyS1UkPg",
     "version" : "0.1",
     "type" : "job"
