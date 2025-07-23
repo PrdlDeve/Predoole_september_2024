@@ -210,7 +210,6 @@
         <mapperTableEntries name="PremiumAmount" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="EffectiveDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="ExpiryDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Endorsements" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -448,8 +447,6 @@
       <elementValue elementRef="TRIM" value="false" id="11"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ExpiryDate" id="12"/>
       <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Endorsements" id="14"/>
-      <elementValue elementRef="TRIM" value="false" id="15"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -475,9 +472,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="10" name="ExpiryDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="100" name="Endorsements" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
