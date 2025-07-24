@@ -180,7 +180,7 @@
     <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;*&quot;+((String)globalMap.get(&quot;row3.identifier&quot;))+&quot;.out&quot;​" id="0"/>
+      <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;row3.identifier&quot;))+&quot;.out&quot;​" id="0"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
