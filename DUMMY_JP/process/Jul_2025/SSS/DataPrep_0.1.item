@@ -104,20 +104,20 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;98.70.31.45&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
-    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;Silver&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;Insurance_ETE&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;admin&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value=""/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value=""/>
+    <elementParameter field="TEXT" name="DBNAME" value=""/>
+    <elementParameter field="TEXT" name="USER" value=""/>
     <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MtH5fN20q/qQRUob7XQN75IvIy3UMWynXKwtjZdm7aRbEYu2t+ChfM8OZw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Unique_Customers&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select *&#xA;from Silver.Unique_Customers&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select *&#xA;from Unique_Customers&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -183,20 +183,15 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataStore.endpoint" value="AP"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataStore.endpoint" value="EU"/>
     <elementParameter field="TEXT" name="configuration.dataStore.endpointURL" value="https://tdp.&lt;env>.cloud.talend.com" show="false"/>
     <elementParameter field="TEXT" name="configuration.dataStore.iamEndpoint" value="https://app.&lt;env>.cloud.talend.com" show="false"/>
     <elementParameter field="CLOSED_LIST" name="configuration.dataStore.authType" value="PAT"/>
     <elementParameter field="TEXT" name="configuration.dataStore.passwordAuthentication.username" value="" show="false"/>
     <elementParameter field="PASSWORD" name="configuration.dataStore.passwordAuthentication.password" value="" show="false"/>
-    <elementParameter field="PASSWORD" name="configuration.dataStore.patAuthentication.pat" value="enc:system.encryption.key.v1:B5dPxfpFhD1IG8iQ2JxTLNdZhKsEXpVrmThFoFPOVlyMGLp88aG4uSIUkG9EcktoVCX1y8GTdLy+tBxsOYUn68Fe7UMhcyn44BzWZThJbyo9y3WSMFKRN4rWRipJFg=="/>
+    <elementParameter field="PASSWORD" name="configuration.dataStore.patAuthentication.pat" value=""/>
     <elementParameter field="CHECK" name="configuration.useDynamicSelection" value="false"/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.preparationIdentifier" value="ebd524ab-f269-4b4b-b9b3-7065194be52f">
-      <elementValue elementRef="suggestionLabel" value="Unique_Customers, '/' (Pranita Patole, 10/06/25, 7:22 am) - ebd524ab-f269-4b4b-b9b3-7065194be52f"/>
-    </elementParameter>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.version" value="HEAD">
-      <elementValue elementRef="suggestionLabel" value="Current"/>
-    </elementParameter>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.preparationIdentifier" value=""/>
     <elementParameter field="TEXT" name="configuration.dataStore.vaultEndPoint" value="https://vault-gateway.&lt;env>.cloud.talend.com" show="false"/>
     <elementParameter field="CHECK" name="configuration.dataStore.dictionary" value="false"/>
     <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataStore.dictionaryConfig.dictionaryVersion" value="0" show="false"/>
@@ -227,12 +222,12 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;98.70.31.45&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;dpdp_administrator&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;User1&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6NRaOob3x7/vtE2OATtEkjY+W0Y9JlF7FQFLoddJr/dPO5/QXvQC6Ke10Q=="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;sss_Prep_&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value=""/>
+    <elementParameter field="TEXT" name="PORT" value=""/>
+    <elementParameter field="TEXT" name="DBNAME" value=""/>
+    <elementParameter field="TEXT" name="USER" value=""/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4iZP+f8HAyO57jTI/3QjK/5j3AOl0NTHtX+p3VJ+"/>
+    <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
