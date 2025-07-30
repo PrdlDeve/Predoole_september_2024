@@ -3,6 +3,8 @@
   <deletedFolders>metadata/fileXml/Mp_file</deletedFolders>
   <deletedFolders>metadata/snowflake/Banking_Flows</deletedFolders>
   <deletedFolders>process/Banking_Demo_V2</deletedFolders>
+  <deletedFolders>process/PP_Deployment_30_07_25/DPDP_END_TO_END</deletedFolders>
+  <deletedFolders>process/PP_Deployment_30_07_25/FrontEndDataArray</deletedFolders>
   <deletedItems id="_CeiFkO0eEe-UfIira7eLtQ" path="" type="CONTEXT"/>
   <deletedItems id="_GN7NoO0MEe-Y7IfYbzqRpg" path="" type="CONTEXT"/>
   <deletedItems id="_2K-lYKASEe-JBZfbH7w5OQ" path="" type="PROCESS"/>
