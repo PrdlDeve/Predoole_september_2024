@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedFolders>metadata/snowflake/Banking_Flows</deletedFolders>
+  <deletedFolders>process/PP_Deployment_30_07_25/DPDP_END_TO_END</deletedFolders>
+  <deletedFolders>process/PP_Deployment_30_07_25/DPDP_END_TO_END/FrontEndDataArray</deletedFolders>
 </recyclebin:RecycleBin>
