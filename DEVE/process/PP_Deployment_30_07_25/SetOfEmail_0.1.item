@@ -102,7 +102,7 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/PostCustomer&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/PostCustomers&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="Emails" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="POST" id="1"/>
