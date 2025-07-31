@@ -1,0 +1,49 @@
+{
+  "itemId" : "_IAuX8GE_EfCaicGJo3RSbA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_A1TlwD-jEfCIjpzlQFIcKA",
+    "parameterList" : [ {
+      "id" : "_elzaEz-jEfCIjpzlQFIcKA",
+      "name" : "CloudPassword"
+    }, {
+      "id" : "_elzaEj-jEfCIjpzlQFIcKA",
+      "name" : "CloudUser"
+    }, {
+      "id" : "_elyzAD-jEfCIjpzlQFIcKA",
+      "name" : "Host"
+    }, {
+      "id" : "_elyzAj-jEfCIjpzlQFIcKA",
+      "name" : "MSSQL"
+    }, {
+      "id" : "_elyzAT-jEfCIjpzlQFIcKA",
+      "name" : "MySQL"
+    }, {
+      "id" : "_elzaET-jEfCIjpzlQFIcKA",
+      "name" : "Password"
+    }, {
+      "id" : "_elzaED-jEfCIjpzlQFIcKA",
+      "name" : "Postgresql"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QUf_EDxrEfC_WOda8ZGOjA",
+    "parameterList" : [ {
+      "id" : "_ejrakTxrEfC_WOda8ZGOjA",
+      "name" : "MSSQL_User"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_phxz8Dx4EfC_WOda8ZGOjA",
+    "parameterList" : [ {
+      "id" : "_gvOjwjx5EfC_WOda8ZGOjA",
+      "name" : "Stewardship_Password"
+    }, {
+      "id" : "_gvOjwDx5EfC_WOda8ZGOjA",
+      "name" : "Stewardship_URL"
+    }, {
+      "id" : "_gvOjwTx5EfC_WOda8ZGOjA",
+      "name" : "Stewardship_UserName"
+    } ]
+  } ]
+}

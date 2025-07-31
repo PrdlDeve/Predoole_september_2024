@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_A2ClkD-jEfCIjpzlQFIcKA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_elyzAD-jEfCIjpzlQFIcKA" comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="98.70.31.45"/>
+  <contextParameter xmi:id="_elyzAT-jEfCIjpzlQFIcKA" comment="" name="MySQL" prompt="MySQL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="User1"/>
+  <contextParameter xmi:id="_elyzAj-jEfCIjpzlQFIcKA" comment="" name="MSSQL" prompt="MSSQL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QDI4"/>
+  <contextParameter xmi:id="_elzaED-jEfCIjpzlQFIcKA" comment="" name="Postgresql" prompt="Postgresql?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="postgres"/>
+  <contextParameter xmi:id="_elzaET-jEfCIjpzlQFIcKA" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+  <contextParameter xmi:id="_elzaEj-jEfCIjpzlQFIcKA" comment="" name="CloudUser" prompt="CloudUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="pranita.p@predoole.com"/>
+  <contextParameter xmi:id="_elzaEz-jEfCIjpzlQFIcKA" comment="" name="CloudPassword" prompt="CloudPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:3YhblMz1Hie6YLzJZmjJbWYepem2gHdNsdCjENC1KhF1u0gG5PR77Sq1jiOCAdGV8eBzvC2+mU+kPWBERXK3CzyGcBPSnm6xReNuwj4QXfYggtY5K0RY5KT1seM="/>
+</talendfile:ContextType>

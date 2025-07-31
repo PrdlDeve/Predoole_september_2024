@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_t4T3YEA-EfCWqPBf35hbPg" name="ms_sql_45" id="_i_sIAEA-EfCWqPBf35hbPg" label="ms_sql_45" dataPackage="_uWRlwEA-EfCWqPBf35hbPg" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://98.70.31.45:1433;DatabaseName=Insurance_ETE;" dbVersionString="MSSQL_PROP" Port="1433" Username="QDI4" Password="enc:system.encryption.key.v1:x0NoQsR8Kjuljuo/QPrUHoub3cFPlqwH6PBUSrBLHzXnE7SN8Bhpdx4=" ServerName="98.70.31.45" DatasourceName="" FileFieldName="" SID="Insurance_ETE" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="bronze" supportNLS="false">
+    <taggedValue xmi:id="_t4T3YUA-EfCWqPBf35hbPg" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_t78aMEA-EfCWqPBf35hbPg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_t79BQEA-EfCWqPBf35hbPg" tag="Status" value=""/>
+    <taggedValue xmi:id="_t79BQUA-EfCWqPBf35hbPg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_t79oUEA-EfCWqPBf35hbPg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_t79oUUA-EfCWqPBf35hbPg" tag="Description" value=""/>
+    <taggedValue xmi:id="_t79oUkA-EfCWqPBf35hbPg" tag="Author" value=""/>
+    <taggedValue xmi:id="_t79oU0A-EfCWqPBf35hbPg" tag="otherParameter"/>
+    <taggedValue xmi:id="_uBF_8EA-EfCWqPBf35hbPg" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_uBF_8UA-EfCWqPBf35hbPg" tag="DB ProductVersion" value="16.00.1000"/>
+    <taggedValue xmi:id="_uBF_8kA-EfCWqPBf35hbPg" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_t4T3YkA-EfCWqPBf35hbPg" key="CONN_PARA_KEY_USERNAME" value="QDI4"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_uWRlwEA-EfCWqPBf35hbPg" name="Insurance_ETE" dataManager="_t4T3YEA-EfCWqPBf35hbPg">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_uWRlwUA-EfCWqPBf35hbPg" name="bronze"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

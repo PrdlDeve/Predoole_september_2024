@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_QU5AoDxrEfC_WOda8ZGOjA" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_ejrakDxrEfC_WOda8ZGOjA" comment="" name="Host" prompt="Host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="98.70.31.45"/>
+  <contextParameter xmi:id="_ejrakTxrEfC_WOda8ZGOjA" comment="" name="MSSQL_User" prompt="MSSQL_User?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="QDI4"/>
+  <contextParameter xmi:id="_ejrakjxrEfC_WOda8ZGOjA" comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RkgJOPQGX7PFP1TkaTzdy1ef2DZjK4uxlkjYedmGDxz9XT+/iB+iSOw="/>
+</talendfile:ContextType>
