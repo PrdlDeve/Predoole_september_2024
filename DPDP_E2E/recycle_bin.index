@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Aug_1/DPDP_Final_End_To_End_Flow</deletedFolders>
+  <deletedFolders>process/Aug_1/DPDP_Final_End_To_End_Flow/FrontEndDataArray</deletedFolders>
   <deletedFolders>process/DPDP_END_TO_END</deletedFolders>
   <deletedFolders>process/DPDP_END_TO_END/Consent_Portal</deletedFolders>
   <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw</deletedFolders>
