@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_9r2zcW4DEfC_vfO3eQ0Pqg" label="DPDP_E2E" description="" language="java" technicalLabel="DPDP_E2E" author="_9r2zcm4DEfC_vfO3eQ0Pqg" productVersion="Talend Real-time Big Data Platform-8.0.1.20250126_0750-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/PredooleTalend2023/Predoole_september_2024&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_9r2zcW4DEfC_vfO3eQ0Pqg" label="DPDP_E2E" description="" language="java" technicalLabel="DPDP_E2E" author="_9r2zcm4DEfC_vfO3eQ0Pqg" productVersion="Talend Real-time Big Data Platform-8.0.1.20250521_1150-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/PredooleTalend2023/Predoole_september_2024&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_9xvZAG4DEfC_vfO3eQ0Pqg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_9r2zcm4DEfC_vfO3eQ0Pqg" login="admin@t.com" firstName="admin" lastName="t" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_YZxnkW4EEfC2wrmX6ZDw5w" login="pranita.p@predoole.com" firstName="Pranita" lastName="Patole" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_BQqsAG7KEfCu2LWtR0SNYQ" login="chirag.p@talend.com" firstName="Chirag" lastName="Patil" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
