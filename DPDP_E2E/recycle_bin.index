@@ -6,5 +6,9 @@
   <deletedFolders>process/DPDP_END_TO_END/Consent_Portal</deletedFolders>
   <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw</deletedFolders>
   <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw</deletedFolders>
+  <deletedFolders>process/Renew_Aug_4_Update/Use_Case</deletedFolders>
+  <deletedFolders>process/Renew_Aug_4_Update/Use_Case/DPDP</deletedFolders>
+  <deletedFolders>process/Renew_Aug_4_Update/Use_Case/DPDP/DPDP_Final_End_To_End_Flow</deletedFolders>
+  <deletedFolders>process/Renew_Aug_4_Update/Use_Case/DPDP/DPDP_Final_End_To_End_Flow/Consent_Portal_Backend_Job</deletedFolders>
   <deletedItems id="_zATFME_yEfCpaPPwbfOioQ" path="DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw" type="PROCESS"/>
 </recyclebin:RecycleBin>
