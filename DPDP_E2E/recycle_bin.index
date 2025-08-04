@@ -1,21 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedFolders>process/Aug_1/DPDP_Final_End_To_End_Flow</deletedFolders>
-  <deletedFolders>process/Aug_1/DPDP_Final_End_To_End_Flow/FrontEndDataArray</deletedFolders>
-  <deletedFolders>process/Aug_4_Renewal_Jobs</deletedFolders>
-  <deletedFolders>process/DPDP_END_TO_END</deletedFolders>
-  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal</deletedFolders>
-  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw</deletedFolders>
-  <deletedFolders>process/DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw</deletedFolders>
-  <deletedFolders>process/Renew_Aug_4_Update</deletedFolders>
-  <deletedFolders>process/Renew_Aug_4_Update/Renew_Add_Consent</deletedFolders>
-  <deletedFolders>process/Renew_Aug_4_Update/Use_Case</deletedFolders>
-  <deletedFolders>process/Renew_Aug_4_Update/Use_Case/DPDP</deletedFolders>
-  <deletedFolders>process/Renew_Aug_4_Update/Use_Case/DPDP/DPDP_Final_End_To_End_Flow</deletedFolders>
-  <deletedFolders>process/Renew_Aug_4_Update/Use_Case/DPDP/DPDP_Final_End_To_End_Flow/Consent_Portal_Backend_Job</deletedFolders>
-  <deletedItems id="_zATFME_yEfCpaPPwbfOioQ" path="DPDP_END_TO_END/Consent_Portal/Withdraw/StewardshipWihdraw" type="PROCESS"/>
-  <deletedItems id="_HvN5EHEVEfCaE4ePjH72Uw" path="Renew_Aug_4_Update" type="PROCESS"/>
-  <deletedItems id="_HvN5EXEVEfCaE4ePjH72Uw" path="Renew_Aug_4_Update" type="PROCESS"/>
-  <deletedItems id="_HvN5EnEVEfCaE4ePjH72Uw" path="Renew_Aug_4_Update" type="PROCESS"/>
-  <deletedItems id="_nE6GYHEREfC1Md-tro3NdA" path="Renew_Aug_4_Update" type="PROCESS"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin"/>
