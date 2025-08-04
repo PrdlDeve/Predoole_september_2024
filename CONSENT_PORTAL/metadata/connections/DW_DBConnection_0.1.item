@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <TalendMetadata:DatabaseConnection xmi:id="_bJqRoA0tEeqWw43uvJ9RkA" name="DW_DBConnection" id="_bIPVUA0tEeqWw43uvJ9RkA" label="DW_DBConnection" dataPackage="_lviELg0tEeqWw43uvJ9RkA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://20.244.15.185:3306/datawarehouse?noDatetimeStringSync=true&amp;useSSL=false" dbVersionString="MYSQL_5" Port="3306" Username="admin" Password="enc:system.encryption.key.v1:fl3VCsGPiu4RHqHnkjflAGFBnJSPuIAIPXbn37Defpl4cCnOfT3fcxc=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="datawarehouse" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;useSSL=false" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
-    <taggedValue xmi:id="_WRoL8QodEeqWw43uvJ9RkA" tag="Is Conn Need Reload" value="false"/>
+  <TalendMetadata:DatabaseConnection xmi:id="_bJqRoA0tEeqWw43uvJ9RkA" name="DW_DBConnection" id="_bIPVUA0tEeqWw43uvJ9RkA" label="DW_DBConnection" dataPackage="_lviELg0tEeqWw43uvJ9RkA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://20.244.15.185:3306/datawarehouse?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="enc:system.encryption.key.v1:HBVHB+R8/GKRUi0jRybB0EpvXswxiCcaLoT9dFmit6TO+jZH6w8UY/w=" ServerName="20.244.15.185" DatasourceName="" FileFieldName="" SID="datawarehouse" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_WRoL8QodEeqWw43uvJ9RkA" tag="Is Conn Need Reload" value="true"/>
     <taggedValue xmi:id="_WTRKsAodEeqWw43uvJ9RkA" tag="package filter" value=""/>
     <taggedValue xmi:id="_WTRKsQodEeqWw43uvJ9RkA" tag="Status" value=""/>
     <taggedValue xmi:id="_WTRKsgodEeqWw43uvJ9RkA" tag="Version" value="0.1"/>
@@ -10,9 +10,9 @@
     <taggedValue xmi:id="_WTRKtQodEeqWw43uvJ9RkA" tag="Author" value=""/>
     <taggedValue xmi:id="_WTRKtgodEeqWw43uvJ9RkA" tag="otherParameter"/>
     <taggedValue xmi:id="_WTa7sAodEeqWw43uvJ9RkA" tag="DB ProductName" value="MySQL"/>
-    <taggedValue xmi:id="_WTa7sQodEeqWw43uvJ9RkA" tag="DB ProductVersion" value="5.7.11-log"/>
+    <taggedValue xmi:id="_WTa7sQodEeqWw43uvJ9RkA" tag="DB ProductVersion" value="8.0.36"/>
     <taggedValue xmi:id="_WTa7sgodEeqWw43uvJ9RkA" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_WRoL8godEeqWw43uvJ9RkA" key="CONN_PARA_KEY_USERNAME" value="admin"/>
+    <parameters xmi:id="_WRoL8godEeqWw43uvJ9RkA" key="CONN_PARA_KEY_USERNAME" value="root"/>
     <parameters xmi:id="_bdDHsA0tEeqWw43uvJ9RkA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_lviELg0tEeqWw43uvJ9RkA" name="datawarehouse" dataManager="_bJqRoA0tEeqWw43uvJ9RkA">
