@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Aug_4_Renew/Use_Case</deletedFolders>
+  <deletedFolders>process/Aug_4_Renew/Use_Case/DPDP</deletedFolders>
+  <deletedFolders>process/Aug_4_Renew/Use_Case/DPDP/DPDP_Final_End_To_End_Flow</deletedFolders>
+  <deletedFolders>process/Aug_4_Renew/Use_Case/DPDP/DPDP_Final_End_To_End_Flow/Consent_Portal_Backend_Job</deletedFolders>
+  <deletedFolders>process/Aug_4_Renew/Use_Case/DPDP/DPDP_Final_End_To_End_Flow/Consent_Portal_Backend_Job/Renew_Add_Consent</deletedFolders>
+</recyclebin:RecycleBin>
