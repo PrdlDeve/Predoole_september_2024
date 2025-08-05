@@ -102,11 +102,11 @@
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
-    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/&quot;"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/Renew_log&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="Renew_log" id="0"/>
       <elementValue elementRef="HTTP_VERB" value="GET" id="1"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Renew_log&quot;" id="2"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;&quot;" id="2"/>
       <elementValue elementRef="CONSUMES" value="NONE" id="3"/>
       <elementValue elementRef="PRODUCES" value="JSON" id="4"/>
       <elementValue elementRef="STREAMING" value="false" id="5"/>
