@@ -230,7 +230,7 @@
       <column comment="" key="false" length="2147483647" name="consent_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="created_at" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -259,7 +259,7 @@
         <nodes name="consent_status" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.3" xpath="row1/consent_status"/>
         <nodes name="created_at" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.4" xpath="row1/created_at"/>
         <nodes name="customer_id" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.5" xpath="row1/customer_id" nullable="false"/>
-        <nodes name="dob" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/dob"/>
+        <nodes name="dob" type="id_Date" outgoingConnections="//@node.3/@nodeData/@connections.6" xpath="row1/dob" pattern="&quot;yyyy-mm-dd&quot;"/>
         <nodes name="email" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.7" xpath="row1/email"/>
         <nodes name="first_name" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.8" xpath="row1/first_name"/>
         <nodes name="gender" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.9" xpath="row1/gender"/>
@@ -382,7 +382,7 @@
       <column comment="" key="false" length="2147483647" name="consent_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="created_at" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
