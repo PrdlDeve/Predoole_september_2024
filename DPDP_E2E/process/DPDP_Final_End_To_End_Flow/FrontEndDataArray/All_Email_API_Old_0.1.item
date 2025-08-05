@@ -229,7 +229,7 @@
       <column comment="" key="false" length="23" name="consent_startdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="consent_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="26" name="created_at" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="customer_id" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2147483647" name="first_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -267,7 +267,7 @@
         <nodes name="pan_no" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.11" xpath="row1/pan_no"/>
         <nodes name="phone" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.12" xpath="row1/phone"/>
       </inputTrees>
-      <outputTrees name="out1">
+      <outputTrees activateCondensedTool="true" name="out1" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="out1/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out1.body:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customers" expression="" type="id_String" xpath="out1.body:/root/Customers" loop="true" main="true">
