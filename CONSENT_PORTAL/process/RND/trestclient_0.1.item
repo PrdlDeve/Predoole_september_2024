@@ -131,7 +131,7 @@
     <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false" show="false"/>
     <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" value="false" show="false"/>
     <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="true"/>
     <elementParameter field="TABLE" name="HEADERS">
       <elementValue elementRef="NAME" value="&quot;Accept&quot;" id="0"/>
       <elementValue elementRef="VALUE" value="&quot;application/json&quot;" id="1"/>
