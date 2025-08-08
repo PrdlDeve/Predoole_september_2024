@@ -254,8 +254,8 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Card_No" type="id_Integer" xpath="row1/Card_No"/>
-        <nodes name="ID" type="id_Integer" xpath="row1/ID"/>
+        <nodes name="Card_No" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="row1/Card_No"/>
+        <nodes name="ID" type="id_Integer" outgoingConnections="//@node.3/@nodeData/@connections.1" xpath="row1/ID"/>
       </inputTrees>
       <outputTrees activateCondensedTool="true" minimized="true" name="out2" reject="true" allInOne="true">
         <nodes name="body" expression="" type="id_Document" xpath="out2/body">
@@ -274,13 +274,15 @@
         <nodes name="body" expression="" type="id_Document" xpath="out/body">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="root" expression="" type="id_String" xpath="out.body:/root" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="employees" expression="" type="id_String" xpath="out.body:/root/employees" loop="true" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="card_no" expression="row1.name" type="id_String" xpath="out.body:/root/employees/card_no"/>
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression="row1.hireDate" type="id_String" xpath="out.body:/root/employees/id"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="card_no" expression=" row1.Card_No" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="out.body:/root/employees/card_no"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="id" expression=" row1.ID" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.1" xpath="out.body:/root/employees/id"/>
             </children>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.1/@nodes.0/@children.0/@children.0/@children.1"/>
     </nodeData>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80">
