@@ -1,0 +1,211 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Employee_API_Pranita",
+    "description" : "No description",
+    "contact" : { },
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://qpt7qf64u45kli9.ap.api-mocks.com",
+    "description" : "This is your API mock endpoint. When called, it will simulate the behavior of your API."
+  } ],
+  "security" : [ {
+    "Bearer authentication" : [ ]
+  } ],
+  "paths" : {
+    "/employees/{id}" : {
+      "get" : {
+        "summary" : "Geting Employee Details by ID",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Employee"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete Record From Employees",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string"
+        },
+        "style" : "simple",
+        "explode" : false
+      } ]
+    },
+    "/employees" : {
+      "get" : {
+        "summary" : "Employees_List",
+        "responses" : {
+          "200" : {
+            "description" : "Status 200",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Employees"
+                }
+              }
+            }
+          },
+          "401" : {
+            "description" : "Status 401",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "Bearer authentication" : [ ]
+        } ]
+      },
+      "post" : {
+        "summary" : "Inserting Employee Details",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/Employee"
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Status 201",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Employee"
+                }
+              }
+            }
+          },
+          "409" : {
+            "description" : "Status 409",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorMessage"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Employees" : {
+        "type" : "object",
+        "properties" : {
+          "employees" : {
+            "type" : "array",
+            "items" : {
+              "type" : "object",
+              "properties" : {
+                "id" : {
+                  "type" : "integer",
+                  "format" : "int32"
+                },
+                "name" : {
+                  "type" : "string"
+                },
+                "age" : {
+                  "type" : "number"
+                },
+                "department" : {
+                  "type" : "string"
+                },
+                "position" : {
+                  "type" : "string"
+                },
+                "salary" : {
+                  "type" : "number"
+                },
+                "hireDate" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "example" : "{\n  \"employees\": [\n    {\n      \"id\": 1,\n      \"name\": \"John Doe\",\n      \"age\": 30,\n      \"department\": \"Engineering\",\n      \"position\": \"Software Engineer\",\n      \"salary\": 70000,\n      \"hireDate\": \"2015-03-25\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Jane Smith\",\n      \"age\": 25,\n      \"department\": \"Marketing\",\n      \"position\": \"Marketing Specialist\",\n      \"salary\": 50000,\n      \"hireDate\": \"2018-07-12\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"Sam Johnson\",\n      \"age\": 35,\n      \"department\": \"Sales\",\n      \"position\": \"Sales Manager\",\n      \"salary\": 65000,\n      \"hireDate\": \"2012-09-15\"\n    }\n  ]\n}"
+      },
+      "Employee" : {
+        "type" : "object",
+        "properties" : {
+          "employee" : {
+            "type" : "object",
+            "properties" : {
+              "id" : {
+                "type" : "integer",
+                "format" : "int32"
+              },
+              "name" : {
+                "type" : "string"
+              },
+              "age" : {
+                "type" : "number"
+              },
+              "department" : {
+                "type" : "string"
+              },
+              "position" : {
+                "type" : "string"
+              },
+              "salary" : {
+                "type" : "number"
+              },
+              "hireDate" : {
+                "type" : "string"
+              }
+            }
+          }
+        },
+        "example" : "{\n  \"employees\": [\n    {\n      \"id\": 7,\n      \"name\": \"John Doe\",\n      \"age\": 30,\n      \"department\": \"Engineering\",\n      \"position\": \"Software Engineer\",\n      \"salary\": 70000,\n      \"hireDate\": \"2015-03-25\"\n    }\n    }\n    "
+      },
+      "ErrorMessage" : {
+        "type" : "object",
+        "properties" : {
+          "ID" : {
+            "type" : "string"
+          },
+          "errorCode" : {
+            "type" : "string"
+          },
+          "errorMessage" : {
+            "type" : "string"
+          }
+        },
+        "example" : "{\n\t\"ID\": \"4\",\n\t\"errorCode\": \"23000\",\n\t\"errorMessage\": \"Duplicate entry ''4\" for key 'PRIMARY' - Line: 0\"\n}"
+      }
+    },
+    "securitySchemes" : {
+      "Bearer authentication" : {
+        "type" : "http",
+        "scheme" : "bearer"
+      }
+    }
+  }
+}
