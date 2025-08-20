@@ -101,7 +101,7 @@
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(TalendDate.getCurrentDate());"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(TalendDate.addDate(TalendDate.getCurrentDate(), (1*3600 + 30*60 + 27), &quot;ss&quot;));"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
