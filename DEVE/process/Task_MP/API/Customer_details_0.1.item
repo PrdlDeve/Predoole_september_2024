@@ -106,30 +106,30 @@
     <elementParameter field="TEXT" name="API_ID" value="554c43ce-e64d-40a9-81d1-62dfa028a068" show="false"/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/basic_Mp&quot;"/>
     <elementParameter field="TABLE" name="SCHEMAS">
-      <elementValue elementRef="SCHEMA" value="create_Customer_details"/>
-      <elementValue elementRef="HTTP_VERB" value="POST"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;"/>
-      <elementValue elementRef="CONSUMES" value="JSON"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
-      <elementValue elementRef="SCHEMA" value="Put_update"/>
-      <elementValue elementRef="HTTP_VERB" value="PUT"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details/{id}&quot;"/>
-      <elementValue elementRef="CONSUMES" value="JSON"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
-      <elementValue elementRef="SCHEMA" value="Delete"/>
-      <elementValue elementRef="HTTP_VERB" value="DELETE"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details/{id}&quot;"/>
-      <elementValue elementRef="CONSUMES" value="JSON"/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
-      <elementValue elementRef="SCHEMA" value="Customer_list"/>
-      <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;"/>
-      <elementValue elementRef="CONSUMES" value=""/>
-      <elementValue elementRef="PRODUCES" value="JSON"/>
-      <elementValue elementRef="STREAMING" value=""/>
+      <elementValue elementRef="SCHEMA" value="create_Customer_details" id="0"/>
+      <elementValue elementRef="HTTP_VERB" value="POST" id="1"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;" id="2"/>
+      <elementValue elementRef="CONSUMES" value="JSON" id="3"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="4"/>
+      <elementValue elementRef="STREAMING" value="" id="5"/>
+      <elementValue elementRef="SCHEMA" value="Put_update" id="6"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT" id="7"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details/{id}&quot;" id="8"/>
+      <elementValue elementRef="CONSUMES" value="JSON" id="9"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="10"/>
+      <elementValue elementRef="STREAMING" value="" id="11"/>
+      <elementValue elementRef="SCHEMA" value="Delete" id="12"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE" id="13"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details/{id}&quot;" id="14"/>
+      <elementValue elementRef="CONSUMES" value="JSON" id="15"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="16"/>
+      <elementValue elementRef="STREAMING" value="" id="17"/>
+      <elementValue elementRef="SCHEMA" value="Customer_list" id="18"/>
+      <elementValue elementRef="HTTP_VERB" value="GET" id="19"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/Customer_details&quot;" id="20"/>
+      <elementValue elementRef="CONSUMES" value="" id="21"/>
+      <elementValue elementRef="PRODUCES" value="JSON" id="22"/>
+      <elementValue elementRef="STREAMING" value="" id="23"/>
     </elementParameter>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
@@ -184,24 +184,22 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dkCWMHsCEe-ieb2t1q9I-A" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;20.204.123.250&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;20.244.15.185&quot;"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;MrunalTalend&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;qdimainuser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hMPtLocG+PX3WxK+rRu0Jra5OhN5CDdIU6yn/Wxi031b+ZEKQaCNFIGK"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;qlik_db&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;User1&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JBankGoqg2XJqHyZ2maZImHmxz/k/V6/TzDFxgkJyEri3KMg0VNXDmB1kA=="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_dkCWMHsCEe-ieb2t1q9I-A - customer_details" show="false"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer_details&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customer&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT dbo.customer_details.customer_id,&#xA;&#x9;&#x9;dbo.customer_details.name,&#xA;&#x9;&#x9;dbo.customer_details.email,&#xA;&#x9;&#x9;dbo.customer_details.phone,&#xA;&#x9;&#x9;dbo.customer_details.address&#xA;FROM&#x9;dbo.customer_details&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select * from dbo.Customer&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -215,16 +213,16 @@
     <elementParameter field="PASSWORD" name="KEYSTORE_SECRET" value="" show="false"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="name"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="address"/>
-      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="name" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="phone" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="address" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
     <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" value="30" show="false"/>
@@ -252,6 +250,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="ORIGIN" value="" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="copyOfout">
@@ -318,7 +318,7 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
   </subjob>
 </talendfile:ProcessType>
